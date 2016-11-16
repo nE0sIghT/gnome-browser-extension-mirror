@@ -37,7 +37,9 @@ EXTENSION_CHANGED_ERROR			= 2;
 
 NATIVE_HOST				= 'org.gnome.chrome_gnome_shell';
 
-EXTENSIONS_WEBSITE			= 'https://extensions.gnome.org/';
+EXTENSIONS_WEBSITE			= [
+	'https://extensions.gnome.org/',
+];
 UPDATE_URL				= EXTENSIONS_WEBSITE + 'update-info/';
 
 DEFAULT_SYNC_OPTIONS			= {

@@ -26,7 +26,11 @@ chrome.runtime.onInstalled.addListener(function(details) {
 });
 
 chrome.runtime.onMessageExternal.addListener(function (request, sender, sendResponse) {
-	if (sender.url.startsWith(EXTENSIONS_WEBSITE))
+	if (
+		EXTENSIONS_WEBSITE.reduce(
+			(accumulator, url) => accumulator + sender.url.startsWith(url),
+			0)
+	)
 	{
 		if (request && request.execute)
 		{
@@ -72,10 +76,12 @@ chrome.runtime.onMessageExternal.addListener(function (request, sender, sendResp
 	}
 });
 
-chrome.browserAction.onClicked.addListener(function () {
-	chrome.tabs.create({
-		url: EXTENSIONS_WEBSITE,
-		active: true
+EXTENSIONS_WEBSITE.forEach(url => {
+	chrome.browserAction.onClicked.addListener(function () {
+		chrome.tabs.create({
+			url: url,
+			active: true
+		});
 	});
 });
 
@@ -105,8 +111,9 @@ port.onMessage.addListener(function (message) {
 			/*
 			 * Send events to opened extensions.gnome.org tabs
 			 */
-			chrome.tabs.query({
-					url: EXTENSIONS_WEBSITE + '*'
+			EXTENSIONS_WEBSITE.forEach(url => {
+				chrome.tabs.query({
+					url: url + '*'
 				},
 				function (tabs) {
 					for (k in tabs)
@@ -114,6 +121,7 @@ port.onMessage.addListener(function (message) {
 						chrome.tabs.sendMessage(tabs[k].id, message);
 					}
 				});
+			});
 
 			/*
 			 * Route message to Options page.
