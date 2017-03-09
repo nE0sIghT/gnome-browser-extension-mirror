@@ -551,7 +551,7 @@ class ChromeGNOMEShell(Gio.Application):
 
 
 if __name__ == '__main__':
-    debug('Main. Use CTRL+D to quit.')
+    debug('Main. Use Ctrl+D to quit.')
 
     run_as_service = False
     if '--gapplication-service' in sys.argv:
