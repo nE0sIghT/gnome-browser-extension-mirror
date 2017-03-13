@@ -357,7 +357,7 @@ class ChromeGNOMEShell(Gio.Application):
             source = Gio.SettingsSchemaSource.get_default()
             shell_version = self.shell_proxy.get_cached_property("ShellVersion")
 
-            if source.lookup(SHELL_SCHEMA, False) is not None and shell_version is not None:
+            if source.lookup(SHELL_SCHEMA, True) is not None and shell_version is not None:
                 settings = Gio.Settings.new(SHELL_SCHEMA)
 
                 if EXTENSION_DISABLE_VERSION_CHECK_KEY in settings.keys():
