@@ -129,7 +129,7 @@ msgstr "Aucune réponse de l'hôte"
 #. Tooltip for browser extensions icon.
 #: chrome-gnome-shell-key-open_website:1
 msgid "Open GNOME Shell extensions website"
-msgstr "Ouvrer le site Web pour les extensions de GNOME Shell"
+msgstr "Ouvrir le site Web pour les extensions de GNOME Shell"
 
 #. Option name. Allow to set interval between GNOME Shell extensions update
 #. checks.
