@@ -1,28 +1,40 @@
+%global debug_package %{nil}
+
 Name:           chrome-gnome-shell
 Version:        9
-Release:        1%{?dist}
-Summary:        GNOME Shell integration for Chrome
+Release:        3%{?dist}
+Summary:        Support for managing GNOME Shell Extensions through web browsers
 
 License:        GPLv3+
 URL:            https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome
-Source0:        https://git.gnome.org/browse/%{name}/snapshot/%{name}-%{version}.tar.xz
-
-BuildArch:      noarch
+Source0:        https://download.gnome.org/sources/%{name}/%{version}/%{name}-%{version}.tar.xz
 
 BuildRequires:  cmake
 BuildRequires:  desktop-file-utils
-BuildRequires:  jq
-BuildRequires:  python2-devel
+%if 0%{?el7}
+BuildRequires:  python-devel
+%else
+BuildRequires:  python3-devel
+%endif
+BuildRequires:  /usr/bin/base64
+BuildRequires:  /usr/bin/head
+BuildRequires:  /usr/bin/jq
+BuildRequires:  /usr/bin/sha256sum
+BuildRequires:  /usr/bin/tr
+
+Requires:       dbus
+Requires:       gnome-icon-theme
 Requires:       gnome-shell
-Requires:       python-gobject-base
-Requires:       python-requests
+Requires:       hicolor-icon-theme
+Requires:       mozilla-filesystem
+Requires:       python3-gobject-base
+Requires:       python3-requests
 
 %description
-Browser extension for Google Chrome/Chromium, Firefox, Vivaldi, Opera
-(and other Browser Extension, Chrome Extension or WebExtensions capable
-browsers) and native host messaging connector that provides integration
-with GNOME Shell and the corresponding extensions repository
-https://extensions.gnome.org.
+Browser extension for Google Chrome/Chromium, Firefox, Vivaldi, Opera (and
+other Browser Extension, Chrome Extension or WebExtensions capable browsers)
+and native host messaging connector that provides integration with GNOME Shell
+and the corresponding extensions repository https://extensions.gnome.org.
 
 %prep
 %autosetup
@@ -30,10 +42,10 @@ https://extensions.gnome.org.
 %build
 mkdir build
 pushd build
-  %cmake .. \
-    -DCMAKE_INSTALL_PREFIX=%{_prefix} \
-    -DCMAKE_INSTALL_LIBDIR=%{_libdir} \
-    -DBUILD_EXTENSION=OFF
+  %cmake -DBUILD_EXTENSION=OFF \
+         -DCMAKE_INSTALL_LIBDIR=%{_lib} \
+         -DPython_ADDITIONAL_VERSIONS=3 \
+         ..
   %make_build
 popd
 
@@ -43,66 +55,50 @@ pushd build
 popd
 
 %check
-desktop-file-validate %{buildroot}%{_datadir}/applications/org.gnome.ChromeGnomeShell.desktop
+desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/org.gnome.ChromeGnomeShell.desktop
 
 %files
-%doc README.md
 %license LICENSE
+%{_sysconfdir}/chromium/
+%{_sysconfdir}/opt/chrome/
 %{_bindir}/chrome-gnome-shell
+%{_libdir}/mozilla/native-messaging-hosts/
+%if 0%{?el7}
+%{python_sitelib}/chrome_gnome_shell-*.egg-info
+%else
+%{python3_sitelib}/chrome_gnome_shell-*.egg-info
+%endif
 %{_datadir}/applications/org.gnome.ChromeGnomeShell.desktop
 %{_datadir}/dbus-1/services/org.gnome.ChromeGnomeShell.service
-%{_datadir}/icons/gnome/*/*/org.gnome.ChromeGnomeShell.png
-%dir %{_sysconfdir}/chromium
-%dir %{_sysconfdir}/chromium/native-messaging-hosts
-%dir %{_sysconfdir}/chromium/policies
-%dir %{_sysconfdir}/chromium/policies/managed
-%config(noreplace) %{_sysconfdir}/chromium/native-messaging-hosts/org.gnome.chrome_gnome_shell.json
-%config(noreplace) %{_sysconfdir}/chromium/policies/managed/chrome-gnome-shell.json
-%dir %{_sysconfdir}/opt/chrome
-%dir %{_sysconfdir}/opt/chrome/native-messaging-hosts
-%dir %{_sysconfdir}/opt/chrome/policies
-%dir %{_sysconfdir}/opt/chrome/policies/managed
-%config(noreplace) %{_sysconfdir}/opt/chrome/native-messaging-hosts/org.gnome.chrome_gnome_shell.json
-%config(noreplace) %{_sysconfdir}/opt/chrome/policies/managed/chrome-gnome-shell.json
-%{_libdir}/mozilla/native-messaging-hosts/org.gnome.chrome_gnome_shell.json
-%{python2_sitelib}/chrome_gnome_shell-*.egg-info
+%{_datadir}/icons/gnome/*/apps/org.gnome.ChromeGnomeShell.png
 
 %changelog
-* Thu Apr 20 2017 Maxim Orlov <murmansksity@gmail.com> - 9-1
-- Update to Ver.9
+* Wed Aug 02 2017 Fedora Release Engineering <releng@fedoraproject.org> - 9-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild
 
-* Sun Apr 02 2017 Maxim Orlov <murmansksity@gmail.com> - 8.2.1-1
-- Update to Ver.8.2.1
+* Wed Jul 26 2017 Fedora Release Engineering <releng@fedoraproject.org> - 9-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
 
-* Fri Mar 03 2017 Maxim Orlov <murmansksity@gmail.com> - 8.2-1
-- Update to Ver.8.2
+* Thu Jun 22 2017 Pete Walter <pwalter@fedoraproject.org> - 9-1
+- Update to 9
 
-* Wed Feb 22 2017 Maxim Orlov <murmansksity@gmail.com> - 8.1-1
-- Update to Ver.8.1
+* Fri Mar 10 2017 Pete Walter <pwalter@fedoraproject.org> - 8.2-2
+- Package review fixes (#1343710)
+- Validate the desktop file
+- Don't own /etc/opt directory
+- Depend on mozilla-filesystem instead of co-owning mozilla directories
+- Depend on dbus and gnome-icon-theme/hicolor-icon-theme for directory
+  ownership
 
-* Sun Jan 22 2017 Maxim Orlov <murmansksity@gmail.com> - 8-1
-- Update to Ver.8
+* Fri Mar 03 2017 Pete Walter <pwalter@fedoraproject.org> - 8.2-1
+- Update to 8.2
+- Simplify files list
+- Build with Python 3 (#1343710)
+- Add missing python3-requests dependency (#1343710)
+- Update package description
 
-* Mon Dec 26 2016 Maxim Orlov <murmansksity@gmail.com> - 7.2.1-1
-- Update to Ver.7.2.1
-
-* Sat Nov 19 2016 Maxim Orlov <murmansksity@gmail.com> - 7.2-1
-- Update to Ver.7.2
-
-* Mon Sep 26 2016 Maxim Orlov <murmansksity@gmail.com> - 7.1-1
-- Update to Ver.7.1
-
-* Thu Sep 08 2016 Maxim Orlov <murmansksity@gmail.com> - 7-1
-- Update to Ver.7
-
-* Sat Aug 06 2016 Maxim Orlov <murmansksity@gmail.com> - 6.2-1
-- Update to Ver.6.2
-
-* Sun Jul 31 2016 Maxim Orlov <murmansksity@gmail.com> - 6.1-2
-- Add missing Requires: python-gobject-base
-
-* Tue Jun 07 2016 Maxim Orlov <murmansksity@gmail.com> - 6.1-1
-- Update to Ver.6.1
+* Tue Jun 07 2016 Pete Walter <pwalter@fedoraproject.org> - 6.1-1
+- Update to 6.1
 
 * Sat May 14 2016 Maxim Orlov <murmansksity@gmail.com> - 6-1
 - Update to Ver.6
