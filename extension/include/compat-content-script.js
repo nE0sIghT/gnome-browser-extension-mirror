@@ -8,7 +8,7 @@
     (at your option) any later version.
  */
 
-if(COMPAT.IS_FIREFOX)
+if(!window.chrome)
 {
 	(function() {
 		// Define the API subset provided to the webpage
