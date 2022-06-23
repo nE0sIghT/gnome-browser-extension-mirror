@@ -1,11 +1,6 @@
 project('gnome-browser-extension',
   license: 'GPL-3',
   version : '10.1',
-  default_options: [
-    'prefix=' + meson.current_build_dir(),
-    'python.platlibdir=.',
-    'python.purelibdir=.',
-  ]
 )
 
 # Constants
