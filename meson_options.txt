@@ -1,0 +1,10 @@
+option('build_extension', type: 'boolean', value: true, description: 'Build extension zip package')
+option('build_messages', type: 'boolean', value: false, description: 'Update translation strings')
+option('build_source_package', type: 'boolean', value: false, description: 'Build source package')
+
+option(
+    'gettext_report_email',
+    type: 'string',
+    value: 'ykonotopov@gnome.org',
+    description : 'Report-Msgid-Bugs-To field value in pot file'
+)

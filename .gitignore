@@ -13,3 +13,4 @@
 # Our stuff
 po/*.po~
 *.pyc
+/builddir
