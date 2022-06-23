@@ -17,17 +17,17 @@ First you need to install build requirements:
 
 Then invoke meson to build extension:
 ```shell
-    meson setup build
-    cd build
+    meson builddir
+    cd builddir
     meson compile
 ```
 
-This will produce 2 zip files in `build` folder:
+This will produce 2 zip files in `builddir` folder:
 - extension-chrome.zip
 - extension-firefox
 
 Those files can be uploaded to corresponding browser Addons website.  
-There are also unpacked extensions available under `build/extension` folder that can be loaded in web browsers for development purposes.
+There are also unpacked extensions available under `builddir/extension` folder that can be loaded in web browsers for development purposes.
 
 ## Translations
 
