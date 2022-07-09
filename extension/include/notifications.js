@@ -97,14 +97,6 @@ GSC.notifications = (function($) {
 				delete options.buttons;
 			}
 
-			if(COMPAT.IS_OPERA)
-			{
-				if(options.type === chrome.notifications.TemplateType.LIST)
-				{
-					options = remove_list(options);
-				}
-			}
-
 			if (callback)
 			{
 				chrome.notifications.create(name, options, callback);

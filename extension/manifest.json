@@ -18,7 +18,18 @@
   },
 
   "background": {
-    "page": "extension.html",
+    "scripts": [
+      "include/external/jquery-2.1.4.js",
+      "include/i18n.js",
+      "include/constants.js",
+      "include/compat-common.js",
+      "include/gsc.js",
+      "include/notifications.js",
+      "include/update.js",
+      "include/sync.js",
+      "include/toolbar.js",
+      "extension.js"
+    ],
     "persistent": false
   },
 

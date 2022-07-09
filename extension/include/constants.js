@@ -13,7 +13,6 @@ PLATFORMS_WHITELIST			= ["freebsd", "linux", "openbsd"];
 
 COMPAT = {
 	IS_FIREFOX:	 CSS.supports("-moz-appearance: none"),
-	IS_OPERA:	 navigator.userAgent.indexOf(' OPR/') >= 0
 };
 
 NOTIFICATION_SYNC_FAILED		= 'gs-chrome-sync-fail';
