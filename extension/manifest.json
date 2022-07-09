@@ -37,9 +37,9 @@
     ],
       "run_at": "document_start",
       "js": [
-	    "include/constants.js",
-	    "include/compat-content-script.js",
-	    "content-script-start.js"
+        "include/constants.js",
+        "include/compat-content-script.js",
+        "content-script-start.js"
       ]
     }
   ],
