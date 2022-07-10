@@ -1,7 +1,5 @@
 Morate instalirati izvornu spojnicu kako bi ovo proširenje radilo.
 
-Za Arch Linux postoji PKGBUILD dostupan u AUR: https://aur.archlinux.org/packages/chrome-gnome-shell-git
+Za Arch Linux , Debian, Fedoru, Gentoo i Ubuntu možete instalirati paket "chrome-gnome-shell".
 
-Za Debian, Fedoru, Gentoo i Ubuntu možete instalirati paket "chrome-gnome-shell".
-
-Isto tako možete instalirati spojnicu ručno. Pogledajte https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation for install instructions.
+Isto tako možete instalirati spojnicu ručno. Posjetite https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation za upute instalacije.

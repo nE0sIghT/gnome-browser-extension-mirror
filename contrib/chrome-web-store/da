@@ -1,8 +1,6 @@
 Du SKAL installere en oprindelig forbindelseskomponent før denne udvidelse virker.
 
-Til Arch Linux findes der en PKGBUILD i AUR: https://aur.archlinux.org/packages/chrome-gnome-shell-git
-
-Til Debian, Fedora, Gentoo og Ubuntu kan du installere pakken “chrome-gnome-shell”.
+Til Arch Linux, Debian, Fedora, Gentoo og Ubuntu kan du installere pakken “chrome-gnome-shell”.
 ”
 
 Du kan også installere forbindelseskomponenten manuelt. Se https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation for instruktioner vedrørende installation.

@@ -1,54 +1,54 @@
 {
 	"_DO_NOT_EDIT": {
-		"description": "This file is auto generated with po2chrome-messages tool from id.po.",
+		"description": "This file is auto generated with po2chrome-messages tool from zh_CN.po.",
 		"message": ""
 	},
 	"close": {
-		"message": "Tutup"
+		"message": "\u5173\u95ed"
 	},
 	"error_connector_response": {
 		"description": "Shown to user when response from connector API call does not follow known format.",
-		"message": "Menerima respon konektor yang salah"
+		"message": "\u6536\u5230\u4e86\u9519\u8bef\u7684\u8fde\u63a5\u5668\u54cd\u5e94"
 	},
 	"extension_enabled": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension enabled?'",
-		"message": "Difungsikan"
+		"message": "\u5df2\u542f\u7528"
 	},
 	"extension_installed": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension installed?'",
-		"message": "Terpasang"
+		"message": "\u5df2\u5b89\u88c5"
 	},
 	"extension_name": {
 		"description": "Used as title, eg in table header. Means 'GNOME Shell extension name'.",
-		"message": "Ekstensi"
+		"message": "\u6269\u5c55"
 	},
 	"extension_status_downgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons must be downgraded'.",
-		"message": "mesti turun tingkat"
+		"message": "\u5fc5\u987b\u964d\u7ea7"
 	},
 	"extension_status_upgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons can be upgraded'.",
-		"message": "dapat ditingkatkan"
+		"message": "\u53ef\u4ee5\u5347\u7ea7"
 	},
 	"extension_synchronized": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension status synchronized with remote browser storage?'",
-		"message": "Selaras"
+		"message": "\u5df2\u540c\u6b65"
 	},
 	"gs_chrome": {
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
-		"message": "Integrasi Shell GNOME"
+		"message": "GNOME Shell \u96c6\u6210"
 	},
 	"hours": {
 		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "jam"
+		"message": "\u5c0f\u65f6"
 	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
-		"message": "Ekstensi ini menyediakan integrasi dengan Shell GNOME dan repositori ekstensi yang berhubungan https://extensions.gnome.org"
+		"message": "\u6b64\u6269\u5c55\u63d0\u4f9b\u4e86\u4e0e GNOME Shell \u548c\u76f8\u5e94\u6269\u5c55\u5e93 https://extensions.gnome.org \u7684\u96c6\u6210"
 	},
 	"native_request_failed": {
 		"description": "$REQUEST$ is a placeholder for technical name of request that web extension make via native messaging host application.",
-		"message": "\u00ab$REQUEST$\u00bb permintaan native gagal",
+		"message": "\u00ab$REQUEST$\u00bb \u672c\u5730\u8bf7\u6c42\u5931\u8d25\u4e86",
 		"placeholders": {
 			"request": {
 				"content": "$1"
@@ -57,61 +57,61 @@
 	},
 	"never": {
 		"description": "This is a part of phrase 'Last check: never'",
-		"message": "tidak pernah"
+		"message": "\u4ece\u672a"
 	},
 	"no": {
-		"message": "Tidak"
+		"message": "\u5426"
 	},
 	"no_gnome_shell": {
 		"description": "Shown to user when native connector unable to query GNOME Shell version or settings",
-		"message": "Tidak bisa menemukan versi atau pengaturan Shell GNOME. Pastikan bahwa itu terpasang dan berjalan."
+		"message": "\u65e0\u6cd5\u5b9a\u4f4d GNOME Shell \u8bbe\u7f6e\u6216\u7248\u672c\u3002\u786e\u4fdd\u5df2\u5b89\u88c5\u5e76\u8fd0\u884c\u4e86\u5b83\u3002"
 	},
 	"no_host_connector": {
-		"message": "Walaupun ektensi integrasi Shell GNOME berjalan, konektor host native tidak terdeteksi. Lihat <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentasi</a> untuk instruksi tentang memasang konektor."
+		"message": "\u5c3d\u7ba1 GNOME Shell \u96c6\u6210\u6269\u5c55\u6b63\u5728\u8fd0\u884c\uff0c\u672a\u68c0\u6d4b\u5230\u672c\u5730\u4e3b\u673a\u8fde\u63a5\u5668\u3002\u53c2\u8003 <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>\u6587\u6863</a> \u83b7\u53d6\u5173\u4e8e\u5b89\u88c5\u8fde\u63a5\u5668\u7684\u8bf4\u660e\u3002"
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
-		"message": "Tidak ada respon host"
+		"message": "\u65e0\u4e3b\u673a\u54cd\u5e94"
 	},
 	"open_website": {
 		"description": "Tooltip for browser extensions icon.",
-		"message": "Buka situs web ekstensi GNOME Shell"
+		"message": "\u6253\u5f00 GNOME Shell \u6269\u5c55\u7f51\u7ad9"
 	},
 	"options_check_period": {
 		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Mutakhirkan perioda periksa"
+		"message": "\u66f4\u65b0\u68c0\u67e5\u95f4\u9694"
 	},
 	"options_last_check": {
 		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Pemeriksaan terakhir"
+		"message": "\u6700\u540e\u68c0\u67e5"
 	},
 	"options_link": {
 		"description": "Link name for options tab.",
-		"message": "Pilihan"
+		"message": "\u9009\u9879"
 	},
 	"options_next_check": {
 		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Pemeriksaan selanjutnya"
+		"message": "\u4e0b\u6b21\u68c0\u67e5"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
-		"message": "Opsi disimpan."
+		"message": "\u9009\u9879\u5df2\u4fdd\u5b58\u3002"
 	},
 	"options_show_release_notes": {
 		"description": "Option name. Allow to enable/disable popup with release notes when Web extension is updated.",
-		"message": "Tampilkan catatan rilis saat ekstensi peramban diperbarui"
+		"message": "\u5f53\u6d4f\u89c8\u5668\u6269\u5c55\u66f4\u65b0\u65f6\u663e\u793a\u53d1\u884c\u8bf4\u660e"
 	},
 	"options_synchronize_extensions": {
 		"description": "Option name. Allow to enable/disable synchronization of GNOME Shell extensions with remote browser storage.",
-		"message": "Selaraskan daftar ekstensi GNOME Shell"
+		"message": "\u540c\u6b65 GNOME Shell \u6269\u5c55\u5217\u8868"
 	},
 	"options_synchronize_extensions_notice": {
 		"description": "This is a notice under option name.",
-		"message": "Bila difungsikan, daftar ekstensi Shell GNOME Anda akan diselaraskan dengan akun Google Anda."
+		"message": "\u5982\u679c\u542f\u7528\uff0c\u4f60\u7684 GNOME Shell \u6269\u5c55\u5217\u8868\u5c06\u4e0e Google \u8d26\u53f7\u540c\u6b65\u3002"
 	},
 	"options_title": {
 		"description": "$GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This string used as title for Options page. This title is not shown in Chrome, but may be shown in other browsers.",
-		"message": "Opsi $GS_CHROME$",
+		"message": "$GS_CHROME$ \u9009\u9879",
 		"placeholders": {
 			"gs_chrome": {
 				"content": "$1"
@@ -120,41 +120,41 @@
 	},
 	"options_update_check": {
 		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Periksa pemutakhiran ekstensi GNOME Shell"
+		"message": "\u68c0\u67e5 GNOME Shell \u6269\u5c55\u66f4\u65b0"
 	},
 	"options_update_check_enabled": {
 		"description": "Option name.",
-		"message": "Periksa pembaruan ekstensi GNOME Shell yang diaktifkan saja"
+		"message": "\u4ec5\u68c0\u67e5\u5df2\u542f\u7528\u7684 GNOME Shell \u6269\u5c55\u66f4\u65b0"
 	},
 	"options_update_check_enabled_notice": {
-		"message": "Konektor host native Anda tidak mendukung pemeriksaan pembaruan hanya untuk ekstensi GNOME Shell yang difungsikan. Pertimbangkan memperbarui."
+		"message": "\u4f60\u7684\u672c\u5730\u4e3b\u673a\u8fde\u63a5\u5668\u4e0d\u652f\u6301\u4ec5\u68c0\u67e5\u542f\u7528\u7684 GNOME Shell \u6269\u5c55\u66f4\u65b0\u3002\u8bf7\u66f4\u65b0\u3002"
 	},
 	"options_update_check_notice": {
-		"message": "Konektor host native Anda tidak mendukung pengecekan untuk pemutakhiran ekstensi GNOME Shell. Mungkin paket python-requests hilang."
+		"message": "\u4f60\u7684\u672c\u5730\u4e3b\u673a\u8fde\u63a5\u5668\u4e0d\u652f\u6301\u68c0\u67e5 GNOME Shell \u6269\u5c55\u66f4\u65b0\u3002\u53ef\u80fd\u662f\u7f3a\u5c11 python-requests \u8f6f\u4ef6\u5305\u3002"
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
-		"message": "Gunakan ikon terang (tema gelap)"
+		"message": "\u4f7f\u7528\u4eae\u8272\u56fe\u6807\uff08\u9ed1\u8272\u4e3b\u9898\uff09"
 	},
 	"platform_not_supported": {
-		"message": "Konektor host native tidak didukung untuk platform Anda."
+		"message": "\u672c\u5730\u4e3b\u673a\u8fde\u63a5\u5668\u5728\u4f60\u7684\u5e73\u53f0\u4e0a\u672a\u652f\u6301\u3002"
 	},
 	"retry": {
-		"message": "Coba Lagi"
+		"message": "\u91cd\u8bd5"
 	},
 	"save": {
-		"message": "Simpan"
+		"message": "\u4fdd\u5b58"
 	},
 	"synchronization": {
 		"description": "Link name for synchronization tab in options dialog.",
-		"message": "Penyelarasan"
+		"message": "\u540c\u6b65"
 	},
 	"synchronization_cancel": {
-		"message": "Jangan fungsikan penyelarasan."
+		"message": "\u4e0d\u8981\u542f\u7528\u540c\u6b65\u3002"
 	},
 	"synchronization_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused synchronization failure.",
-		"message": "Gagal menyelaraskan ekstensi: $CAUSE$",
+		"message": "\u540c\u6b65\u6269\u5c55\u5931\u8d25\uff1a$CAUSE$",
 		"placeholders": {
 			"cause": {
 				"content": "$1"
@@ -162,32 +162,32 @@
 		}
 	},
 	"synchronization_storage_exists": {
-		"message": "Penyimpanan penyelarasan remote Anda telah memuat daftar ekstensi."
+		"message": "\u4f60\u7684\u8fdc\u7a0b\u540c\u6b65\u5b58\u50a8\u5df2\u5305\u542b\u4e86\u6269\u5c55\u5217\u8868\u3002"
 	},
 	"synchronization_use_local": {
-		"message": "Gunakan daftar ekstensi lokal, timpa remote."
+		"message": "\u4f7f\u7528\u672c\u5730\u6269\u5c55\u5217\u8868\uff0c\u8986\u76d6\u6389\u8fdc\u7a0b\u7684\u3002"
 	},
 	"synchronization_use_remote": {
-		"message": "Gunakan daftar ekstensi remote, timpa lokal."
+		"message": "\u4f7f\u7528\u8fdc\u7a0b\u6269\u5c55\u5217\u8868\uff0c\u8986\u76d6\u6389\u672c\u5730\u7684\u3002"
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "Andika Triwidada <andika@gmail.com>, 2016.\nKukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2018, 2020."
+		"message": "Dingzhong Chen <wsxy162@gmail.com>, 2016-2018."
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
-		"message": "Tentang terjemahan"
+		"message": "\u5173\u4e8e\u7ffb\u8bd1"
 	},
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
-		"message": "galat tak dikenal"
+		"message": "\u672a\u77e5\u9519\u8bef"
 	},
 	"update_available": {
-		"message": "Tersedia pemutakhiran untuk Shell GNOME"
+		"message": "GNOME Shell \u6269\u5c55\u6709\u53ef\u7528\u66f4\u65b0"
 	},
 	"update_check_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Gagal memeriksa pemutakhiran ekstensi GNOME Shell: $CAUSE$",
+		"message": "\u68c0\u67e5 GNOME Shell \u6269\u5c55\u66f4\u65b0\u5931\u8d25\uff1a$CAUSE$",
 		"placeholders": {
 			"cause": {
 				"content": "$1"
@@ -196,9 +196,9 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Konektor host native Anda tidak mendukung API berikut: $$1. Mungkin Anda perlu meningkatkan konektor host native atau memasang pengaya bagi API yang kurang. Lihat <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentasi</a> untuk instruksi."
+		"message": "\u4f60\u7684\u672c\u5730\u4e3b\u673a\u8fde\u63a5\u5668\u4e0d\u652f\u6301\u4e0b\u5217 API\uff1a$$1\u3002\u6216\u8bb8\u4f60\u53ef\u4ee5\u5347\u7ea7\u672c\u5730\u4e3b\u673a\u8fde\u63a5\u5668\uff0c\u6216\u8005\u5b89\u88c5\u7528\u4e8e\u7f3a\u5931 API \u7684\u63d2\u4ef6\u3002\u53c2\u8003 <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentation</a> \u4e0a\u7684\u8bf4\u660e\u3002"
 	},
 	"yes": {
-		"message": "Ya"
+		"message": "\u662f"
 	}
 }

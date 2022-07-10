@@ -1,7 +1,5 @@
 Bu uzantının çalışması için yerleşik bağlayıcıyı KURMALISINIZ.
 
-Arch Linux için AUR'da PKGBUILD bulunabilir: https://aur.archlinux.org/packages/chrome-gnome-shell-git
-
-Debian, Fedora, Gentoo ve Ubuntu için "chrome-gnome-shell" paketini kurabilirsiniz.
+Arch Linux, Debian, Fedora, Gentoo ve Ubuntu için "chrome-gnome-shell" paketini kurabilirsiniz.
 
 Ayrıca bağlayıcıyı elle kurabilirsiniz. Kurulum yönergeleri için https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation adresine göz atın.

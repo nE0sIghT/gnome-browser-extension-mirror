@@ -1,0 +1,5 @@
+您必須安裝此附加元件的原生介面才能運作。
+
+Arch Linux、Debian、Fedora、Gentoo 和 Ubuntu 能直接安裝名為「chrome-gnome-shell」的軟體包。
+
+你也可以手動安裝連接器。請參閱 https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation 的安裝指引。

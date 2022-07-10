@@ -103,7 +103,7 @@
 	},
 	"options_synchronize_extensions": {
 		"description": "Option name. Allow to enable/disable synchronization of GNOME Shell extensions with remote browser storage.",
-		"message": "GNOME-Shell-Erweiterungsliste abgleichen"
+		"message": "GNOME Shell-Erweiterungsliste abgleichen"
 	},
 	"options_synchronize_extensions_notice": {
 		"description": "This is a notice under option name.",
@@ -120,17 +120,17 @@
 	},
 	"options_update_check": {
 		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Auf Aktualisierungen f\u00fcr GNOME-Shell-Erweiterungen pr\u00fcfen"
+		"message": "Auf Aktualisierungen f\u00fcr GNOME Shell-Erweiterungen pr\u00fcfen"
 	},
 	"options_update_check_enabled": {
 		"description": "Option name.",
 		"message": "Nur auf Aktualisierungen pr\u00fcfen, wenn die GNOME Shell-Erweiterungen aktiviert sind"
 	},
 	"options_update_check_enabled_notice": {
-		"message": "Ihr nativer Host-Connector unterst\u00fctzt keine Pr\u00fcfung auf Aktualisierungen f\u00fcr aktive GNOME-Shell-Erweiterungen. Sie sollten aktualisieren."
+		"message": "Ihr nativer Host-Connector unterst\u00fctzt keine Pr\u00fcfung auf Aktualisierungen f\u00fcr aktive GNOME Shell-Erweiterungen. Sie sollten aktualisieren."
 	},
 	"options_update_check_notice": {
-		"message": "Ihr nativer Host-Connector unterst\u00fctzt keine Pr\u00fcfung auf Aktualisierungen f\u00fcr GNOME-Shell-Erweiterungen. Wahrscheinlich fehlt das Paket python-requests."
+		"message": "Ihr nativer Host-Connector unterst\u00fctzt keine Pr\u00fcfung auf Aktualisierungen f\u00fcr GNOME Shell-Erweiterungen. Wahrscheinlich fehlt das Paket python-requests."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -172,7 +172,7 @@
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "Stefan Kirrmann, 2016<br />Mario Bl\u00e4ttermann, 2016"
+		"message": "Stefan Kirrmann, 2016<br />Mario Bl\u00e4ttermann, 2016<br />Onno Giesmann, 2020"
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
@@ -187,7 +187,7 @@
 	},
 	"update_check_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Pr\u00fcfung auf GNOME-Shell-Erweiterungs-Aktualisierungen ist fehlgeschlagen: $CAUSE$",
+		"message": "Pr\u00fcfung auf Aktualisierungen f\u00fcr GNOME Shell-Erweiterungen ist fehlgeschlagen: $CAUSE$",
 		"placeholders": {
 			"cause": {
 				"content": "$1"
@@ -196,7 +196,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Ihr Nativer Host-Connector unterst\u00fctzt die folgenden APIs nicht: $$1. Wahrscheinlich sollten Sie den Nativen Host-Connector aktualisieren oder fehlende Erweiterungen oder APIs installieren. In der <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>Dokumentation</a> finden Sie Anweisungen zum Installieren des Connectors."
+		"message": "Ihr nativer Host-Connector unterst\u00fctzt die folgenden APIs nicht: $$1. Wahrscheinlich sollten Sie den Nativen Host-Connector aktualisieren oder fehlende Erweiterungen oder APIs installieren. In der <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>Dokumentation</a> finden Sie Anweisungen zum Installieren des Connectors."
 	},
 	"yes": {
 		"message": "Ja"

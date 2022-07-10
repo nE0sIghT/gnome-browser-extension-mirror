@@ -183,7 +183,7 @@
 		"message": "erro desconhecido"
 	},
 	"update_available": {
-		"message": "Uma atualiza\u00e7\u00e3o para extens\u00f5es do GNOME Shell est\u00e1 dispon\u00edvel"
+		"message": "Atualiza\u00e7\u00e3o dispon\u00edvel para extens\u00f5es do GNOME Shell"
 	},
 	"update_check_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused update failure.",

@@ -124,17 +124,17 @@
 	},
 	"options_update_check_enabled": {
 		"description": "Option name.",
-		"message": "Check update of enabled GNOME Shell extensions only"
+		"message": "\ud65c\uc131 \uadf8\ub188 \uc178 \ud655\uc7a5 \uae30\ub2a5\uc758 \uc5c5\ub370\uc774\ud2b8\ub9cc \uac80\uc0ac"
 	},
 	"options_update_check_enabled_notice": {
-		"message": "Your native host connector does not support updates check for enabled GNOME Shell extensions only. Consider update."
+		"message": "\uc790\uccb4 \ud638\uc2a4\ud2b8 \uc5f0\uacb0 \ud504\ub85c\uadf8\ub7a8\uc5d0\uc11c \ud65c\uc131 \uadf8\ub188 \uc178 \ud655\uc7a5 \uae30\ub2a5 \uc5c5\ub370\uc774\ud2b8 \uac80\uc0ac \uae30\ub2a5\uc744 \uc9c0\uc6d0\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4."
 	},
 	"options_update_check_notice": {
 		"message": "\uc774 \uc790\uccb4 \ud50c\ub7ab\ud3fc \uc5f0\uacb0 \ud504\ub85c\uadf8\ub7a8\uc5d0\uc11c \uadf8\ub188 \uc178 \ud655\uc7a5 \uae30\ub2a5 \uc5c5\ub370\uc774\ud2b8 \ud655\uc778\uc744 \uc9c0\uc6d0\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. python-request \ud328\ud0a4\uc9c0\uac00 \ube60\uc9c4 \uac83 \uac19\uc2b5\ub2c8\ub2e4."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
-		"message": "Use light icon (dark theme)"
+		"message": "\ubc1d\uc740 \uc544\uc774\ucf58 \uc0ac\uc6a9(\uc5b4\ub450\uc6c0 \ud14c\ub9c8)"
 	},
 	"platform_not_supported": {
 		"message": "\uc790\uccb4 \ud638\uc2a4\ud2b8 \uc5f0\uacb0 \ud504\ub85c\uadf8\ub7a8\uc5d0\uc11c \uc774 \ud50c\ub7ab\ud3fc\uc744 \uc9c0\uc6d0\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4."

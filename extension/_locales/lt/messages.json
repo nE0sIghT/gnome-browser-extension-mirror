@@ -1,54 +1,54 @@
 {
 	"_DO_NOT_EDIT": {
-		"description": "This file is auto generated with po2chrome-messages tool from id.po.",
+		"description": "This file is auto generated with po2chrome-messages tool from lt.po.",
 		"message": ""
 	},
 	"close": {
-		"message": "Tutup"
+		"message": "U\u017everti"
 	},
 	"error_connector_response": {
 		"description": "Shown to user when response from connector API call does not follow known format.",
-		"message": "Menerima respon konektor yang salah"
+		"message": "Gautas neteisingas jungiklio atsakymas"
 	},
 	"extension_enabled": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension enabled?'",
-		"message": "Difungsikan"
+		"message": "\u012ejungtas"
 	},
 	"extension_installed": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension installed?'",
-		"message": "Terpasang"
+		"message": "\u012ediegtas"
 	},
 	"extension_name": {
 		"description": "Used as title, eg in table header. Means 'GNOME Shell extension name'.",
-		"message": "Ekstensi"
+		"message": "Pl\u0117tinys"
 	},
 	"extension_status_downgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons must be downgraded'.",
-		"message": "mesti turun tingkat"
+		"message": "privalo b\u016bti pasendintas"
 	},
 	"extension_status_upgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons can be upgraded'.",
-		"message": "dapat ditingkatkan"
+		"message": "gali b\u016bti atnaujintas"
 	},
 	"extension_synchronized": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension status synchronized with remote browser storage?'",
-		"message": "Selaras"
+		"message": "Sinchronizuota"
 	},
 	"gs_chrome": {
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
-		"message": "Integrasi Shell GNOME"
+		"message": "GNOME apvalkalo integracija"
 	},
 	"hours": {
 		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "jam"
+		"message": "val."
 	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
-		"message": "Ekstensi ini menyediakan integrasi dengan Shell GNOME dan repositori ekstensi yang berhubungan https://extensions.gnome.org"
+		"message": "\u0160is pl\u0117tinys suteikia integracij\u0105 su GNOME apvalkalu ir atitinkama pl\u0117tini\u0173 saugykla https://extensions.gnome.org"
 	},
 	"native_request_failed": {
 		"description": "$REQUEST$ is a placeholder for technical name of request that web extension make via native messaging host application.",
-		"message": "\u00ab$REQUEST$\u00bb permintaan native gagal",
+		"message": "\u00ab$REQUEST$\u00bb u\u017eklausa nepavyko",
 		"placeholders": {
 			"request": {
 				"content": "$1"
@@ -57,61 +57,61 @@
 	},
 	"never": {
 		"description": "This is a part of phrase 'Last check: never'",
-		"message": "tidak pernah"
+		"message": "niekada"
 	},
 	"no": {
-		"message": "Tidak"
+		"message": "Ne"
 	},
 	"no_gnome_shell": {
 		"description": "Shown to user when native connector unable to query GNOME Shell version or settings",
-		"message": "Tidak bisa menemukan versi atau pengaturan Shell GNOME. Pastikan bahwa itu terpasang dan berjalan."
+		"message": "Nepavyko nustatyti GNOME apvalkalo nustatym\u0173 vietos ar versijos. \u012esitikinkite, kad jie yra \u012fdiegti ir veikia."
 	},
 	"no_host_connector": {
-		"message": "Walaupun ektensi integrasi Shell GNOME berjalan, konektor host native tidak terdeteksi. Lihat <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentasi</a> untuk instruksi tentang memasang konektor."
+		"message": "Nors GNOME apvalkalo integracijos pl\u0117tinys veikia, ta\u010diau neaptiktas kompiuterio jungiklis. Nurodymus apie jungiklio \u012fdiegim\u0105 rasite <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentacijoje</a>."
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
-		"message": "Tidak ada respon host"
+		"message": "N\u0117ra jokio atsakymo i\u0161 kompiuterio"
 	},
 	"open_website": {
 		"description": "Tooltip for browser extensions icon.",
-		"message": "Buka situs web ekstensi GNOME Shell"
+		"message": "Atverti GNOME apvalkalo pl\u0117tini\u0173 tinklalap\u012f"
 	},
 	"options_check_period": {
 		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Mutakhirkan perioda periksa"
+		"message": "Atnaujinim\u0173 tikrinimo intervalas"
 	},
 	"options_last_check": {
 		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Pemeriksaan terakhir"
+		"message": "Paskutinis tikrinimas"
 	},
 	"options_link": {
 		"description": "Link name for options tab.",
-		"message": "Pilihan"
+		"message": "Parametrai"
 	},
 	"options_next_check": {
 		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Pemeriksaan selanjutnya"
+		"message": "Kitas tikrinimas"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
-		"message": "Opsi disimpan."
+		"message": "Parametrai \u012fra\u0161yti."
 	},
 	"options_show_release_notes": {
 		"description": "Option name. Allow to enable/disable popup with release notes when Web extension is updated.",
-		"message": "Tampilkan catatan rilis saat ekstensi peramban diperbarui"
+		"message": "Atnaujinus nar\u0161ykl\u0117s pl\u0117tin\u012f, rodyti laidos informacij\u0105"
 	},
 	"options_synchronize_extensions": {
 		"description": "Option name. Allow to enable/disable synchronization of GNOME Shell extensions with remote browser storage.",
-		"message": "Selaraskan daftar ekstensi GNOME Shell"
+		"message": "Sinchronizuoti GNOME apvalkalo pl\u0117tini\u0173 s\u0105ra\u0161\u0105"
 	},
 	"options_synchronize_extensions_notice": {
 		"description": "This is a notice under option name.",
-		"message": "Bila difungsikan, daftar ekstensi Shell GNOME Anda akan diselaraskan dengan akun Google Anda."
+		"message": "Jei \u012fjungta, j\u016bs\u0173 GNOME apvalkalo pl\u0117tini\u0173 s\u0105ra\u0161as bus sinchronizuojamas su j\u016bs\u0173 Google paskyra."
 	},
 	"options_title": {
 		"description": "$GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This string used as title for Options page. This title is not shown in Chrome, but may be shown in other browsers.",
-		"message": "Opsi $GS_CHROME$",
+		"message": "$GS_CHROME$ parametrai",
 		"placeholders": {
 			"gs_chrome": {
 				"content": "$1"
@@ -120,41 +120,41 @@
 	},
 	"options_update_check": {
 		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Periksa pemutakhiran ekstensi GNOME Shell"
+		"message": "Tikrinti GNOME apvalkalo pl\u0117tini\u0173 atnaujinimus"
 	},
 	"options_update_check_enabled": {
 		"description": "Option name.",
-		"message": "Periksa pembaruan ekstensi GNOME Shell yang diaktifkan saja"
+		"message": "Tikrinti tik \u012fjungt\u0173 GNOME apvalkalo pl\u0117tini\u0173 atnaujinimus"
 	},
 	"options_update_check_enabled_notice": {
-		"message": "Konektor host native Anda tidak mendukung pemeriksaan pembaruan hanya untuk ekstensi GNOME Shell yang difungsikan. Pertimbangkan memperbarui."
+		"message": "J\u016bs\u0173 savas kompiuterio jungiklis nepalaiko tik \u012fjungt\u0173 GNOME apvalkalo pl\u0117tini\u0173 atnaujinim\u0173 tikrinimo. Apsvarstykite galimyb\u0119 atsinaujinti."
 	},
 	"options_update_check_notice": {
-		"message": "Konektor host native Anda tidak mendukung pengecekan untuk pemutakhiran ekstensi GNOME Shell. Mungkin paket python-requests hilang."
+		"message": "J\u016bs\u0173 kompiuterio jungiklis nepalaiko GNOME apvalkalo pl\u0117tini\u0173 atnaujinim\u0173 tikrinimo. Tikriausiai, tr\u016bksta python-requests paketo."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
-		"message": "Gunakan ikon terang (tema gelap)"
+		"message": "Naudoti \u0161viesi\u0105 piktogram\u0105 (tamsi tema)"
 	},
 	"platform_not_supported": {
-		"message": "Konektor host native tidak didukung untuk platform Anda."
+		"message": "Kompiuterio jungiklis n\u0117ra palaikomas j\u016bs\u0173 platformai."
 	},
 	"retry": {
-		"message": "Coba Lagi"
+		"message": "Bandyti dar kart\u0105"
 	},
 	"save": {
-		"message": "Simpan"
+		"message": "\u012era\u0161yti"
 	},
 	"synchronization": {
 		"description": "Link name for synchronization tab in options dialog.",
-		"message": "Penyelarasan"
+		"message": "Sinchronizavimas"
 	},
 	"synchronization_cancel": {
-		"message": "Jangan fungsikan penyelarasan."
+		"message": "Ne\u012fjungti sinchronizavimo."
 	},
 	"synchronization_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused synchronization failure.",
-		"message": "Gagal menyelaraskan ekstensi: $CAUSE$",
+		"message": "Nepavyko sinchronizuoti pl\u0117tini\u0173: $CAUSE$",
 		"placeholders": {
 			"cause": {
 				"content": "$1"
@@ -162,32 +162,32 @@
 		}
 	},
 	"synchronization_storage_exists": {
-		"message": "Penyimpanan penyelarasan remote Anda telah memuat daftar ekstensi."
+		"message": "J\u016bs\u0173 nuotolin\u0117je sinchronizavimo saugykloje jau yra pl\u0117tini\u0173 s\u0105ra\u0161as."
 	},
 	"synchronization_use_local": {
-		"message": "Gunakan daftar ekstensi lokal, timpa remote."
+		"message": "Naudoti vietin\u012f pl\u0117tini\u0173 s\u0105ra\u0161\u0105, perra\u0161yti nuotolin\u012f."
 	},
 	"synchronization_use_remote": {
-		"message": "Gunakan daftar ekstensi remote, timpa lokal."
+		"message": "Naudoti nuotolin\u012f pl\u0117tini\u0173 s\u0105ra\u0161\u0105, perra\u0161yti vietin\u012f."
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "Andika Triwidada <andika@gmail.com>, 2016.\nKukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2018, 2020."
+		"message": "I\u0161vert\u0117:\nMoo"
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
-		"message": "Tentang terjemahan"
+		"message": "Apie vertim\u0105"
 	},
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
-		"message": "galat tak dikenal"
+		"message": "ne\u017einoma klaida"
 	},
 	"update_available": {
-		"message": "Tersedia pemutakhiran untuk Shell GNOME"
+		"message": "Yra prieinamas GNOME apvalkalo pl\u0117tini\u0173 atnaujinimas"
 	},
 	"update_check_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Gagal memeriksa pemutakhiran ekstensi GNOME Shell: $CAUSE$",
+		"message": "Nepavyko patikrinti GNOME apvalkalo pl\u0117tini\u0173 atnaujinim\u0173: $CAUSE$",
 		"placeholders": {
 			"cause": {
 				"content": "$1"
@@ -196,9 +196,9 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Konektor host native Anda tidak mendukung API berikut: $$1. Mungkin Anda perlu meningkatkan konektor host native atau memasang pengaya bagi API yang kurang. Lihat <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentasi</a> untuk instruksi."
+		"message": "J\u016bs\u0173 kompiuterio jungiklis nepalaiko \u0161i\u0173 API: $$1. Tikriausiai, jums reik\u0117t\u0173 atnaujinti sav\u0105 kompiuterio jungikl\u012f arba \u012fsidiegti tr\u016bkstam\u0173 API \u012fskiepius. Instrukcijas rasite <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentacijoje</a>."
 	},
 	"yes": {
-		"message": "Ya"
+		"message": "Taip"
 	}
 }

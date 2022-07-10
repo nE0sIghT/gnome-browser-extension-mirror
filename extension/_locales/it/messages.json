@@ -8,7 +8,7 @@
 	},
 	"error_connector_response": {
 		"description": "Shown to user when response from connector API call does not follow known format.",
-		"message": "Ricevuta risposta connettore errato"
+		"message": "Ricevuta risposta errata dal connettore"
 	},
 	"extension_enabled": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension enabled?'",
@@ -127,14 +127,14 @@
 		"message": "Verificare gli aggiornamenti solo per le estensioni di GNOME Shell abilitate"
 	},
 	"options_update_check_enabled_notice": {
-		"message": "Your native host connector does not support updates check for enabled GNOME Shell extensions only. Consider update."
+		"message": "Il connettore nativo non supporta la verifica degli aggiornamenti delle estensioni di GNOME Shell. Potrebbe essere utile aggiornarlo."
 	},
 	"options_update_check_notice": {
 		"message": "Il connettore host nativo non supporta la verifica degli aggiornamenti delle estensioni di GNOME Shell. Probabilmente manca il pacchetto python-requests."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
-		"message": "Use light icon (dark theme)"
+		"message": "Usa icone chiare (tema scuro)"
 	},
 	"platform_not_supported": {
 		"message": "Il connettore host nativo non \u00e8 supportato da questa piattaforma."
@@ -172,7 +172,7 @@
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "Gianvito Cavasoli <gianvito@gmx.it>"
+		"message": "Gianvito Cavasoli <gianvito@gmx.it>\nMilo Casagrande <milo@milo.name>"
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
@@ -196,7 +196,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Il connettore host nativo non supporta le seguenti API: $$1. Probabilmente bisogna aggiornare il connettore host nativo oppure installare i plugin per le API mancanti. Fare riferimento alla <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentazione</a> per le istruzioni."
+		"message": "Il connettore nativo non supporta le seguenti API: $$1. Probabilmente bisogna aggiornare il connettore nativo oppure installare i plugin per le API mancanti. Per maggiori informazioni, consultare la <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentazione</a>."
 	},
 	"yes": {
 		"message": "S\u00ec"

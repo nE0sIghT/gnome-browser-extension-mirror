@@ -1,7 +1,5 @@
-Sie müssen den Nativen Host-Connector installieren, damit diese Erweiterung funktioniert.
+Sie müssen den nativen Host-Connector installieren, damit diese Erweiterung funktioniert.
 
-Für Archlinux ist ein PKGBUILD im AUR verfügbar: https://aur.archlinux.org/packages/chrome-gnome-shell-git
-
-Für Debian, Fedora, Gentoo und Ubuntu steht ein installierbares Paket namens »chrome-gnome-shell« zur Verfügung.
+Für Arch Linux, Debian, Fedora, Gentoo und Ubuntu steht ein installierbares Paket namens »chrome-gnome-shell« zur Verfügung.
 
 Sie können den Connector auch manuell installieren. Installationshinweise finden Sie auf https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation.

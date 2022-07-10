@@ -1,54 +1,54 @@
 {
 	"_DO_NOT_EDIT": {
-		"description": "This file is auto generated with po2chrome-messages tool from id.po.",
+		"description": "This file is auto generated with po2chrome-messages tool from eu.po.",
 		"message": ""
 	},
 	"close": {
-		"message": "Tutup"
+		"message": "Itxi"
 	},
 	"error_connector_response": {
 		"description": "Shown to user when response from connector API call does not follow known format.",
-		"message": "Menerima respon konektor yang salah"
+		"message": "Konektorearen erantzun okerra jaso da"
 	},
 	"extension_enabled": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension enabled?'",
-		"message": "Difungsikan"
+		"message": "Gaituta"
 	},
 	"extension_installed": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension installed?'",
-		"message": "Terpasang"
+		"message": "Instalatuta"
 	},
 	"extension_name": {
 		"description": "Used as title, eg in table header. Means 'GNOME Shell extension name'.",
-		"message": "Ekstensi"
+		"message": "Luzapena"
 	},
 	"extension_status_downgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons must be downgraded'.",
-		"message": "mesti turun tingkat"
+		"message": "bertsio zaharra erabili behar da"
 	},
 	"extension_status_upgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons can be upgraded'.",
-		"message": "dapat ditingkatkan"
+		"message": "eguneratu egin daiteke"
 	},
 	"extension_synchronized": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension status synchronized with remote browser storage?'",
-		"message": "Selaras"
+		"message": "Sinkronizatua"
 	},
 	"gs_chrome": {
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
-		"message": "Integrasi Shell GNOME"
+		"message": "GNOME Shell integrazioa"
 	},
 	"hours": {
 		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "jam"
+		"message": "ordu"
 	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
-		"message": "Ekstensi ini menyediakan integrasi dengan Shell GNOME dan repositori ekstensi yang berhubungan https://extensions.gnome.org"
+		"message": "Hedapen honek GNOME Shell aplikazioarekin eta haren hedapenen biltegiarekin (https://extensions.gnome.org) integratzeko aukera eskaintzen du"
 	},
 	"native_request_failed": {
 		"description": "$REQUEST$ is a placeholder for technical name of request that web extension make via native messaging host application.",
-		"message": "\u00ab$REQUEST$\u00bb permintaan native gagal",
+		"message": "\u00ab$REQUEST$\u00bb jatorrizko eskaerak huts egin du",
 		"placeholders": {
 			"request": {
 				"content": "$1"
@@ -57,61 +57,61 @@
 	},
 	"never": {
 		"description": "This is a part of phrase 'Last check: never'",
-		"message": "tidak pernah"
+		"message": "inoiz ere ez"
 	},
 	"no": {
-		"message": "Tidak"
+		"message": "Ez"
 	},
 	"no_gnome_shell": {
 		"description": "Shown to user when native connector unable to query GNOME Shell version or settings",
-		"message": "Tidak bisa menemukan versi atau pengaturan Shell GNOME. Pastikan bahwa itu terpasang dan berjalan."
+		"message": "Ezin izan dira GNOME Shell ezarpenak edo bertsioa aurkitu. Ziurtatu instalatuta dagoela eta exekutatzen ari dela."
 	},
 	"no_host_connector": {
-		"message": "Walaupun ektensi integrasi Shell GNOME berjalan, konektor host native tidak terdeteksi. Lihat <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentasi</a> untuk instruksi tentang memasang konektor."
+		"message": "GNOME Shell integraziorako hedapena exekutatzen ari den arren, jatorrizko ostalari-konektorea ez da aurkitu. Ikusi <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentation</a> konektorea instalatzeko argibideak ezagutzeko."
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
-		"message": "Tidak ada respon host"
+		"message": "Ez dago ostalariaren erantzunik"
 	},
 	"open_website": {
 		"description": "Tooltip for browser extensions icon.",
-		"message": "Buka situs web ekstensi GNOME Shell"
+		"message": "Ireki GNOME Shell hedapenen webgunea"
 	},
 	"options_check_period": {
 		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Mutakhirkan perioda periksa"
+		"message": "Eguneratzeak egiaztatzeko denbora-tartea"
 	},
 	"options_last_check": {
 		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Pemeriksaan terakhir"
+		"message": "Azken egiaztatzea"
 	},
 	"options_link": {
 		"description": "Link name for options tab.",
-		"message": "Pilihan"
+		"message": "Aukerak"
 	},
 	"options_next_check": {
 		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Pemeriksaan selanjutnya"
+		"message": "Hurrengo egiaztatzea"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
-		"message": "Opsi disimpan."
+		"message": "Aukerak gorde dira."
 	},
 	"options_show_release_notes": {
 		"description": "Option name. Allow to enable/disable popup with release notes when Web extension is updated.",
-		"message": "Tampilkan catatan rilis saat ekstensi peramban diperbarui"
+		"message": "Erakutsi bertsioaren oharrak nabigatzailearen hedapena eguneratzen denean"
 	},
 	"options_synchronize_extensions": {
 		"description": "Option name. Allow to enable/disable synchronization of GNOME Shell extensions with remote browser storage.",
-		"message": "Selaraskan daftar ekstensi GNOME Shell"
+		"message": "Sinkronizatu GNOME Shell hedapenen zerrenda"
 	},
 	"options_synchronize_extensions_notice": {
 		"description": "This is a notice under option name.",
-		"message": "Bila difungsikan, daftar ekstensi Shell GNOME Anda akan diselaraskan dengan akun Google Anda."
+		"message": "Gaituta badago, zure GNOME Shell hedapenen zerrenda zure Google kontuarekin sinkronizatuko da."
 	},
 	"options_title": {
 		"description": "$GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This string used as title for Options page. This title is not shown in Chrome, but may be shown in other browsers.",
-		"message": "Opsi $GS_CHROME$",
+		"message": "$GS_CHROME$ aukerak",
 		"placeholders": {
 			"gs_chrome": {
 				"content": "$1"
@@ -120,41 +120,41 @@
 	},
 	"options_update_check": {
 		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Periksa pemutakhiran ekstensi GNOME Shell"
+		"message": "Begiratu GNOME Shell hedapenen eguneratzerik dagoen"
 	},
 	"options_update_check_enabled": {
 		"description": "Option name.",
-		"message": "Periksa pembaruan ekstensi GNOME Shell yang diaktifkan saja"
+		"message": "Egiaztatu gaitutako GNOME Shell hedapenen eguneratzeak soilik"
 	},
 	"options_update_check_enabled_notice": {
-		"message": "Konektor host native Anda tidak mendukung pemeriksaan pembaruan hanya untuk ekstensi GNOME Shell yang difungsikan. Pertimbangkan memperbarui."
+		"message": "Zure jatorrizko ostalari-konektoreak ez du onartzen gaituta dauden GNOME Shell hedapenen eguneratzeak soilik egiaztatzea. Beharbada eguneratu egin beharko zenuke."
 	},
 	"options_update_check_notice": {
-		"message": "Konektor host native Anda tidak mendukung pengecekan untuk pemutakhiran ekstensi GNOME Shell. Mungkin paket python-requests hilang."
+		"message": "Zure jatorrizko ostalari-konektoreak ez du onartzen GNOME Shell hedapenen eguneratzea egiaztatzea. Beharbada python-requests paketea falta da."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
-		"message": "Gunakan ikon terang (tema gelap)"
+		"message": "Erabili ikono argia (gai iluna)"
 	},
 	"platform_not_supported": {
-		"message": "Konektor host native tidak didukung untuk platform Anda."
+		"message": "Jatorrizko osatalari-konektorea ez dago onartuta zure plataforman."
 	},
 	"retry": {
-		"message": "Coba Lagi"
+		"message": "Saiatu berriro"
 	},
 	"save": {
-		"message": "Simpan"
+		"message": "Gorde"
 	},
 	"synchronization": {
 		"description": "Link name for synchronization tab in options dialog.",
-		"message": "Penyelarasan"
+		"message": "Sinkronizazioa"
 	},
 	"synchronization_cancel": {
-		"message": "Jangan fungsikan penyelarasan."
+		"message": "Ez gaitu sinkronizazioa."
 	},
 	"synchronization_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused synchronization failure.",
-		"message": "Gagal menyelaraskan ekstensi: $CAUSE$",
+		"message": "Huts egin du hedapenak sinkronizatzeak: $CAUSE$",
 		"placeholders": {
 			"cause": {
 				"content": "$1"
@@ -162,32 +162,32 @@
 		}
 	},
 	"synchronization_storage_exists": {
-		"message": "Penyimpanan penyelarasan remote Anda telah memuat daftar ekstensi."
+		"message": "Zure urruneko sinkronizazio-biltegia dagoeneko badu hedapenen zerrenda."
 	},
 	"synchronization_use_local": {
-		"message": "Gunakan daftar ekstensi lokal, timpa remote."
+		"message": "Erabili hedapenen zerrenda lokala, gainidatzi urrunekoa."
 	},
 	"synchronization_use_remote": {
-		"message": "Gunakan daftar ekstensi remote, timpa lokal."
+		"message": "Erabili hedapenen urruneko zerrenda, gainidatzi lokala."
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "Andika Triwidada <andika@gmail.com>, 2016.\nKukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2018, 2020."
+		"message": "translation_credits"
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
-		"message": "Tentang terjemahan"
+		"message": "Itzulpenari buruz"
 	},
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
-		"message": "galat tak dikenal"
+		"message": "errore ezezaguna"
 	},
 	"update_available": {
-		"message": "Tersedia pemutakhiran untuk Shell GNOME"
+		"message": "GNOME Shell hedapenen eguneratze bat eskuragarri dago"
 	},
 	"update_check_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Gagal memeriksa pemutakhiran ekstensi GNOME Shell: $CAUSE$",
+		"message": "Huts egin du GNOME Shell hedapenen eguneratzeen egiaztatzeak: $CAUSE$",
 		"placeholders": {
 			"cause": {
 				"content": "$1"
@@ -196,9 +196,9 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Konektor host native Anda tidak mendukung API berikut: $$1. Mungkin Anda perlu meningkatkan konektor host native atau memasang pengaya bagi API yang kurang. Lihat <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentasi</a> untuk instruksi."
+		"message": "Zure jatorrizko ostalari-konektoreak ez ditu onartzen honako APIak: $$1. Beharbada jatorrizko ostalari-konektorea eguneratu beharko duzu edo falta diren APIetarako pluginak instalatu beharko dituzu. Ikusi <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentation</a> argibideetarako."
 	},
 	"yes": {
-		"message": "Ya"
+		"message": "Bai"
 	}
 }

@@ -12,15 +12,15 @@
 	},
 	"extension_enabled": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension enabled?'",
-		"message": "Enabled"
+		"message": "\u0395\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03b1"
 	},
 	"extension_installed": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension installed?'",
-		"message": "Installed"
+		"message": "\u0395\u03b3\u03ba\u03b1\u03c4\u03b5\u03c3\u03c4\u03b7\u03bc\u03ad\u03bd\u03b1"
 	},
 	"extension_name": {
 		"description": "Used as title, eg in table header. Means 'GNOME Shell extension name'.",
-		"message": "Extension"
+		"message": "\u0395\u03c0\u03ad\u03ba\u03c4\u03b1\u03c3\u03b7"
 	},
 	"extension_status_downgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons must be downgraded'.",
@@ -32,7 +32,7 @@
 	},
 	"extension_synchronized": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension status synchronized with remote browser storage?'",
-		"message": "Synchronized"
+		"message": "\u03a3\u03c5\u03b3\u03c7\u03c1\u03bf\u03bd\u03b9\u03c3\u03bc\u03ad\u03bd\u03b1"
 	},
 	"gs_chrome": {
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
@@ -64,7 +64,7 @@
 	},
 	"no_gnome_shell": {
 		"description": "Shown to user when native connector unable to query GNOME Shell version or settings",
-		"message": "Unable to locate GNOME Shell settings or version. Make sure it is installed and running."
+		"message": "\u0394\u03b5\u03bd \u03b5\u03af\u03bd\u03b1\u03b9 \u03b4\u03c5\u03bd\u03b1\u03c4\u03cc\u03c2 \u03bf \u03b5\u03bd\u03c4\u03bf\u03c0\u03b9\u03c3\u03bc\u03cc\u03c2 \u03c4\u03c9\u03bd \u03c1\u03c5\u03b8\u03bc\u03af\u03c3\u03b5\u03c9\u03bd \u03ae \u03c4\u03b7\u03c2 \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2 \u03c4\u03bf\u03c5 \u03ba\u03b5\u03bb\u03cd\u03c6\u03bf\u03c5\u03c2 \u03c4\u03bf\u03c5 GNOME. \u0392\u03b5\u03b2\u03b1\u03b9\u03c9\u03b8\u03b5\u03af\u03c4\u03b5 \u03cc\u03c4\u03b9 \u03b5\u03af\u03bd\u03b1\u03b9 \u03b5\u03b3\u03ba\u03b1\u03c4\u03b5\u03c3\u03c4\u03b7\u03bc\u03ad\u03bd\u03bf \u03ba\u03b1\u03b9 \u03cc\u03c4\u03b9 \u03bb\u03b5\u03b9\u03c4\u03bf\u03c5\u03c1\u03b3\u03b5\u03af."
 	},
 	"no_host_connector": {
 		"message": "\u0391\u03bd \u03ba\u03b1\u03b9 \u03b7 \u03b5\u03c0\u03ad\u03ba\u03c4\u03b1\u03c3\u03b7 \u03b5\u03bd\u03c3\u03c9\u03bc\u03ac\u03c4\u03c9\u03c3\u03b7\u03c2 \u03bc\u03b5 \u03c4\u03bf GNOME Shell \u03b5\u03af\u03bd\u03b1\u03b9 \u03c3\u03b5 \u03bb\u03b5\u03b9\u03c4\u03bf\u03c5\u03c1\u03b3\u03af\u03b1, \u03b7 \u03b5\u03b3\u03b3\u03b5\u03bd\u03ae\u03c2 \u03b5\u03c6\u03b1\u03c1\u03bc\u03bf\u03b3\u03ae \u03c4\u03bf\u03c5 \u03c3\u03c5\u03c3\u03c4\u03ae\u03bc\u03b1\u03c4\u03bf\u03c2 \u03b4\u03b5\u03bd \u03ad\u03c7\u03b5\u03b9 \u03b5\u03bd\u03c4\u03bf\u03c0\u03b9\u03c3\u03c4\u03b5\u03af. \u03a0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03bf\u03cd\u03bc\u03b5, \u03b4\u03b5\u03af\u03c4\u03b5 \u03c3\u03c4\u03b9\u03c2 \u03bf\u03b4\u03b7\u03b3\u03af\u03b5\u03c2 \u03c4\u03b7\u03c2 <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>\u03c4\u03b5\u03ba\u03bc\u03b7\u03c1\u03af\u03c9\u03c3\u03b7\u03c2</a> \u03c0\u03c9\u03c2 \u03bd\u03b1 \u03c4\u03b7\u03bd \u03b5\u03b3\u03ba\u03b1\u03c4\u03b1\u03c3\u03c4\u03ae\u03c3\u03b5\u03c4\u03b5."
@@ -75,7 +75,7 @@
 	},
 	"open_website": {
 		"description": "Tooltip for browser extensions icon.",
-		"message": "Open GNOME Shell extensions website"
+		"message": "\u0386\u03bd\u03bf\u03b9\u03b3\u03bc\u03b1 \u03b9\u03c3\u03c4\u03bf\u03c4\u03cc\u03c0\u03bf\u03c5 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd \u03ba\u03b5\u03bb\u03cd\u03c6\u03bf\u03c5\u03c2 \u03c4\u03bf\u03c5 GNOME"
 	},
 	"options_check_period": {
 		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
@@ -99,15 +99,15 @@
 	},
 	"options_show_release_notes": {
 		"description": "Option name. Allow to enable/disable popup with release notes when Web extension is updated.",
-		"message": "Show release notes when browser extension updated"
+		"message": "\u0395\u03bc\u03c6\u03ac\u03bd\u03b9\u03c3\u03b7 \u03c3\u03b7\u03bc\u03b5\u03b9\u03ce\u03c3\u03b5\u03c9\u03bd \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u03b5\u03bd\u03b7\u03bc\u03ad\u03c1\u03c9\u03c3\u03b7 \u03c4\u03b7\u03c2 \u03b5\u03c0\u03ad\u03ba\u03c4\u03b1\u03c3\u03b7\u03c2"
 	},
 	"options_synchronize_extensions": {
 		"description": "Option name. Allow to enable/disable synchronization of GNOME Shell extensions with remote browser storage.",
-		"message": "Synchronize GNOME Shell extensions list"
+		"message": "\u03a3\u03c5\u03b3\u03c7\u03c1\u03bf\u03bd\u03b9\u03c3\u03bc\u03cc\u03c2 \u03bb\u03af\u03c3\u03c4\u03b1\u03c2 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd \u03ba\u03b5\u03bb\u03cd\u03c6\u03bf\u03c5\u03c2 GNOME"
 	},
 	"options_synchronize_extensions_notice": {
 		"description": "This is a notice under option name.",
-		"message": "If enabled, your GNOME Shell extensions list will be synchronized with your Google account."
+		"message": "\u0395\u03ac\u03bd \u03b5\u03af\u03bd\u03b1\u03b9 \u03b5\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03bf, \u03b7 \u03bb\u03af\u03c3\u03c4\u03b1 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd \u03ba\u03b5\u03bb\u03cd\u03c6\u03bf\u03c5\u03c2 GNOME \u03b8\u03b1 \u03c3\u03c5\u03b3\u03c7\u03c1\u03bf\u03bd\u03b9\u03c3\u03c4\u03b5\u03af \u03bc\u03b5 \u03c4\u03bf\u03bd Google \u03bb\u03bf\u03b3\u03b1\u03c1\u03b9\u03b1\u03c3\u03bc\u03cc \u03c3\u03b1\u03c2."
 	},
 	"options_title": {
 		"description": "$GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This string used as title for Options page. This title is not shown in Chrome, but may be shown in other browsers.",
@@ -120,11 +120,11 @@
 	},
 	"options_update_check": {
 		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Check for GNOME Shell extensions update"
+		"message": "\u0388\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2 \u03b3\u03b9\u03b1 \u03b5\u03bd\u03b7\u03bc\u03b5\u03c1\u03ce\u03c3\u03b5\u03b9\u03c2 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd \u03ba\u03b5\u03bb\u03cd\u03c6\u03bf\u03c5\u03c2 GNOME"
 	},
 	"options_update_check_enabled": {
 		"description": "Option name.",
-		"message": "Check update of enabled GNOME Shell extensions only"
+		"message": "\u0388\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2 \u03b5\u03bd\u03b7\u03bc\u03b5\u03c1\u03ce\u03c3\u03b5\u03c9\u03bd \u03c4\u03c9\u03bd \u03b5\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03c9\u03bd \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd \u03ba\u03b5\u03bb\u03cd\u03c6\u03bf\u03c5\u03c2 \u03c4\u03bf\u03c5 GNOME"
 	},
 	"options_update_check_enabled_notice": {
 		"message": "Your native host connector does not support updates check for enabled GNOME Shell extensions only. Consider update."
@@ -147,14 +147,14 @@
 	},
 	"synchronization": {
 		"description": "Link name for synchronization tab in options dialog.",
-		"message": "Synchronization"
+		"message": "\u03a3\u03c5\u03b3\u03c7\u03c1\u03bf\u03bd\u03b9\u03c3\u03bc\u03cc\u03c2"
 	},
 	"synchronization_cancel": {
-		"message": "Do not enable synchronization."
+		"message": "\u039d\u03b1 \u03bc\u03b7\u03bd \u03b5\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03b8\u03b5\u03af \u03bf \u03c3\u03c5\u03b3\u03c7\u03c1\u03bf\u03bd\u03b9\u03c3\u03bc\u03cc\u03c2."
 	},
 	"synchronization_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused synchronization failure.",
-		"message": "Failed to synchronize extensions: $CAUSE$",
+		"message": "\u0391\u03c0\u03ad\u03c4\u03c5\u03c7\u03b5 \u03bf \u03c3\u03c5\u03b3\u03c7\u03c1\u03bf\u03bd\u03b9\u03c3\u03bc\u03cc\u03c2 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd: $CAUSE$",
 		"placeholders": {
 			"cause": {
 				"content": "$1"
@@ -162,17 +162,17 @@
 		}
 	},
 	"synchronization_storage_exists": {
-		"message": "Your remote synchronization storage already contains extensions list."
+		"message": "\u039f \u03b1\u03c0\u03bf\u03bc\u03b1\u03ba\u03c1\u03c5\u03c3\u03bc\u03ad\u03bd\u03bf\u03c2 \u03c7\u03ce\u03c1\u03bf\u03c2 \u03b1\u03c0\u03bf\u03b8\u03ae\u03ba\u03b5\u03c5\u03c3\u03b7\u03c2 \u03c3\u03c5\u03b3\u03c7\u03c1\u03bf\u03bd\u03b9\u03c3\u03bc\u03bf\u03cd \u03c0\u03b5\u03c1\u03b9\u03ad\u03c7\u03b5\u03b9 \u03ae\u03b4\u03b7 \u03bc\u03b9\u03b1 \u03bb\u03af\u03c3\u03c4\u03b1 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd."
 	},
 	"synchronization_use_local": {
-		"message": "Use local extensions list, overwrite remote."
+		"message": "\u03a7\u03c1\u03ae\u03c3\u03b7 \u03c4\u03bf\u03c0\u03b9\u03ba\u03ae\u03c2 \u03bb\u03af\u03c3\u03c4\u03b1\u03c2 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd, \u03b1\u03bd\u03c4\u03b9\u03ba\u03b1\u03c4\u03ac\u03c3\u03c4\u03b1\u03c3\u03b7 \u03b1\u03c0\u03bf\u03bc\u03b1\u03ba\u03c1\u03c5\u03c3\u03bc\u03ad\u03bd\u03b7\u03c2."
 	},
 	"synchronization_use_remote": {
-		"message": "Use remote extensions list, overwrite local."
+		"message": "\u03a7\u03c1\u03ae\u03c3\u03b7 \u03b1\u03c0\u03bf\u03bc\u03b1\u03ba\u03c1\u03c5\u03c3\u03bc\u03ad\u03bd\u03b7\u03c2 \u03bb\u03af\u03c3\u03c4\u03b1\u03c2 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd, \u03b1\u03bd\u03c4\u03b9\u03ba\u03b1\u03c4\u03ac\u03c3\u03c4\u03b1\u03c3\u03b7 \u03c4\u03bf\u03c0\u03b9\u03ba\u03ae\u03c2."
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "Tom Tryfonidis, 2016"
+		"message": "\u0395\u03c5\u03c3\u03c4\u03ac\u03b8\u03b9\u03bf\u03c2 \u0399\u03c9\u03c3\u03b7\u03c6\u03af\u03b4\u03b7\u03c2 <iosifidis@opensuse.org><br/>"
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
@@ -180,14 +180,14 @@
 	},
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
-		"message": "unknown error"
+		"message": "\u03ac\u03b3\u03bd\u03c9\u03c3\u03c4\u03bf \u03c3\u03c6\u03ac\u03bb\u03bc\u03b1"
 	},
 	"update_available": {
 		"message": "\u03a5\u03c0\u03ac\u03c1\u03c7\u03b5\u03b9 \u03bc\u03b9\u03b1 \u03b4\u03b9\u03b1\u03b8\u03ad\u03c3\u03b9\u03bc\u03b7 \u03b5\u03bd\u03b7\u03bc\u03ad\u03c1\u03c9\u03c3\u03b7 \u03b3\u03b9\u03b1 \u03c4\u03b9\u03c2 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03b9\u03c2 \u03c4\u03bf\u03c5 GNOME Shell"
 	},
 	"update_check_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Failed to check GNOME Shell extensions updates: $CAUSE$",
+		"message": "\u0391\u03c0\u03ad\u03c4\u03c5\u03c7\u03b5 \u03bf \u03ad\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2 \u03b3\u03b9\u03b1 \u03b5\u03bd\u03b7\u03bc\u03b5\u03c1\u03ce\u03c3\u03b5\u03b9\u03c2 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd \u03ba\u03b5\u03bb\u03cd\u03c6\u03bf\u03c5\u03c2 GNOME: $CAUSE$",
 		"placeholders": {
 			"cause": {
 				"content": "$1"

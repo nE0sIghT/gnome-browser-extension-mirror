@@ -172,7 +172,7 @@
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "Piotr Dr\u0105g, 2016-2018"
+		"message": "Piotr Dr\u0105g, 2016-2020"
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",

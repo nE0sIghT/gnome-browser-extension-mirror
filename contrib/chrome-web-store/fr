@@ -1,0 +1,5 @@
+Vous devez installer le connecteur natif pour faire fonctionner cette extension.
+
+Pour Arch Linux, Debian, Fedora, Gentoo et Ubuntu, vous pouvez installer le paquet « chrome-gnome-shell ».
+
+Vous pouvez également installer le connecteur manuellement. Voir https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation.

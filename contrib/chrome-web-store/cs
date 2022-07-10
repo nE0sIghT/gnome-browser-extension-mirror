@@ -1,7 +1,5 @@
 Aby tohle rozšíření fungovalo, MUSÍTE nainstalovat přirozený konektor.
 
-Pro Arch Linux je k dispozici PKGBUILD v AUR: https://aur.archlinux.org/packages/chrome-gnome-shell-git
-
-V distribucích Debian, Fedora, Gentoo a Ubuntu můžete nainstalovat balíček s názvem „chrome-gnome-shell“.
+V distribucích Arch Linux, Debian, Fedora, Gentoo a Ubuntu můžete nainstalovat balíček s názvem „chrome-gnome-shell“.
 
 Můžete konektor nainstalovat i ručně. Instalační instrukce viz https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation.

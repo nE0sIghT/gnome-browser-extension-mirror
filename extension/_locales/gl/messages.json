@@ -127,7 +127,7 @@
 		"message": "S\u00f3 comprobar actualizaci\u00f3ns para as extensi\u00f3ns de GNOME Shell"
 	},
 	"options_update_check_enabled_notice": {
-		"message": "Your native host connector does not support updates check for enabled GNOME Shell extensions only. Consider update."
+		"message": "O seu conector nativo do anfitri\u00f3n non admite a comprobaci\u00f3n de actualizaci\u00f3ns das extensi\u00f3ns de GNOME Shell. Considere actualizar."
 	},
 	"options_update_check_notice": {
 		"message": "O seu conector nativo do anfitri\u00f3n non admite a comprobaci\u00f3n de actualizaci\u00f3ns das extensi\u00f3ns de GNOME Shell. Probablemente falta o paquete python-requests."

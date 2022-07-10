@@ -1,7 +1,5 @@
 A kiterjesztés működéséhez telepíteni KELL a natív csatlakozót.
 
-Arch Linuxhoz elérhető PKGBUILD az AUR-ban: https://aur.archlinux.org/packages/chrome-gnome-shell-git
-
-Debian, Fedora, Gentoo és Ubuntu Linuxokhoz a „chrome-gnome-shell” nevű csomagot telepítheti.
+Arch Linux, Debian, Fedora, Gentoo és Ubuntu használatakor a „chrome-gnome-shell” nevű csomagot telepítheti.
 
 Kézzel is telepítheti a csatlakozót. Nézze meg a https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation oldalt a telepítési utasításokért.

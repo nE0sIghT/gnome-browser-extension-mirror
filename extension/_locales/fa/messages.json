@@ -1,0 +1,204 @@
+{
+	"_DO_NOT_EDIT": {
+		"description": "This file is auto generated with po2chrome-messages tool from fa.po.",
+		"message": ""
+	},
+	"close": {
+		"message": "\u0628\u0633\u062a\u0646"
+	},
+	"error_connector_response": {
+		"description": "Shown to user when response from connector API call does not follow known format.",
+		"message": "\u067e\u0627\u0633\u062e \u0631\u0627\u0628\u0637 \u0627\u0634\u062a\u0628\u0627\u0647 \u062f\u0631\u06cc\u0627\u0641\u062a \u0634\u062f"
+	},
+	"extension_enabled": {
+		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension enabled?'",
+		"message": "\u0628\u0647 \u06a9\u0627\u0631 \u0627\u0641\u062a\u0627\u062f\u0647"
+	},
+	"extension_installed": {
+		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension installed?'",
+		"message": "\u0646\u0635\u0628 \u0634\u062f\u0647"
+	},
+	"extension_name": {
+		"description": "Used as title, eg in table header. Means 'GNOME Shell extension name'.",
+		"message": "\u0627\u0641\u0632\u0648\u0646\u0647"
+	},
+	"extension_status_downgrade": {
+		"description": "This is a part of phrase like 'Extension Top Icons must be downgraded'.",
+		"message": "\u0628\u0627\u06cc\u062f \u067e\u0627\u06cc\u06cc\u0646 \u0628\u0631\u062f\u0647 \u0634\u0648\u062f"
+	},
+	"extension_status_upgrade": {
+		"description": "This is a part of phrase like 'Extension Top Icons can be upgraded'.",
+		"message": "\u0645\u06cc\u200c\u062a\u0648\u0627\u0646\u062f \u0627\u0631\u062a\u0642\u0627 \u06cc\u0627\u0628\u062f"
+	},
+	"extension_synchronized": {
+		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension status synchronized with remote browser storage?'",
+		"message": "\u0647\u0645\u06af\u0627\u0645 \u0634\u062f\u0647"
+	},
+	"gs_chrome": {
+		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
+		"message": "\u06cc\u06a9\u067e\u0627\u0631\u0686\u06af\u06cc \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645"
+	},
+	"hours": {
+		"description": "This is a part of phrase 'Update check period: xx hours'",
+		"message": "\u0633\u0627\u0639\u062a"
+	},
+	"manifest_description": {
+		"description": "Used as extension description in Chrome Store",
+		"message": "\u0627\u06cc\u0646 \u0627\u0641\u0632\u0648\u0646\u0647\u060c \u06cc\u06a9\u067e\u0627\u0631\u0686\u06af\u06cc \u0628\u0627 \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645 \u0648 \u0645\u062e\u0632\u0646 \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u06cc \u0645\u062a\u0646\u0627\u0638\u0631\u0634 https://extensions.gnome.org \u0631\u0627 \u0641\u0631\u0627\u0647\u0645 \u0645\u06cc\u200c\u06a9\u0646\u062f"
+	},
+	"native_request_failed": {
+		"description": "$REQUEST$ is a placeholder for technical name of request that web extension make via native messaging host application.",
+		"message": "\u062f\u0631\u062e\u0648\u0627\u0633\u062a \u0628\u0648\u0645\u06cc $REQUEST$ \u0634\u06a9\u0633\u062a \u062e\u0648\u0631\u062f",
+		"placeholders": {
+			"request": {
+				"content": "$1"
+			}
+		}
+	},
+	"never": {
+		"description": "This is a part of phrase 'Last check: never'",
+		"message": "\u0647\u0631\u06af\u0632"
+	},
+	"no": {
+		"message": "\u062e\u06cc\u0631"
+	},
+	"no_gnome_shell": {
+		"description": "Shown to user when native connector unable to query GNOME Shell version or settings",
+		"message": "\u0646\u0627\u062a\u0648\u0627\u0646 \u062f\u0631 \u062a\u0639\u06cc\u06cc\u0646 \u0645\u06a9\u0627\u0646 \u0646\u06af\u0627\u0631\u0634 \u06cc\u0627 \u062a\u0646\u0638\u06cc\u0645\u0627\u062a \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645. \u0645\u0637\u0645\u0626\u0646 \u0634\u0648\u06cc\u062f \u0646\u0635\u0628 \u0634\u062f\u0647 \u0648 \u062f\u0631 \u062d\u0627\u0644 \u0627\u062c\u0631\u0627\u0633\u062a."
+	},
+	"no_host_connector": {
+		"message": "\u0628\u0627 \u0627\u06cc\u0646 \u06a9\u0647 \u0627\u0641\u0632\u0648\u0646\u0647\u0654 \u06cc\u06a9\u067e\u0627\u0631\u0686\u06af\u06cc \u0628\u0627 \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645 \u062f\u0631 \u062d\u0627\u0644 \u0627\u062c\u0631\u0627\u0633\u062a\u060c \u0631\u0627\u0628\u0637 \u0645\u06cc\u0632\u0628\u0627\u0646 \u0628\u0648\u0645\u06cc \u062a\u0634\u062e\u06cc\u0635 \u062f\u0627\u062f\u0647 \u0646\u0634\u062f. \u0628\u0631\u0627\u06cc \u062f\u0633\u062a\u0648\u0631\u0627\u0644\u0639\u0645\u0644\u200c\u0647\u0627 \u062f\u0631\u0628\u0627\u0631\u0647\u0654 \u0646\u0635\u0628 \u0631\u0627\u0628\u0637 \u0628\u0647 <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>\u0645\u0633\u062a\u0646\u062f\u0627\u062a</a> \u0645\u0631\u0627\u062c\u0639\u0647 \u06a9\u0646\u06cc\u062f."
+	},
+	"no_host_response": {
+		"description": "Means 'Web extension does not received answer from native messaging host application.'",
+		"message": "\u0628\u062f\u0648\u0646 \u067e\u0627\u0633\u062e \u0645\u06cc\u0632\u0628\u0627\u0646"
+	},
+	"open_website": {
+		"description": "Tooltip for browser extensions icon.",
+		"message": "\u06af\u0634\u0648\u062f\u0646 \u067e\u0627\u06cc\u06af\u0627\u0647 \u0648\u0628 \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u06cc \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645"
+	},
+	"options_check_period": {
+		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
+		"message": "\u062f\u0648\u0631\u0647\u0654 \u0628\u0631\u0631\u0633\u06cc \u0628\u0647\u200c\u0631\u0648\u0632 \u0631\u0633\u0627\u0646\u06cc"
+	},
+	"options_last_check": {
+		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
+		"message": "\u0622\u062e\u0631\u06cc\u0646 \u0628\u0631\u0631\u0633\u06cc"
+	},
+	"options_link": {
+		"description": "Link name for options tab.",
+		"message": "\u06af\u0632\u06cc\u0646\u0647\u200c\u0647\u0627"
+	},
+	"options_next_check": {
+		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
+		"message": "\u0628\u0631\u0631\u0633\u06cc \u0628\u0639\u062f\u06cc"
+	},
+	"options_saved": {
+		"description": "Means 'Options were saved successfully after user clicked Save button'",
+		"message": "\u06af\u0632\u06cc\u0646\u0647\u200c\u0647\u0627 \u0630\u062e\u06cc\u0631\u0647 \u0634\u062f\u0646\u062f."
+	},
+	"options_show_release_notes": {
+		"description": "Option name. Allow to enable/disable popup with release notes when Web extension is updated.",
+		"message": "\u0646\u0645\u0627\u06cc\u0634 \u06cc\u0627\u062f\u062f\u0627\u0634\u062a\u200c\u0647\u0627\u06cc \u0627\u0646\u062a\u0634\u0627\u0631 \u0647\u0646\u06af\u0627\u0645 \u0628\u0647\u200c\u0631\u0648\u0632 \u0634\u062f\u0646 \u0627\u0641\u0632\u0648\u0646\u0647\u0654 \u0645\u0631\u0648\u0631\u06af\u0631"
+	},
+	"options_synchronize_extensions": {
+		"description": "Option name. Allow to enable/disable synchronization of GNOME Shell extensions with remote browser storage.",
+		"message": "\u0647\u0645\u06af\u0627\u0645 \u0633\u0627\u0632\u06cc \u0633\u06cc\u0627\u0647\u0647\u0654 \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u06cc \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645"
+	},
+	"options_synchronize_extensions_notice": {
+		"description": "This is a notice under option name.",
+		"message": "\u0627\u06af\u0631 \u0628\u0647 \u06a9\u0627\u0631 \u0627\u0641\u062a\u062f\u060c \u0633\u06cc\u0627\u0647\u0647\u0654 \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u06cc \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645\u062a\u0627\u0646 \u0628\u0627 \u062d\u0633\u0627\u0628 \u06af\u0648\u06af\u0644\u062a\u0627\u0646 \u0647\u0645\u06af\u0627\u0645 \u062e\u0648\u0627\u0647\u062f \u0634\u062f."
+	},
+	"options_title": {
+		"description": "$GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This string used as title for Options page. This title is not shown in Chrome, but may be shown in other browsers.",
+		"message": "\u06af\u0632\u06cc\u0646\u0647\u200c\u0647\u0627\u06cc $GS_CHROME$",
+		"placeholders": {
+			"gs_chrome": {
+				"content": "$1"
+			}
+		}
+	},
+	"options_update_check": {
+		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
+		"message": "\u0628\u0631\u0631\u0633\u06cc \u0628\u0647\u200c\u0631\u0648\u0632 \u0631\u0633\u0627\u0646\u06cc \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u06cc \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645"
+	},
+	"options_update_check_enabled": {
+		"description": "Option name.",
+		"message": "\u0628\u0631\u0631\u0633\u06cc \u0628\u0647\u200c\u0631\u0648\u0632 \u0631\u0633\u0627\u0646\u06cc \u0641\u0642\u0637 \u0628\u0631\u0627\u06cc \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u06cc \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645 \u0628\u0647 \u06a9\u0627\u0631 \u0627\u0641\u062a\u0627\u062f\u0647"
+	},
+	"options_update_check_enabled_notice": {
+		"message": "\u0631\u0627\u0628\u0637 \u0645\u0632\u0628\u0627\u0646 \u0628\u0648\u0645\u06cc\u062a\u0627\u0646\u060c\u200c\u0628\u0631\u0631\u0633\u06cc \u0628\u0647\u200c\u0631\u0648\u0632 \u0631\u0633\u0627\u0646\u06cc\u200c\u0647\u0627 \u0641\u0642\u0637 \u0628\u0631\u0627\u06cc \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u06cc \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645 \u0628\u0647 \u06a9\u0627\u0631 \u0627\u0641\u062a\u0627\u062f\u0647 \u0631\u0627 \u067e\u0634\u062a\u06cc\u0628\u0627\u0646\u06cc \u0646\u0645\u06cc\u200c\u06a9\u0646\u062f. \u0628\u0647\u200c\u0631\u0648\u0632\u0634 \u06a9\u0646\u06cc\u062f."
+	},
+	"options_update_check_notice": {
+		"message": "\u0631\u0627\u0628\u0637 \u0645\u0632\u0628\u0627\u0646 \u0628\u0648\u0645\u06cc\u062a\u0627\u0646\u060c\u200c\u0628\u0631\u0631\u0633\u06cc \u0628\u0647\u200c\u0631\u0648\u0632 \u0631\u0633\u0627\u0646\u06cc\u200c\u0647\u0627\u06cc \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u06cc \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645 \u0628\u0647 \u06a9\u0627\u0631 \u0627\u0641\u062a\u0627\u062f\u0647 \u0631\u0627 \u067e\u0634\u062a\u06cc\u0628\u0627\u0646\u06cc \u0646\u0645\u06cc\u200c\u06a9\u0646\u062f. \u0627\u062d\u062a\u0645\u0627\u0644\u0627\u064b \u0628\u0633\u062a\u0647\u0654 python-requests \u0646\u0635\u0628 \u0646\u0634\u062f\u0647."
+	},
+	"options_use_light_icon": {
+		"description": "Use light icon that is looked better with dark themes.",
+		"message": "\u0627\u0633\u062a\u0641\u0627\u062f\u0647 \u0627\u0632 \u0646\u0642\u0634\u06a9 \u0631\u0648\u0634\u0646 (\u0632\u0645\u06cc\u0646\u0647\u0654 \u062a\u06cc\u0631\u0647)"
+	},
+	"platform_not_supported": {
+		"message": "\u0631\u0627\u0628\u0637 \u0645\u06cc\u0632\u0628\u0627\u0646 \u0628\u0648\u0645\u06cc \u0631\u0648\u06cc \u0628\u0646\u200c\u0633\u0627\u0632\u0647\u200c\u062a\u0627\u0646 \u067e\u0634\u062a\u06cc\u0628\u0627\u0646\u06cc \u0646\u0645\u06cc\u200c\u0634\u0648\u062f."
+	},
+	"retry": {
+		"message": "\u062a\u0644\u0627\u0634 \u062f\u0648\u0628\u0627\u0631\u0647"
+	},
+	"save": {
+		"message": "\u0630\u062e\u06cc\u0631\u0647"
+	},
+	"synchronization": {
+		"description": "Link name for synchronization tab in options dialog.",
+		"message": "\u0647\u0645\u06af\u0627\u0645\u200c\u0633\u0627\u0632\u06cc"
+	},
+	"synchronization_cancel": {
+		"message": "\u0628\u0647 \u06a9\u0627\u0631 \u0646\u06cc\u0646\u062f\u0627\u062e\u062a\u0646 \u0647\u0645\u06af\u0627\u0645 \u0633\u0627\u0632\u06cc."
+	},
+	"synchronization_failed": {
+		"description": "$CAUSE$ is placeholder for error that caused synchronization failure.",
+		"message": "\u0634\u06a9\u0633\u062a \u062f\u0631 \u0647\u0645\u06af\u0627\u0645 \u0633\u0627\u0632\u06cc \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627: $CAUSE$",
+		"placeholders": {
+			"cause": {
+				"content": "$1"
+			}
+		}
+	},
+	"synchronization_storage_exists": {
+		"message": "\u0630\u062e\u06cc\u0631\u0647\u200c\u0633\u0627\u0632 \u0647\u0645\u06af\u0627\u0645 \u0633\u0627\u0632\u06cc \u062f\u0648\u0631\u062f\u0633\u062a\u062a\u0627\u0646 \u0627\u0632 \u067e\u06cc\u0634 \u0634\u0627\u0645\u0644 \u0633\u06cc\u0627\u0647\u0647\u0654 \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u0633\u062a."
+	},
+	"synchronization_use_local": {
+		"message": "\u0627\u0633\u062a\u0641\u0627\u062f\u0647 \u0627\u0632 \u0633\u06cc\u0627\u0647\u0647\u0654 \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u06cc \u0645\u062d\u0644\u0651\u06cc\u060c \u062c\u0627\u0646\u0648\u06cc\u0633\u06cc \u062f\u0648\u0631\u062f\u0633\u062a."
+	},
+	"synchronization_use_remote": {
+		"message": "\u0627\u0633\u062a\u0641\u0627\u062f\u0647 \u0627\u0632 \u0633\u06cc\u0627\u0647\u0647\u0654 \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u06cc \u062f\u0648\u0631\u062f\u0633\u062a\u060c \u062c\u0627\u0646\u0648\u06cc\u0633\u06cc \u0645\u062d\u0644\u0651\u06cc."
+	},
+	"translation_credits": {
+		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
+		"message": "\u062f\u0627\u0646\u06cc\u0627\u0644 \u0628\u0647\u0632\u0627\u062f\u06cc <dani.behzi@ubuntu.com>"
+	},
+	"translation_credits_title": {
+		"description": "Link name for translation credits tab in options dialog.",
+		"message": "\u062f\u0631\u0628\u0627\u0631\u0647\u0654 \u062a\u0631\u062c\u0645\u0647"
+	},
+	"unknown_error": {
+		"description": "This should newer be shown to user. However better safe than sorry.",
+		"message": "\u062e\u0637\u0627\u06cc \u0646\u0627\u0634\u0646\u0627\u062e\u062a\u0647"
+	},
+	"update_available": {
+		"message": "\u0628\u0647\u200c\u0631\u0648\u0632 \u0631\u0633\u0627\u0646\u06cc\u200c\u0627\u06cc \u0628\u0631\u0627\u06cc \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u06cc \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645 \u0645\u0648\u062c\u0648\u062f \u0627\u0633\u062a"
+	},
+	"update_check_failed": {
+		"description": "$CAUSE$ is placeholder for error that caused update failure.",
+		"message": "\u0634\u06a9\u0633\u062a \u062f\u0631 \u0628\u0631\u0631\u0633\u06cc \u0628\u0647\u200c\u0631\u0648\u0632 \u0631\u0633\u0627\u0646\u06cc\u200c\u0647\u0627\u06cc \u0627\u0641\u0632\u0648\u0646\u0647\u200c\u0647\u0627\u06cc \u067e\u0648\u0633\u062a\u0647\u0654 \u06af\u0646\u0648\u0645: $CAUSE$",
+		"placeholders": {
+			"cause": {
+				"content": "$1"
+			}
+		}
+	},
+	"warning_apis_missing": {
+		"description": "$$1 is a placeholder for a list of missing APIs",
+		"message": "\u0631\u0627\u0628\u0637 \u0645\u06cc\u0632\u0628\u0627\u0646 \u0628\u0648\u0645\u06cc\u062a\u0627\u0646\u060c \u0627\u06cc\u0646 API\u0647\u0627 \u0631\u0627 \u067e\u0634\u062a\u06cc\u0628\u0627\u0646\u06cc \u0646\u0645\u06cc\u200c\u06a9\u0646\u062f: $$1. \u0627\u062d\u062a\u0645\u0627\u0644\u0627\u064b \u0628\u0627\u06cc\u062f \u0631\u0627\u0628\u0637 \u0645\u06cc\u0632\u0628\u0627\u0646 \u0628\u0648\u0645\u06cc\u062a\u0627\u0646 \u0631\u0627 \u0627\u0631\u062a\u0642\u0627 \u062f\u0627\u062f\u0647 \u06cc\u0627 \u0627\u0641\u0632\u0627\u06cc\u0647\u200c\u0647\u0627\u06cc\u06cc \u0631\u0627 \u0628\u0631\u0627\u06cc API\u0647\u0627\u06cc \u0646\u0627\u0645\u0648\u062c\u0648\u062f \u0646\u0635\u0628 \u06a9\u0646\u06cc\u062f. \u0628\u0631\u0627\u06cc \u062f\u0633\u062a\u0648\u0631\u0627\u0644\u0639\u0645\u0644\u200c\u0647\u0627 \u0628\u0647 <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>\u0645\u0633\u062a\u0646\u062f\u0627\u062a</a> \u0645\u0631\u0627\u062c\u0639\u0647 \u06a9\u0646\u06cc\u062f."
+	},
+	"yes": {
+		"message": "\u0628\u0644\u0647"
+	}
+}

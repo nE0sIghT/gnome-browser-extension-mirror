@@ -36,7 +36,7 @@
 	},
 	"gs_chrome": {
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
-		"message": "GNOME Kabuk b\u00fct\u00fcnle\u015fmesi"
+		"message": "GNOME Kabuk t\u00fcmle\u015fimi"
 	},
 	"hours": {
 		"description": "This is a part of phrase 'Update check period: xx hours'",
@@ -44,7 +44,7 @@
 	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
-		"message": "Bu uygulama, GNOME Kabuk ve buna uygun uzant\u0131 deposu olan https://extensions.gnome.org ile b\u00fct\u00fcnle\u015fme sa\u011flar"
+		"message": "Bu uygulama, GNOME Kabuk ve buna uygun uzant\u0131 deposu olan https://extensions.gnome.org ile t\u00fcmle\u015fim sa\u011flar"
 	},
 	"native_request_failed": {
 		"description": "$REQUEST$ is a placeholder for technical name of request that web extension make via native messaging host application.",
@@ -57,7 +57,7 @@
 	},
 	"never": {
 		"description": "This is a part of phrase 'Last check: never'",
-		"message": "hi\u00e7bir zaman"
+		"message": "asla"
 	},
 	"no": {
 		"message": "Hay\u0131r"
@@ -67,11 +67,11 @@
 		"message": "GNOME Kabuk ayarlar\u0131 veya s\u00fcr\u00fcm\u00fc saptanam\u0131yor. Kurulu oldu\u011fundan ve \u00e7al\u0131\u015ft\u0131\u011f\u0131ndan emin olun."
 	},
 	"no_host_connector": {
-		"message": "Yine de GNOME Kabuk b\u00fct\u00fcnle\u015fme uzant\u0131s\u0131 \u00e7al\u0131\u015f\u0131yor ancak yerle\u015fik ana makine ba\u011flay\u0131c\u0131 saptanamad\u0131. Ba\u011flay\u0131c\u0131y\u0131 kurmakla ilgili y\u00f6nergeler i\u00e7in <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>belgelendirmeye</a> bak\u0131n."
+		"message": "GNOME Kabuk t\u00fcmle\u015fim uzant\u0131s\u0131 \u00e7al\u0131\u015f\u0131yor ancak yerle\u015fik ana makine ba\u011flay\u0131c\u0131 saptanamad\u0131. Ba\u011flay\u0131c\u0131y\u0131 kurmakla ilgili y\u00f6nergeler i\u00e7in <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>belgelendirmeye</a> bak\u0131n."
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
-		"message": "Ana makine yan\u0131t vermiyor"
+		"message": "Ana makine yan\u0131tlam\u0131yor"
 	},
 	"open_website": {
 		"description": "Tooltip for browser extensions icon.",
@@ -183,7 +183,7 @@
 		"message": "bilinmeyen hata"
 	},
 	"update_available": {
-		"message": "GNOME Kabuk uzant\u0131lar\u0131 i\u00e7in bir g\u00fcncelleme var"
+		"message": "GNOME Kabuk uzant\u0131lar\u0131 i\u00e7in g\u00fcncelleme var"
 	},
 	"update_check_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused update failure.",
@@ -196,7 +196,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Yerle\u015fik ana makine ba\u011flay\u0131c\u0131 \u015fu API'leri desteklemiyor: $$1. B\u00fcy\u00fck olas\u0131l\u0131kla yerle\u015fik ana makine ba\u011flay\u0131c\u0131y\u0131 g\u00fcncellemelisiniz veya eksik API'ler i\u00e7in eklentileri kurmal\u0131s\u0131n\u0131z. Y\u00f6nergeler i\u00e7in <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>belgelendirmeye</a> bak\u0131n."
+		"message": "Yerle\u015fik ana makine ba\u011flay\u0131c\u0131 \u015fu API\u2019leri desteklemiyor: $$1. B\u00fcy\u00fck olas\u0131l\u0131kla yerle\u015fik ana makine ba\u011flay\u0131c\u0131y\u0131 g\u00fcncellemelisiniz veya eksik API\u2019ler i\u00e7in eklentileri kurmal\u0131s\u0131n\u0131z. Y\u00f6nergeler i\u00e7in <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>belgelendirmeye</a> bak\u0131n."
 	},
 	"yes": {
 		"message": "Evet"

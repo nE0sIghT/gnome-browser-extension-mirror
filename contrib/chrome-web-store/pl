@@ -1,7 +1,5 @@
 Należy zainstalować natywnego łącznika, aby to rozszerzenie mogło działać.
 
-Dla systemu Arch Linux dostępny jest pakiet PKGBUILD w repozytorium AUR: https://aur.archlinux.org/packages/chrome-gnome-shell-git
-
-W systemach Debian, Fedora, Gentoo i Ubuntu można zainstalować pakiet o nazwie „chrome-gnome-shell”.
+W systemach Arch Linux, Debian, Fedora, Gentoo i Ubuntu można zainstalować pakiet o nazwie „chrome-gnome-shell”.
 
 Można także zainstalować łącznika ręcznie. Instrukcje instalacji: https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation
