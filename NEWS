@@ -1,3 +1,50 @@
+= 2022-07-12 gnome-browser-extension 11 =
+
+== Changes ==
+ * Website API is updated to version 6.
+   It is now possible to control `disable-user-extensions` and `disable-extension-version-validation`
+   Shell settings via website.
+   You need GNOME browser connector 42 for this feature to work.
+ * Fixed compatibility with upcoming Firefox 103 (thanks to Emilio Cobos Álvarez for the fix).
+
+== Translators ==
+ * Alan Mortensen (da)
+ * Alexandre Franke (fr)
+ * Anders Jonsson (sv)
+ * Asier Sarasua Garmendia (eu)
+ * Aurimas Černius (lt)
+ * Balázs Úr (hu)
+ * Boyuan Yang (zh_CN)
+ * Danial Behzadi (fa)
+ * Daniel Mustieles (es)
+ * Davy Defaud (fr)
+ * Dz Chen (zh_CN)
+ * Efstathios Iosifidis (el)
+ * Emin Tufan Çetin (tr)
+ * Florentina Mușat (ro)
+ * Fran Dieguez (gl)
+ * Goran Vidović (hr)
+ * Irénée THIRION (fr)
+ * Jordi Mas (ca)
+ * Kukuh Syafaat (id)
+ * Marek Černocký (cs)
+ * Milo Casagrande (it)
+ * Мирослав Николић (sr)
+ * Nathan Follens (nl)
+ * Piotr Drąg (pl)
+ * Rafael Fontenelle (pt_BR)
+ * Ryuta Fujii (ja)
+ * Seong-ho Cho (ko)
+ * Sergej A (ru)
+ * sicklylife (ja)
+ * Tim Sabsch (de)
+ * Yaron Shahrabani (he)
+ * Yi-Jyun Pan (zh_TW)
+ * Yuri Chornoivan (uk)
+ * Yuri Konotopov (fr)
+ * Zander Brown (en_GB)
+
+
 = 2018-03-21 chrome-gnome-shell 10.1 =
 
 == Changes ==
