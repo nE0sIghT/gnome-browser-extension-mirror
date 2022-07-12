@@ -1,6 +1,6 @@
 project('gnome-browser-extension',
   license: 'GPL-3',
-  version : '11',
+  version : '11.1',
 )
 
 # Constants
