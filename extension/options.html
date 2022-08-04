@@ -3,12 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title data-i18n="options_title, __MSG_gs_chrome__"></title>
-		<link href="css/dialog-polyfill.css" rel="stylesheet" type="text/css" />
-		<link href="css/tabby.min.css" rel="stylesheet" type="text/css" />
 		<link href="css/options.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="include/external/dialog-polyfill.js"></script>
-		<script type="text/javascript" src="include/external/jquery-3.6.0.js"></script>
-		<script type="text/javascript" src="include/external/tabby-10.1.0.js"></script>
 		<script type="text/javascript" src="include/i18n.js"></script>
 		<script type="text/javascript" src="include/constants.js"></script>
 		<script type="text/javascript" src="include/compat-common.js"></script>
@@ -16,15 +11,15 @@
 		<script type="text/javascript" src="include/sync.js"></script>
 	</head>
 	<body>
-		<ul data-tabs='tabs' class="tabs">
-			<li><a href="#options" class='active' data-i18n='options_link' data-tab='tab'></a></li>
+		<ul data-tabs class="tabs">
+			<li><a href="#options" data-tabs-active data-i18n='options_link' data-tab='tab'></a></li>
 			<li><a href="#synchronization" data-i18n='synchronization' data-tab='tab'></a></li>
 			<li class='translation_credits_container'><a href="#translation_credits" data-i18n='translation_credits_title' data-tab='tab'></a></li>
 		</ul>
-		<div data-tabs-content='tabs-content'>
+		<div>
 			<div id="options" class="tabs-pane active" data-tabs-pane='tabs-pane'>
-				<div id="status" data-i18n="options_saved"></div>
-				<div id="error"></div>
+				<div id="status" class="hide" data-i18n="options_saved"></div>
+				<div id="error" class="hide"></div>
 
 				<fieldset>
 					<dl>

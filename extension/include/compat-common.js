@@ -10,6 +10,33 @@
 
 /* global chrome, COMPAT */
 
+$ = (...args) => document.querySelector(...args);
+$$ = (...args) => document.querySelectorAll(...args);
+
+function empty(element) {
+	while(element.firstChild) element.removeChild(element.firstChild);
+}
+
+function isEmptyObject(object) {
+	for (const k in object) return false;
+	return true;
+}
+
+function showWithDelay(element, delay, message) {
+	if (message) {
+		element.innerHtml = message;
+	}
+
+	element.classList.remove('hide');
+	element.classList.add('show');
+	setTimeout(() => {
+		element.classList.remove('show');
+		setTimeout(() => {
+			element.classList.add('hide');
+		}, 250);
+	}, delay);
+}
+
 COMPAT.PERMISSIONS_CONTAINS		= true;
 COMPAT.PERMISSIONS_EVENTS		= true;
 COMPAT.SYNC_STORAGE				= true;

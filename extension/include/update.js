@@ -8,7 +8,7 @@
     (at your option) any later version.
  */
 
-GSC.update = (function($) {
+GSC.update = (function() {
 	function schedule(updateCheckPeriod, skipCheck) {
 		if(!skipCheck)
 		{
@@ -68,7 +68,7 @@ GSC.update = (function($) {
 		var toUpgrade = [];
 		for (uuid in data)
 		{
-			if (installedExtensions[uuid] && $.inArray(data[uuid], ['upgrade', 'downgrade']) !== -1)
+			if (installedExtensions[uuid] && ['upgrade', 'downgrade'].includes(data[uuid]))
 			{
 				toUpgrade.push({
 					title: installedExtensions[uuid].name,
@@ -94,7 +94,7 @@ GSC.update = (function($) {
 
 	function init() {
 		function onNotificationAction(notificationId, buttonIndex) {
-			if ($.inArray(notificationId, [NOTIFICATION_UPDATE_AVAILABLE]) === -1)
+			if (NOTIFICATION_UPDATE_AVAILABLE == notificationId)
 				return;
 
 			GSC.notifications.remove(notificationId);
@@ -201,4 +201,4 @@ GSC.update = (function($) {
 		check: check,
 		schedule: schedule
 	};
-})(jQuery);
+})();

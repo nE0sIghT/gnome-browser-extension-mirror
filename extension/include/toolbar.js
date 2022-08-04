@@ -11,7 +11,7 @@
 /*
  * Main object that handles toolbar icon.
  */
-GSC.toolbar = (function($) {
+GSC.toolbar = (function() {
 	/*
 	 * Initialization rutines.
 	 */
@@ -62,4 +62,4 @@ GSC.toolbar = (function($) {
 	return {
 		init: init
 	};
-})(jQuery);
+})();

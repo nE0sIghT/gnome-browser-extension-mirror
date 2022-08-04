@@ -1,42 +1,32 @@
-/*
-    GNOME Shell integration for Chrome
-    Copyright (C) 2016  Yuri Konotopov <ykonotopov@gnome.org>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
- */
+// # SPDX-License-Identifer: GPL-3.0-or-later
 
 m = chrome.i18n.getMessage;
-i18n = (function($) {
-	return function() {
-		$('[data-i18n]').each(function () {
-			var data = $.map($(this).data('i18n').split(','), function(value) {
-				value = value.trim();
+i18n = (() => {
+	$$('[data-i18n]').forEach((element) => {
+		let data = element.dataset.i18n.split(',').map((value) => {
+			value = value.trim();
 
-				if(value.startsWith('__MSG_'))
-				{
-					return value.replace(/__MSG_(\w+)__/g, function(match, key)
-					{
-					    return key ? m(key) : "";
-					});
-				}
-
-				return value;
-			});
-
-			if(data.length)
+			if(value.startsWith('__MSG_'))
 			{
-				if($(this).data('i18n-html'))
+				return value.replace(/__MSG_(\w+)__/g, function(match, key)
 				{
-					$(this).html(m(data[0], data.slice(1)));
-				}
-				else
-				{
-					$(this).text(m(data[0], data.slice(1)));
-				}
+					return key ? m(key) : "";
+				});
 			}
+
+			return value;
 		});
-	}
-})(jQuery);
+
+		if(data)
+		{
+			if(element.dataset.i18nHtml)
+			{
+				element.innerHtml = m(data[0], data.slice(1));
+			}
+			else
+			{
+				element.innerText = m(data[0], data.slice(1));
+			}
+		}
+	});
+});

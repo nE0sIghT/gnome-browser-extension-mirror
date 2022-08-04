@@ -8,7 +8,7 @@
     (at your option) any later version.
  */
 
-GSC.notifications = (function($) {
+GSC.notifications = (function() {
 	var DEFAULT_NOTIFICATION_OPTIONS = {
 		type: chrome.notifications.TemplateType.BASIC,
 		iconUrl: 'icons/GnomeLogo-128.png',
@@ -80,7 +80,7 @@ GSC.notifications = (function($) {
 			}, function (items) {
 				var notifications = items.notifications;
 
-				notifications[name] = $.extend(DEFAULT_NOTIFICATION_OPTIONS, options);
+				notifications[name] = {...DEFAULT_NOTIFICATION_OPTIONS, ...options};
 
 				_create(name, notifications[name], function (notificationId) {
 					chrome.storage.local.set({
@@ -165,7 +165,7 @@ GSC.notifications = (function($) {
 			window.postMessage({
 				execute: 'createNotification',
 				name: name,
-				options: $.extend(DEFAULT_NOTIFICATION_OPTIONS, options)
+				options: {...DEFAULT_NOTIFICATION_OPTIONS, ...options}
 			}, "*");
 		}
 
@@ -215,4 +215,4 @@ GSC.notifications = (function($) {
 			});
 		}
 	};
-})(jQuery);
+})();

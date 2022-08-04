@@ -34,12 +34,12 @@ GSC.sync = (function($) {
 				enabled = false;
 
 				// Remove all disabled extensions from queue
-				$.each(extensionChangedQueue, function(extensionId, extension) {
+				for (const [extensionId, extension] of Object.entries(extensionChangedQueue)) {
 					if(extension.state == EXTENSION_STATE.DISABLED)
 					{
 						delete extensionChangedQueue[extensionId];
 					}
-				});
+				};
 			}
 			else if (state === 'active')
 			{
@@ -146,38 +146,39 @@ GSC.sync = (function($) {
 	 *	...
 	 * ]
 	 */
-	function getExtensions(deferred, remoteExtensions) {
-		GSC.sendNativeRequest({
-			execute: 'listExtensions'
-		}, function(response) {
-			if(response && response.success)
-			{
-				if(remoteExtensions)
+	function getExtensions(remoteExtensions) {
+		return new Promise((resolve, reject) => {
+			GSC.sendNativeRequest({
+				execute: 'listExtensions'
+			}, function(response) {
+				if(response && response.success)
 				{
-					deferred.resolve(mergeExtensions(remoteExtensions, response.extensions));
+					if(remoteExtensions)
+					{
+						resolve(mergeExtensions(remoteExtensions, response.extensions));
+					}
+					else
+					{
+						chrome.storage.sync.get({
+							extensions: {}
+						}, function(options) {
+							if(chrome.runtime.lastError)
+							{
+								reject(chrome.runtime.lastError.message);
+							}
+							else
+							{
+								resolve(mergeExtensions(options.extensions, response.extensions));
+							}
+						});
+					}
 				}
 				else
 				{
-					chrome.storage.sync.get({
-						extensions: {}
-					}, function(options) {
-						if(chrome.runtime.lastError)
-						{
-							deferred.reject(chrome.runtime.lastError.message);
-						}
-						else
-						{
-							var extensions = mergeExtensions(options.extensions, response.extensions);
-							deferred.resolve(extensions);
-						}
-					});
+					var message = response && response.message ? response.message : m('error_connector_response');
+					reject(message);
 				}
-			}
-			else
-			{
-				var message = response && response.message ? response.message : m('error_connector_response');
-				deferred.reject(message);
-			}
+			});
 		});
 	}
 
@@ -199,7 +200,7 @@ GSC.sync = (function($) {
 	{
 		var extensions = {};
 
-		$.each(remoteExtensions, function(key, extension) {
+		for (const [key, extension] of Object.entries(remoteExtensions)) {
 			if(extension.uuid && extension.name && extension.state)
 			{
 				extensions[extension.uuid] = {
@@ -210,9 +211,9 @@ GSC.sync = (function($) {
 					local:		false
 				};
 			}
-		});
+		};
 
-		$.each(localExtensions, function(key, extension) {
+		for (const [key, extension] of Object.entries(localExtensions)) {
 			if(extensions[extension.uuid])
 			{
 				extensions[extension.uuid].name = extension.name;
@@ -230,7 +231,7 @@ GSC.sync = (function($) {
 					local:		true
 				};
 			}
-		});
+		};
 
 		return extensions;
 	}
@@ -241,7 +242,7 @@ GSC.sync = (function($) {
 	function localExtensionsChanged() {
 		extensionChangedTimeout = false;
 
-		if (!$.isEmptyObject(extensionChangedQueue))
+		if (!isEmptyObject(extensionChangedQueue))
 		{
 			GSC.sendNativeRequest({
 				execute: 'listExtensions'
@@ -251,11 +252,11 @@ GSC.sync = (function($) {
 					chrome.storage.sync.get({
 						extensions: {}
 					}, function (options) {
-						$.each(extensionChangedQueue, function (extensionId, extension) {
-							if ($.inArray(extension.state, [EXTENSION_STATE.ENABLED, EXTENSION_STATE.DISABLED, EXTENSION_STATE.UNINSTALLED]) !== -1)
+						for (const [extensionId, extension] of Object.entries(extensionChangedQueue)) {
+							if ([EXTENSION_STATE.ENABLED, EXTENSION_STATE.DISABLED, EXTENSION_STATE.UNINSTALLED].includes(extension.state))
 							{
 								// Extension can be uninstalled already
-								if (response.extensions[extensionId] && !$.isEmptyObject(response.extensions[extensionId]))
+								if (response.extensions[extensionId] && !isEmptyObject(response.extensions[extensionId]))
 								{
 									extension = response.extensions[extensionId];
 								}
@@ -273,7 +274,7 @@ GSC.sync = (function($) {
 									};
 								}
 							}
-						});
+						};
 
 						chrome.storage.sync.set({
 							extensions: options.extensions
@@ -296,10 +297,9 @@ GSC.sync = (function($) {
 	 * @param remoteExtensions - (optional) remote extensions list
 	 */
 	function remoteExtensionsChanged(remoteExtensions) {
-
-		getExtensions($.Deferred().done(function(extensions) {
+		getExtensions(remoteExtensions).then((extensions) => {
 			var enableExtensions = [];
-			$.each(extensions, function(uuid, extension) {
+			for ([uuid, extension] of Object.entries(extensions)) {
 				if(extension.remote)
 				{
 					if(!extension.local)
@@ -334,7 +334,7 @@ GSC.sync = (function($) {
 						uuid: extension.uuid
 					}, onInstallUninstall);
 				}
-			});
+			};
 
 			if(enableExtensions.length > 0)
 			{
@@ -343,9 +343,9 @@ GSC.sync = (function($) {
 					extensions: enableExtensions
 				});
 			}
-		}).fail(function(message) {
+		}).catch((message) => {
 			createSyncFailedNotification(message);
-		}), remoteExtensions);
+		});
 	}
 
 	/*
@@ -452,4 +452,4 @@ GSC.sync = (function($) {
 		getExtensions: getExtensions,
 		onExtensionChanged: onExtensionChanged
 	};
-})(jQuery);
+})();

@@ -8,14 +8,39 @@
     (at your option) any later version.
  */
 
+function init_tabs()
+{
+	let tabLinks = $("[data-tabs]").querySelectorAll('a');
+	let updateTabs = (active = null) => {
+		tabLinks.forEach((link) => {
+			let tab = $(link.getAttribute("href"));
+
+			if((!active && link.hasAttribute('data-tabs-active')) || link == active) {
+				tab.classList.remove('hide');
+			}
+			else {
+				tab.classList.add('hide');
+			}
+		});
+	};
+
+	tabLinks.forEach((link) => {
+		link.addEventListener('click', (event) => {
+			updateTabs(event.target);
+		});
+	});
+
+	updateTabs();
+}
+
 function save_options()
 {
-	var showReleaseNotes = $('#show_release_notes_yes').prop('checked');
-	var syncExtensions = $('#synchronize_extensions_yes').prop('checked');
-	var updateCheck = $('#update_check_yes').prop('checked');
-	var updateCheckEnabledOnly = $('#update_check_enabled_yes').prop('checked');
-	var updateCheckPeriod = $('#update_check_period').val();
-	var useLightIcon = $('#use_light_icon_yes').prop('checked');
+	var showReleaseNotes = $('#show_release_notes_yes').checked;
+	var syncExtensions = $('#synchronize_extensions_yes').checked;
+	var updateCheck = $('#update_check_yes').checked;
+	var updateCheckEnabledOnly = $('#update_check_enabled_yes').checked;
+	var updateCheckPeriod = $('#update_check_period').value;
+	var useLightIcon = $('#use_light_icon_yes').checked;
 	updateCheckPeriod = Math.max(3, updateCheckPeriod);
 
 	chrome.storage.sync.set({
@@ -33,9 +58,9 @@ function save_options()
 				syncType = document.getElementById('syncChoice').returnValue;
 				if(!syncType || syncType === 'local')
 				{
-					GSC.sync.getExtensions($.Deferred().done(function (extensions) {
+					GSC.sync.getExtensions().then((extensions) => {
 						var localExtensions = {};
-						$.each(extensions, function (uuid, extension) {
+						for (const [uuid, extension] of Object.entries(extensions)) {
 							if(extension.local && extension.localState != EXTENSION_STATE.UNINSTALLED)
 							{
 								localExtensions[extension.uuid] = {
@@ -44,20 +69,16 @@ function save_options()
 									state:	extension.localState
 								};
 							}
-						});
+						};
 
 						chrome.storage.sync.set({
 							extensions: localExtensions
 						}, function() {
 							showSuccessStatus();
 						});
-					}).fail(function (message) {
-						$('#error')
-							.html(message)
-							.show()
-							.delay(15000)
-							.hide(250);
-					}));
+					}).catch((message) => {
+						showWithDelay($('#error'), 15000, message);
+					});
 				}
 				else if(syncType === 'remote')
 				{
@@ -76,29 +97,26 @@ function save_options()
 function showSuccessStatus()
 {
 	// Update status to let user know options were saved.
-	$('#status')
-		.show()
-		.delay(750)
-		.hide(250);
+	showWithDelay($('#status'), 750);
 }
 
 function restore_options()
 {
-	tabby.init();
+	init_tabs();
 
 	chrome.storage.sync.get(DEFAULT_SYNC_OPTIONS, function (items) {
 		function toggle_notice(show, id) {
 			let notice = $('#' + id)
 				.closest('dl')
-				.find('dt br, dt span.notice');
+				.querySelector('dt br, dt span.notice');
 
 			if (show)
 			{
-				notice.show();
+				notice.style.display = 'block';
 			}
 			else
 			{
-				notice.hide();
+				notice.style.display = 'none';
 			}
 		}
 
@@ -143,8 +161,8 @@ function restore_options()
 			}
 			else
 			{
-				$("input[name='update_check'], #update_check_period").removeAttr('disabled');
-				$('#update_check_period').val(items.updateCheckPeriod);
+				$$("input[name='update_check'], #update_check_period").forEach((input) => input.disabled = false);
+				$('#update_check_period').value = items.updateCheckPeriod;
 				toggle_update_notice(false);
 				retrieveUpdateTimes();
 			}
@@ -155,7 +173,7 @@ function restore_options()
 			}
 			else
 			{
-				$("input[name='update_check_enabled']").removeAttr('disabled');
+				$("input[name='update_check_enabled']").disabled = false;
 				toggle_update_enable_notice(false);
 			}
 
@@ -174,8 +192,8 @@ function restore_options()
 	}
 	else
 	{
-		$('a[data-i18n="synchronization"]').parent().remove();
-		$('#synchronize_extensions_yes').closest('dl').hide();
+		$('a[data-i18n="synchronization"]').parentNode.remove();
+		$('#synchronize_extensions_yes').closest('dl').style.display = 'none';
 	}
 
 	chrome.storage.local.get(DEFAULT_LOCAL_OPTIONS, function (items) {
@@ -203,11 +221,11 @@ function retrieveUpdateTimes()
 	}, function (items) {
 		if(items.lastUpdateCheck)
 		{
-			$('#last_update_check').text(items.lastUpdateCheck);
+			$('#last_update_check').innerText = items.lastUpdateCheck;
 		}
 		else
 		{
-			$('#last_update_check').text(m('never'));
+			$('#last_update_check').innerText = m('never');
 		}
 	});
 
@@ -219,11 +237,11 @@ function retrieveNextUpdateTime()
 	chrome.alarms.get(ALARM_UPDATE_CHECK, function (alarm) {
 		if (alarm)
 		{
-			$('#next_update_check').text(new Date(alarm.scheduledTime).toLocaleString());
+			$('#next_update_check').innerText = new Date(alarm.scheduledTime).toLocaleString();
 		}
 		else
 		{
-			$('#next_update_check').text(m('never'));
+			$('#next_update_check').innerText = m('never');
 		}
 	});
 }
@@ -231,46 +249,46 @@ function retrieveNextUpdateTime()
 function setCheckUpdate(result)
 {
 	if(result)
-		$('#update_check_yes').prop('checked', true);
+		$('#update_check_yes').checked = true;
 	else
-		$('#update_check_no').prop('checked', true);
+		$('#update_check_no').checked = true;
 }
 
 function setCheckUpdateEnabledOnly(result)
 {
 	if(result)
-		$('#update_check_enabled_yes').prop('checked', true);
+		$('#update_check_enabled_yes').checked = true;
 	else
-		$('#update_check_enabled_no').prop('checked', true);
+		$('#update_check_enabled_no').checked = true;
 }
 
 function setLightIcon(result)
 {
 	if(result)
-		$('#use_light_icon_yes').prop('checked', true);
+		$('#use_light_icon_yes').checked = true;
 	else
-		$('#use_light_icon_no').prop('checked', true);
+		$('#use_light_icon_no').checked = true;
 }
 
 function setReleaseNotes(result)
 {
 	if(result)
-		$('#show_release_notes_yes').prop('checked', true);
+		$('#show_release_notes_yes').checked = true;
 	else
-		$('#show_release_notes_no').prop('checked', true);
+		$('#show_release_notes_no').checked = true;
 }
 
 function setSyncExtensions(result)
 {
 	if(result)
-		$('#synchronize_extensions_yes').prop('checked', true);
+		$('#synchronize_extensions_yes').checked = true;
 	else
-		$('#synchronize_extensions_no').prop('checked', true);
+		$('#synchronize_extensions_no').checked = true;
 }
 
 function handleSynchronize()
 {
-	if($('#synchronize_extensions_yes').is(':checked'))
+	if($('#synchronize_extensions_yes').checked)
 	{
 		chrome.permissions.request({
 			permissions: ["idle"]
@@ -285,7 +303,7 @@ function handleSynchronize()
 				chrome.storage.sync.get({
 					extensions: {}
 				}, function (options) {
-					if(!$.isEmptyObject(options.extensions))
+					if(!isEmptyObject(options.extensions))
 					{
 						document.getElementById('syncChoice').showModal();
 					}
@@ -319,7 +337,7 @@ function handleSynchronize()
 
 function updateSynchronizationStatus()
 {
-	GSC.sync.getExtensions($.Deferred().done(function (extensions) {
+	GSC.sync.getExtensions().then((extensions) => {
 		var keys = Object.keys(extensions).sort(function (a, b) {
 			var nameA = extensions[a].name.toLowerCase();
 			var nameB = extensions[b].name.toLowerCase();
@@ -337,39 +355,23 @@ function updateSynchronizationStatus()
 			return 0;
 		});
 
-		$('#synchronization table tbody').empty();
-		$.each(keys, function (key, uuid) {
+		empty($('#synchronization table tbody'));
+		for (const [key, uuid] of Object.entries(keys)) {
 			var extension = extensions[uuid];
 
-			$('#synchronization table tbody').append(
-				$('<tr />')
-					.append(
-						$('<td />').text(extension.name)
-					)
-					.append(
-						$('<td />').addClass(
-							extension.local ? 'ok' : 'fail'
-						)
-					)
-					.append(
-						$('<td />').addClass(
-							extension.localState == EXTENSION_STATE.ENABLED ? 'ok' : 'fail'
-						)
-					)
-					.append(
-						$('<td />').addClass(
-							extension.remote ? 'ok' : 'fail'
-						)
-					)
+			$('#synchronization table tbody').insertAdjacentHTML(
+				'beforeEnd',
+				`<tr>
+					<td>${extension.name}</td>
+					<td class='${extension.local && 'ok' || 'fail'}'></td>
+					<td class='${extension.localState == EXTENSION_STATE.ENABLED && 'ok' || 'fail'}'></td>
+					<td class='${extension.remote && 'ok' || 'fail'}'></td>
+				</tr>`
 			);
-		});
-	}).fail(function (message) {
-		$('#error')
-			.html(message)
-			.show()
-			.delay(15000)
-			.hide(250);
-	}));
+		};
+	}).catch((message) => {
+		showWithDelay($('#error'), 15000, message);
+	});
 }
 
 i18n();
@@ -377,13 +379,11 @@ i18n();
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click', save_options);
 
-$.each(document.getElementsByName('synchronize_extensions'), function(index, control) {
+document.getElementsByName('synchronize_extensions').forEach((control) => {
 	control.addEventListener('change', handleSynchronize);
 });
 
 
-// Compat: Firefox
-dialogPolyfill.registerDialog(document.getElementById('syncChoice'));
 document.getElementById('syncChoice').addEventListener('close', function() {
 	if(document.getElementById('syncChoice').returnValue === 'cancel')
 	{
@@ -400,7 +400,7 @@ document.getElementById('syncChoice').addEventListener('close', function() {
 	}
 });
 
-if($('#translation_credits div').is(':empty'))
+if(!$('#translation_credits div').firstChild)
 {
 	$('.translation_credits_container').remove();
 }
@@ -410,7 +410,7 @@ chrome.storage.onChanged.addListener(function (changes, areaName) {
 	{
 		if(changes.lastUpdateCheck && changes.lastUpdateCheck.newValue)
 		{
-			$('#last_update_check').text(changes.lastUpdateCheck.newValue);
+			$('#last_update_check').innerText = changes.lastUpdateCheck.newValue;
 		}
 	}
 
