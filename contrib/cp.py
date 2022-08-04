@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# SPDX-License-Identifer: GPL-3.0-or-later
 
 import argparse
 import os

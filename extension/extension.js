@@ -1,12 +1,4 @@
-/*
-    GNOME Shell integration for Chrome
-    Copyright (C) 2016-2019  Yuri Konotopov <ykonotopov@gnome.org>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
- */
+// SPDX-License-Identifer: GPL-3.0-or-later
 
 chrome.runtime.onInstalled.addListener(function(details) {
 	var version = chrome.runtime.getManifest().version;
