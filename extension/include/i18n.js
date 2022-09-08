@@ -17,7 +17,7 @@ i18n = (() => {
 
         if (data) {
             if (element.dataset.i18nHtml) {
-                element.innerHtml = m(data[0], data.slice(1));
+                element.insertAdjacentHTML('beforeEnd', m(data[0], data.slice(1)));
             }
             else {
                 element.innerText = m(data[0], data.slice(1));
