@@ -16,7 +16,7 @@ function isEmptyObject(object) {
 
 function showWithDelay(element, delay, message) {
     if (message) {
-        element.innerHtml = message;
+        element.innerHTML = message;
     }
 
     element.classList.remove('hide');
