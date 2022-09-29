@@ -2,34 +2,34 @@
 # Copyright (C) 2016 chrome-gnome-shell's COPYRIGHT HOLDER
 # This file is distributed under the same license as the chrome-gnome-shell package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2016
+# Matej Urbančič <mateju@svn.gnome.org>, 2016–2022
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2017-01-04 06:47+0000\n"
-"PO-Revision-Date: 2016-08-29 19:48+0200\n"
+"POT-Creation-Date: 2020-05-04 19:33+0000\n"
+"PO-Revision-Date: 2022-09-29 23:10+0200\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
 msgstr "Zapri"
 
-#. Shown to user when response of extension API call does not follow known
+#. Shown to user when response from connector API call does not follow known
 #. format.
-#: chrome-gnome-shell-key-error_extension_response:1
-msgid "Wrong extension response received"
-msgstr ""
+#: chrome-gnome-shell-key-error_connector_response:1
+msgid "Wrong connector response received"
+msgstr "Prejet je napačen odziv povezovalnika"
 
 #. Used as title, eg in table header. Means 'Does GNOME Shell extension
 #. enabled?'
@@ -46,7 +46,7 @@ msgstr "Nameščeno"
 #. Used as title, eg in table header. Means 'GNOME Shell extension name'.
 #: chrome-gnome-shell-key-extension_name:1
 msgid "Extension"
-msgstr "Pripona"
+msgstr "Razširitev"
 
 #. This is a part of phrase like 'Extension Top Icons must be downgraded'.
 #: chrome-gnome-shell-key-extension_status_downgrade:1
@@ -63,16 +63,14 @@ msgstr "Ni mogoče postaviti v žarišče"
 #. Used as title, eg in table header. Means 'Does GNOME Shell extension status
 #. synchronized with remote browser storage?'
 #: chrome-gnome-shell-key-extension_synchronized:1
-#, fuzzy
 msgid "Synchronized"
-msgstr "Usklajena hitrost"
+msgstr "Usklajeno"
 
 #. This is a project title. Used as extension name in Chrome Store and in some
 #. titlebars.
 #: chrome-gnome-shell-key-gs_chrome:1
-#, fuzzy
 msgid "GNOME Shell integration"
-msgstr "Gnome lupina"
+msgstr "Razširitev lupine GNOME"
 
 #. This is a part of phrase 'Update check period: xx hours'
 #: chrome-gnome-shell-key-hours:1
@@ -97,12 +95,6 @@ msgstr ""
 msgid "«$REQUEST$» native request failed"
 msgstr "Zahteva za pridobivanje poti je spodletela."
 
-#: chrome-gnome-shell-key-network_error:1
-msgid ""
-"A network error has occurred. Please check your Internet connection and/or "
-"proxy settings."
-msgstr ""
-
 #. This is a part of phrase 'Last check: never'
 #: chrome-gnome-shell-key-never:1
 msgid "never"
@@ -111,6 +103,14 @@ msgstr "nikoli"
 #: chrome-gnome-shell-key-no:1
 msgid "No"
 msgstr "Ne"
+
+#. Shown to user when native connector unable to query GNOME Shell version or
+#. settings
+#: chrome-gnome-shell-key-no_gnome_shell:1
+msgid ""
+"Unable to locate GNOME Shell settings or version. Make sure it is installed "
+"and running."
+msgstr ""
 
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
@@ -123,23 +123,26 @@ msgstr ""
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
 #: chrome-gnome-shell-key-no_host_response:1
-#, fuzzy
 msgid "No host response"
-msgstr "Gostitelj"
+msgstr "Ni odziva gostitelja"
+
+#. Tooltip for browser extensions icon.
+#: chrome-gnome-shell-key-open_website:1
+#, fuzzy
+msgid "Open GNOME Shell extensions website"
+msgstr "Nastavitve razširitev lupine Gnome"
 
 #. Option name. Allow to set interval between GNOME Shell extensions update
 #. checks.
 #: chrome-gnome-shell-key-options_check_period:1
-#, fuzzy
 msgid "Update check period"
-msgstr "Preveri za posodobitve"
+msgstr "Preveri za posodobitve vsakih"
 
 #. This is a start of phrase (followed by date/time) of last GNOME Shell
 #. extensions update check.
 #: chrome-gnome-shell-key-options_last_check:1
-#, fuzzy
 msgid "Last check"
-msgstr "Preveri zadnjo različico"
+msgstr "Zadnje preverjanje"
 
 #. Link name for options tab.
 #: chrome-gnome-shell-key-options_link:1
@@ -149,41 +152,25 @@ msgstr "Možnosti"
 #. This is a start of phrase (followed by date/time) of next GNOME Shell
 #. extensions update check.
 #: chrome-gnome-shell-key-options_next_check:1
-#, fuzzy
 msgid "Next check"
-msgstr "Skoči na naslednje potrditveno polje."
+msgstr "Naslednje preverjanje"
 
 #. Means 'Options were saved successfully after user clicked Save button'
 #: chrome-gnome-shell-key-options_saved:1
-#, fuzzy
 msgid "Options saved."
-msgstr "Možnosti"
-
-#. Option name. By default Chrome do not reveal exact network error in case of
-#. request failure. Allow enable/disable extended error information.
-#: chrome-gnome-shell-key-options_show_network_errors:1
-#, fuzzy
-msgid "Show information about network errors"
-msgstr "Pokaže podatke o mestih."
-
-#. This is a notice under option name. Warns user that additional browser
-#. permission is required if option will be enabled.
-#: chrome-gnome-shell-key-options_show_network_errors_notice:1
-msgid "Chrome permission «webRequest» required."
-msgstr ""
+msgstr "Možnosti so shranjene."
 
 #. Option name. Allow to enable/disable popup with release notes when Web
 #. extension is updated.
 #: chrome-gnome-shell-key-options_show_release_notes:1
-msgid "Show release notes when extension updated"
-msgstr ""
+msgid "Show release notes when browser extension updated"
+msgstr "Pokaži opombe k izdaji ko je razširitev brskalnika posodobljena"
 
 #. Option name. Allow to enable/disable synchronization of GNOME Shell
 #. extensions with remote browser storage.
 #: chrome-gnome-shell-key-options_synchronize_extensions:1
-#, fuzzy
-msgid "Synchronize extensions list"
-msgstr "Seznam dejavnih razširitev"
+msgid "Synchronize GNOME Shell extensions list"
+msgstr "Uskladi seznam razširitev lupine GNOME"
 
 #. This is a notice under option name.
 #: chrome-gnome-shell-key-options_synchronize_extensions_notice:1
@@ -191,6 +178,8 @@ msgid ""
 "If enabled, your GNOME Shell extensions list will be synchronized with your "
 "Google account."
 msgstr ""
+"Izbrana možnost omogoča, da bo seznam razširitev lupine GNOME usklajen s "
+"povezanim računom Google."
 
 #. $GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This
 #. string used as title for Options page. This title is not shown in Chrome,
@@ -200,19 +189,43 @@ msgstr ""
 #. gs_chrome
 #.
 #: chrome-gnome-shell-key-options_title:1
-#, fuzzy
 msgid "$GS_CHROME$ options"
-msgstr "Geslo za Google Chrome"
+msgstr "Možnosti $GS_CHROME$"
 
 #. Option name. Allow enable/disable update check for GNOME Shell extensions.
 #: chrome-gnome-shell-key-options_update_check:1
-#, fuzzy
-msgid "Check for extensions update"
-msgstr "Preveri za posodobitve"
+msgid "Check for GNOME Shell extensions update"
+msgstr "Preveri za posodobitve razširitev lupine GNOME"
+
+#. Option name.
+#: chrome-gnome-shell-key-options_update_check_enabled:1
+msgid "Check update of enabled GNOME Shell extensions only"
+msgstr "Preveri le posodobitve omogočenih razširitev lupine GNOME"
+
+#: chrome-gnome-shell-key-options_update_check_enabled_notice:1
+msgid ""
+"Your native host connector does not support updates check for enabled GNOME "
+"Shell extensions only. Consider update."
+msgstr ""
+"Privzeti povezovalnik ne podpira preverjanja posodobitev le za omogočene "
+"razširitve lupine GNOME. Razmislite o posodobitvi povezovalnika."
+
+#: chrome-gnome-shell-key-options_update_check_notice:1
+msgid ""
+"Your native host connector does not support check for GNOME Shell extensions "
+"updates. Probably python-requests package is missing."
+msgstr ""
+"Privzeti povezovalnik ne podpira preverjanja posodobitev razširitev lupine "
+"GNOME. Najverjetneje manjka paket python-requests."
+
+#. Use light icon that is looked better with dark themes.
+#: chrome-gnome-shell-key-options_use_light_icon:1
+msgid "Use light icon (dark theme)"
+msgstr "Uporabi svetlo ikono (za temne teme)"
 
 #: chrome-gnome-shell-key-platform_not_supported:1
 msgid "Native host connector is not supported for your platform."
-msgstr ""
+msgstr "Privzeti povezovalnik na tem sistemu ni podprt."
 
 #: chrome-gnome-shell-key-retry:1
 msgid "Retry"
@@ -228,9 +241,8 @@ msgid "Synchronization"
 msgstr "Usklajevanje"
 
 #: chrome-gnome-shell-key-synchronization_cancel:1
-#, fuzzy
 msgid "Do not enable synchronization."
-msgstr "Usklajevanje"
+msgstr "Ne omogoči usklajevanja"
 
 #. $CAUSE$ is placeholder for error that caused synchronization failure.
 #.
@@ -238,35 +250,32 @@ msgstr "Usklajevanje"
 #. cause
 #.
 #: chrome-gnome-shell-key-synchronization_failed:1
-#, fuzzy
 msgid "Failed to synchronize extensions: $CAUSE$"
-msgstr "Usklajevanje ni bilo uspešno"
+msgstr "Usklajevanje razširitev je spodletelo: $CAUSE$"
 
 #: chrome-gnome-shell-key-synchronization_storage_exists:1
 msgid "Your remote synchronization storage already contains extensions list."
-msgstr ""
+msgstr "V oddaljeni shrambi je že seznam razširitev."
 
 #: chrome-gnome-shell-key-synchronization_use_local:1
 msgid "Use local extensions list, overwrite remote."
-msgstr ""
+msgstr "Uporabi krajevni seznam razširitev in prepiši oddaljenega."
 
 #: chrome-gnome-shell-key-synchronization_use_remote:1
 msgid "Use remote extensions list, overwrite local."
-msgstr ""
+msgstr "Uporabi oddaljeni seznam razširitev in prepiši krajevnega."
 
 #. This is content of 'About translation' tab in Options dialog. Thank you for
 #. translation and feel free to add yourself here. HTML markup enabled for
 #. this string. New line character is treated as line break (<br />)
 #: chrome-gnome-shell-key-translation_credits:1
-#, fuzzy
 msgid "translation_credits"
-msgstr "Prevajanje"
+msgstr "Matej Urbančič <mateju@src.gnome.org>"
 
 #. Link name for translation credits tab in options dialog.
 #: chrome-gnome-shell-key-translation_credits_title:1
-#, fuzzy
 msgid "About translation"
-msgstr "O programu"
+msgstr "O prevodu"
 
 #. This should newer be shown to user. However better safe than sorry.
 #: chrome-gnome-shell-key-unknown_error:1
@@ -274,9 +283,8 @@ msgid "unknown error"
 msgstr "neznana napaka"
 
 #: chrome-gnome-shell-key-update_available:1
-#, fuzzy
 msgid "An update for GNOME Shell extensions available"
-msgstr "Nastavitve razširitev lupine Gnome"
+msgstr "Na voljo je posodobitev za razširitve lupine GNOME"
 
 #. $CAUSE$ is placeholder for error that caused update failure.
 #.
@@ -284,8 +292,8 @@ msgstr "Nastavitve razširitev lupine Gnome"
 #. cause
 #.
 #: chrome-gnome-shell-key-update_check_failed:1
-msgid "Failed to check extensions updates: $CAUSE$"
-msgstr ""
+msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
+msgstr "Preverjanje posodobitev lupine GNOME je spodletelo: $CAUSE$"
 
 #. $$1 is a placeholder for a list of missing APIs
 #: chrome-gnome-shell-key-warning_apis_missing:1
@@ -306,27 +314,16 @@ msgstr "Da"
 msgid ""
 "You MUST install native connector for this extension to work.\n"
 "\n"
-"For Arch Linux there is a PKGBUILD available in the AUR: https://aur."
-"archlinux.org/packages/chrome-gnome-shell-git\n"
-"\n"
-"For Debian Linux there is package available in Sid and Stretch: https://"
-"tracker.debian.org/pkg/chrome-gnome-shell\n"
-"\n"
-"For Fedora Linux there is package available in Copr: https://copr."
-"fedorainfracloud.org/coprs/region51/chrome-gnome-shell\n"
-"\n"
-"In Gentoo Linux you can install connector with command:\n"
-"emerge gnome-extra/chrome-gnome-shell\n"
-"\n"
-"For Ubuntu Linux package is available in ne0sight/chrome-gnome-shell PPA. To "
-"install it type:\n"
-"sudo add-apt-repository ppa:ne0sight/chrome-gnome-shell\n"
-"sudo apt-get update\n"
-"sudo apt-get install chrome-gnome-shell\n"
+"For Arch Linux, Debian, Fedora, Gentoo and Ubuntu you can install package "
+"named \"chrome-gnome-shell\".\n"
 "\n"
 "You also can install connector manually. See https://wiki.gnome.org/Projects/"
 "GnomeShellIntegrationForChrome/Installation for install instructions.\n"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Show information about network errors"
+#~ msgstr "Pokaže podatke o mestih."
 
 #, fuzzy
 #~ msgid "older than version 4"
