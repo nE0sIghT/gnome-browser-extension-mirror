@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
 "POT-Creation-Date: 2020-05-04 19:33+0000\n"
-"PO-Revision-Date: 2022-09-29 23:10+0200\n"
+"PO-Revision-Date: 2022-10-03 20:58+0200\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -50,15 +50,13 @@ msgstr "Razširitev"
 
 #. This is a part of phrase like 'Extension Top Icons must be downgraded'.
 #: chrome-gnome-shell-key-extension_status_downgrade:1
-#, fuzzy
 msgid "must be downgraded"
-msgstr "Organizator mora biti nastavljen."
+msgstr "je treba ponižati na starejšo različico."
 
 #. This is a part of phrase like 'Extension Top Icons can be upgraded'.
 #: chrome-gnome-shell-key-extension_status_upgrade:1
-#, fuzzy
 msgid "can be upgraded"
-msgstr "Ni mogoče postaviti v žarišče"
+msgstr "je mogoče posodobiti."
 
 #. Used as title, eg in table header. Means 'Does GNOME Shell extension status
 #. synchronized with remote browser storage?'
@@ -83,6 +81,8 @@ msgid ""
 "This extension provides integration with GNOME Shell and the corresponding "
 "extensions repository https://extensions.gnome.org"
 msgstr ""
+"Razširitev omogoča povezovanje z okoljem Lupine GNOME in ustrezno shrambo "
+"razširitev https://extensions.gnome.org."
 
 #. $REQUEST$ is a placeholder for technical name of request that web extension
 #. make via native messaging host application.
@@ -91,9 +91,8 @@ msgstr ""
 #. request
 #.
 #: chrome-gnome-shell-key-native_request_failed:1
-#, fuzzy
 msgid "«$REQUEST$» native request failed"
-msgstr "Zahteva za pridobivanje poti je spodletela."
+msgstr "Izvorna zahteva «$REQUEST$» je spodletela."
 
 #. This is a part of phrase 'Last check: never'
 #: chrome-gnome-shell-key-never:1
@@ -111,6 +110,8 @@ msgid ""
 "Unable to locate GNOME Shell settings or version. Make sure it is installed "
 "and running."
 msgstr ""
+"Ni mogoče najti nastavitev in podatkov različice okolja Lupine GNOME. "
+"Prepričajte se, da je lupina nameščena in zagnana."
 
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
@@ -119,6 +120,10 @@ msgid ""
 "GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
 "instructions about installing connector."
 msgstr ""
+"Čeprav je razširitev za povezovanja z Lupino GNOME zagnana, povezovalnika ni "
+"mogoče najti. V <a href='https://wiki.gnome.org/Projects/"
+"GnomeShellIntegrationForChrome/Installation'>dokumentaciji</a> si oglejte "
+"navodila za namestitev."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -128,9 +133,8 @@ msgstr "Ni odziva gostitelja"
 
 #. Tooltip for browser extensions icon.
 #: chrome-gnome-shell-key-open_website:1
-#, fuzzy
 msgid "Open GNOME Shell extensions website"
-msgstr "Nastavitve razširitev lupine Gnome"
+msgstr "Odprite spletišče razširitev Lupine GNOME"
 
 #. Option name. Allow to set interval between GNOME Shell extensions update
 #. checks.
@@ -304,6 +308,10 @@ msgid ""
 "GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
 "instructions."
 msgstr ""
+"Izvorni gostiteljski povezovalnik ne podpira vmesnikov API: $$1. "
+"Najverjetneje je treba povezovalnik posodobiti ali pa namestiti manjkajoče "
+"pakete. Več podrobnosti je zapisanih v <a href='https://wiki.gnome.org/"
+"Projects/GnomeShellIntegrationForChrome/Installation'>dokumentaciji</a>."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -320,6 +328,14 @@ msgid ""
 "You also can install connector manually. See https://wiki.gnome.org/Projects/"
 "GnomeShellIntegrationForChrome/Installation for install instructions.\n"
 msgstr ""
+"Za namestitev razširitve je NUJNO namestiti izvorni povezovalnik.\n"
+"\n"
+"Za okolja Arch Linux, Debian, Fedora, Gentoo in Ubuntu je na voljo v paketu "
+"»chrome-gnome-shell«.\n"
+"\n"
+"Povezovalnik je mogoče namestiti tudi ročno. Navodila za namestitev so na "
+"voljo na povezavi https://wiki.gnome.org/Projects/"
+"GnomeShellIntegrationForChrome/Installation.\n"
 
 #, fuzzy
 #~ msgid "Show information about network errors"
