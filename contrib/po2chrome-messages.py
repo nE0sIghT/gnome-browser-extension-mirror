@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # SPDX-License-Identifer: GPL-3.0-or-later
 
 from copy import copy

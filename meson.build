@@ -29,7 +29,7 @@ else
 endif
 
 py = import('python')
-py.find_installation('python3', required: true, modules: py_modules)
+py_install = py.find_installation('python3', required: true, modules: py_modules)
 
 # Chrome Store public extension key
 chrome_key = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlig8TAPPQZinMkJnptC0ldizx6fG9jSjZDJ9c8GuLcXeGRH+NMlQuPC9bR5IQlT7+4VY/1tm1+IZ4xvITx1wXCNTR+KXzZv3VNc2D+logehK7oIRTRj0fLhixrx4NLSNK7L7HgV2xcIoW6QV0jOdFcTPL0mWXodXSzZePrvXuflF7qpwNxLzYVi04Vh3xu2oR2Pc9SwfZ4SNbyCaunH/p8n5AYmDuogI2Ah++RZw0ctnqn7mmHrGXteBu/vkpcHZu3B3eW9PFSrv69rRs8duybYR9C91hJm6yzRqZqIpindIU3k2HnNWeCFWkRVpZPhaNVoxcBUO7wWUUwdIflW2JwIDAQAB'
@@ -63,6 +63,7 @@ if get_option('build_extension')
     ],
     output: 'manifest-firefox.json',
     command: [
+      py_install.path(),
       CONTRIB_PATH / 'merge_json.py',
       '--delete', 'key',
       '--output', '@OUTPUT@',
@@ -72,6 +73,7 @@ if get_option('build_extension')
 
   # Build Chrome extension
   run_command(
+    py_install.path(),
     cp,
     '--rename', 'manifest.json',
     meson.current_build_dir() / 'manifest-chrome.json',
@@ -79,6 +81,7 @@ if get_option('build_extension')
     check: true,
   )
   run_command(
+    py_install.path(),
     cp,
     '--ignore', extension_exclude,
     EXTENSION_PATH,
@@ -97,6 +100,7 @@ if get_option('build_extension')
 
   # Build Firefox extension
   run_command(
+    py_install.path(),
     cp,
     '--rename', 'manifest.json',
     meson.current_build_dir() / 'manifest-firefox.json',
@@ -104,6 +108,7 @@ if get_option('build_extension')
     check: true,
   )
   run_command(
+    py_install.path(),
     cp,
     '--ignore', extension_exclude,
     EXTENSION_PATH,
@@ -126,6 +131,7 @@ if get_option('build_messages')
 
   # Update gettext's pot template from Chrome's messages.json
   run_command(
+    py_install.path(),
     meson.global_source_root() / 'contrib/chrome-messages2po.py',
     '--email', get_option('gettext_report_email'),
     '--reference-lang', 'en',
@@ -137,7 +143,7 @@ if get_option('build_messages')
   )
 
   # Update *.po from generated template
-  langs = run_command('python3', '-c', lang_glob, check: true).stdout().split('\n')
+  langs = run_command(py_install.path(), '-c', lang_glob, check: true).stdout().split('\n')
   foreach lang : langs
     run_command(
       msgmerge, '-q', '--update',
@@ -149,6 +155,7 @@ if get_option('build_messages')
 
   # Regenerate extension locales
   run_command(
+    py_install.path(),
     CONTRIB_PATH / 'po2chrome-messages.py',
     '--reference-lang', 'en',
     CONTRIB_PATH / 'chrome-web-store/',
