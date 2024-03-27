@@ -1,10 +1,10 @@
 # GNOME Shell browser extension
+
 ## Introduction
 
-This repository contains the browser extension that provides integration with GNOME Shell and the corresponding
-extensions repository at https://extensions.gnome.org/.
+This repository contains the browser extension (formerly known as [chrome-gnome-shell](https://gitlab.gnome.org/GNOME/chrome-gnome-shell)) that provides integration with GNOME Shell and the corresponding extensions repository at https://extensions.gnome.org/.
 
-This extension works in conjunction with its [os-native counterpart](https://gitlab.gnome.org/nE0sIghT/gnome-browser-connector).
+This extension works in conjunction with its [os-native counterpart](https://gitlab.gnome.org/GNOME/gnome-browser-connector).
 
 ## Build
 
