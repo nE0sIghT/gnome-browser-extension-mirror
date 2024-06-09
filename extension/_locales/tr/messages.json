@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "GNOME Kabuk t\u00fcmle\u015fimi"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "saat"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Bu uygulama, GNOME Kabuk ve buna uygun uzant\u0131 deposu olan https://extensions.gnome.org ile t\u00fcmle\u015fim sa\u011flar"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "GNOME Kabuk uzant\u0131lar\u0131 web sitesini a\u00e7"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "G\u00fcncelleme denetleme s\u0131kl\u0131\u011f\u0131"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Son denetleme"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Se\u00e7enekler"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Sonraki denetleme"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -118,20 +102,6 @@
 			}
 		}
 	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "GNOME Kabuk uzant\u0131lar\u0131n\u0131n g\u00fcncellemelerini denetle"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Yaln\u0131zca etkin GNOME Kabuk uzant\u0131lar\u0131n\u0131n g\u00fcncellemelerini denetle"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Yerle\u015fik ana makine ba\u011flay\u0131c\u0131n\u0131z yaln\u0131zca etkin GNOME Kabuk uzant\u0131lar\u0131n\u0131n yeni s\u00fcr\u00fcmlerini denetlemeyi desteklemiyor. G\u00fcncellemeyi d\u00fc\u015f\u00fcn\u00fcn."
-	},
-	"options_update_check_notice": {
-		"message": "Yerle\u015fik ana makine ba\u011flay\u0131c\u0131n\u0131z GNOME Kabuk uzant\u0131lar\u0131n\u0131n g\u00fcncellemelerini denetlemeyi desteklemiyor. B\u00fcy\u00fck olas\u0131l\u0131kla python-requests paketi eksik."
-	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
 		"message": "Ayd\u0131nl\u0131k simge kullan (karanl\u0131k g\u00f6vde)"
@@ -154,7 +124,7 @@
 	},
 	"synchronization_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused synchronization failure.",
-		"message": "Uzant\u0131lar\u0131n e\u015fzamanlamas\u0131 ba\u015far\u0131s\u0131z oldu: $CAUSE$",
+		"message": "Uzant\u0131lar e\u015fzamanlanamad\u0131: $CAUSE$",
 		"placeholders": {
 			"cause": {
 				"content": "$1"
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "bilinmeyen hata"
-	},
-	"update_available": {
-		"message": "GNOME Kabuk uzant\u0131lar\u0131 i\u00e7in g\u00fcncelleme var"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "GNOME Kabuk uzant\u0131lar\u0131n\u0131n g\u00fcncellemeleri denetlenemedi: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

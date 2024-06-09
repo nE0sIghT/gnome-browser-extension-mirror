@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Integraci\u00f3 amb el GNOME Shell"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "hores"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Aquesta extensi\u00f3 proporciona integraci\u00f3 amb GNOME Shell i el corresponent dip\u00f2sit d'extensions https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Obre el lloc web d'extensions del GNOME Shell"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Per\u00edode de comprovaci\u00f3 d'actualitzacions"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Darrera comprovaci\u00f3"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Opcions"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Propera comprovaci\u00f3"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Comprova si hi ha actualitzacions de l'extensi\u00f3 del Gnome Shell"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Comprova nom\u00e9s si hi ha actualitzacions per a les extensions habilitades del GNOME Shell"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "El connector amfitri\u00f3 natiu no admet la comprovaci\u00f3 d'actualitzacions  per a les extensions habilitades del GNOME Shell. Considereu actualitzar-lo."
-	},
-	"options_update_check_notice": {
-		"message": "El connector amfitri\u00f3 natiu no admet verificaci\u00f3 d'extensions actualitzades per al GNOME Shell. Probablement no es troba el paquet python-requests."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "error desconegut"
-	},
-	"update_available": {
-		"message": "Hi ha una actualitzaci\u00f3 disponible per a les extensions del GNOME Shell"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "No s'ha pogut comprovar les extensions d'actualitzaci\u00f3 del GNOME Shell: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

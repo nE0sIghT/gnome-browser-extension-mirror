@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Integr\u00e1cia do Shellu prostredia GNOME"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "hod\u00edn"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Toto roz\u0161\u00edrenie poskytuje integr\u00e1ciu do Shellu prostredia GNOME a pr\u00edslu\u0161n\u00fd repozit\u00e1r roz\u0161\u00edren\u00ed https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Otvor\u00ed webov\u00fa str\u00e1nku roz\u0161\u00edren\u00ed Shellu prostredia GNOME"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Interval kontroly aktualiz\u00e1ci\u00ed"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Posledn\u00e1 kontrola d\u0148a"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Vo\u013eby"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Nasleduj\u00faca kontrola d\u0148a"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Kontrolova\u0165 aktualiz\u00e1cie roz\u0161\u00edren\u00ed Shellu prostredia GNOME"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Kontrolova\u0165 aktualiz\u00e1cie iba pre povolen\u00e9 roz\u0161\u00edrenia Shellu prostredia GNOME"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Your native host connector does not support updates check for enabled GNOME Shell extensions only. Consider update."
-	},
-	"options_update_check_notice": {
-		"message": "V\u00e1\u0161 konektor nat\u00edvneho hostite\u013ea nepodporuje kontrolu aktualiz\u00e1ci\u00ed roz\u0161\u00edren\u00ed Shellu prostredia GNOME. Pravdepodobne ch\u00fdba bal\u00edk python-requests."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "nezn\u00e1ma chyba"
-	},
-	"update_available": {
-		"message": "S\u00fa dostupn\u00e9 aktualiz\u00e1cie roz\u0161\u00edren\u00ed pre Shell prostredia GNOME"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Zlyhala kontrola aktualiz\u00e1ci\u00ed roz\u0161\u00edren\u00ed Shellu prostredia GNOME: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

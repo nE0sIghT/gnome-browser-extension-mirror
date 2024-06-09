@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Gnome-shell-integratie"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "uur"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Deze extensie voorziet in de integratie met Gnome-shell en de bijbehorende website met extensies https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Website met Gnome-shell-extensies openen"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Periode tussen de controles op updates"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Laatste controle"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Opties"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Volgende controle"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Controleren of Gnome-shell-extensies moeten worden bijgewerkt"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Enkel controleren op updates voor ingeschakelde Gnome-shell-extensies"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Het controleren of enkel ingeschakelde Gnome-shell-extensies moeten worden bijgewerkt wordt niet ondersteund door uw platform-eigen hostconnector. Overweeg een update."
-	},
-	"options_update_check_notice": {
-		"message": "Het controleren of Gnome-shell-extensies moeten worden bijgewerkt wordt niet ondersteund door uw platform-eigen hostconnector. Mogelijk ontbreekt het pakket python-requests."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "onbekende fout"
-	},
-	"update_available": {
-		"message": "Er is een update voor Gnome-shell-extensies beschikbaar"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Controleren of Gnome-shell-extensies moeten worden bijgewerkt mislukt: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

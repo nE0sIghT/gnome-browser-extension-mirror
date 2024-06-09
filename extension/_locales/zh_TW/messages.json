@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "GNOME Shell \u6574\u5408"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "\u5c0f\u6642"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "\u9019\u500b\u9644\u52a0\u5143\u4ef6\u63d0\u4f9b\u4e86\u8207 GNOME Shell \u7684\u6574\u5408\uff0c\u548c\u5c0d\u61c9\u7684\u9644\u52a0\u5143\u4ef6\u5eab https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "\u958b\u555f GNOME Shell \u9644\u52a0\u5143\u4ef6\u7db2\u9801"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "\u6aa2\u67e5\u66f4\u65b0\u9031\u671f"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "\u4e0a\u6b21\u6aa2\u67e5"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "\u9078\u9805"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "\u4e0b\u6b21\u6aa2\u67e5"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "\u6aa2\u67e5 GNOME Shell \u9644\u52a0\u5143\u4ef6\u7684\u66f4\u65b0"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "\u53ea\u6aa2\u67e5\u555f\u7528\u7684 GNOME Shell \u9644\u52a0\u5143\u4ef6\u66f4\u65b0"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "\u60a8\u7684\u539f\u751f\u4e3b\u6a5f\u4ecb\u9762\u4e0d\u652f\u63f4\u300c\u53ea\u6aa2\u67e5\u555f\u7528\u7684 GNOME Shell \u9644\u52a0\u5143\u4ef6\u66f4\u65b0\u300d\u529f\u80fd\u3002\u8acb\u8003\u616e\u66f4\u65b0\u3002"
-	},
-	"options_update_check_notice": {
-		"message": "\u60a8\u7684\u539f\u751f\u4e3b\u6a5f\u4ecb\u9762\u4e0d\u652f\u63f4\u6aa2\u67e5 GNOME Shell \u9644\u52a0\u5143\u4ef6\u7684\u66f4\u65b0\u3002\u53ef\u80fd\u7f3a\u5c11 python-requests \u8edf\u9ad4\u5305\u3002"
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "\u672a\u77e5\u932f\u8aa4"
-	},
-	"update_available": {
-		"message": "\u6709\u53ef\u7528\u7684 GNOME Shell \u9644\u52a0\u5143\u4ef6\u66f4\u65b0"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "\u5617\u8a66\u6aa2\u67e5 GNOME Shell \u9644\u52a0\u5143\u4ef6\u66f4\u65b0\u6642\u51fa\u932f\uff1a$CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "GNOME Shell-integration"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "timer"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Denne udvidelse giver integration med GNOME Shell og det tilh\u00f8rende udvidelsesarkiv https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "\u00c5bn websted for GNOME Shell-udvidelser"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Opdateringsinterval"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Sidst tjekket"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Valgmuligheder"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "N\u00e6ste tjek"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Tjek for opdateringer til GNOME Shell-udvidelser"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Tjek kun for opdateringer til aktiverede GNOME Shell-udvidelser"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Din oprindelige v\u00e6rtsforbindelseskomponent underst\u00f8tter ikke tjek for opdateringer til GNOME Shell-udvidelser. Overvej at opdatere."
-	},
-	"options_update_check_notice": {
-		"message": "Din oprindelige v\u00e6rtsforbindelseskomponent underst\u00f8tter ikke tjek for opdateringer til GNOME Shell-udvidelser. Sandsynligvis mangler pakken python-requests."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "ukendt fejl"
-	},
-	"update_available": {
-		"message": "En opdatering til GNOME Shell-udvidelser er tilg\u00e6ngelig"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Kunne ikke s\u00f8ge efter opdateringer til GNOME Shell-udvidelser: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

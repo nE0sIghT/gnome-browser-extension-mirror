@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "GNOME Shell integration"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "hours"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "This extension provides integration with GNOME Shell and the corresponding extensions repository https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Open GNOME Shell extensions website"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Update check period"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Last check"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Options"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Next check"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Check for GNOME Shell extensions update"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Check update of enabled GNOME Shell extensions only"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Your native host connector does not support checking only GNOME Shell extensions that are enabled, Consider updating the connector"
-	},
-	"options_update_check_notice": {
-		"message": "Your native host connector does not support checking for updates. Probably missing the python-requests package."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "unknown error"
-	},
-	"update_available": {
-		"message": "An update for GNOME Shell extensions available"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Failed to check GNOME Shell extensions updates: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

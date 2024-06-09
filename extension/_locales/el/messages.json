@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "GNOME Shell integration"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "\u03ce\u03c1\u03b5\u03c2"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "\u0391\u03c5\u03c4\u03ae \u03b7 \u03b5\u03c0\u03ad\u03ba\u03c4\u03b1\u03c3\u03b7 \u03c0\u03b1\u03c1\u03ad\u03c7\u03b5\u03b9 \u03b5\u03bd\u03c3\u03c9\u03bc\u03ac\u03c4\u03c9\u03c3\u03b7 \u03bc\u03b5 \u03c4\u03bf GNOME Shell \u03ba\u03b1\u03b9 \u03c4\u03b1 \u03c0\u03c1\u03cc\u03c3\u03b8\u03b5\u03c4\u03b1 \u03c4\u03bf\u03c5 \u03b1\u03c0\u03cc \u03c4\u03bf https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "\u0386\u03bd\u03bf\u03b9\u03b3\u03bc\u03b1 \u03b9\u03c3\u03c4\u03bf\u03c4\u03cc\u03c0\u03bf\u03c5 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd \u03ba\u03b5\u03bb\u03cd\u03c6\u03bf\u03c5\u03c2 \u03c4\u03bf\u03c5 GNOME"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "\u03a0\u03b5\u03c1\u03af\u03bf\u03b4\u03bf\u03c2 \u03b5\u03bb\u03ad\u03b3\u03c7\u03bf\u03c5 \u03b5\u03bd\u03b7\u03bc\u03ad\u03c1\u03c9\u03c3\u03b7\u03c2"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "\u03a4\u03b5\u03bb\u03b5\u03c5\u03c4\u03b1\u03af\u03bf\u03c2 \u03ad\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "\u03a1\u03c5\u03b8\u03bc\u03af\u03c3\u03b5\u03b9\u03c2"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "\u0395\u03c0\u03cc\u03bc\u03b5\u03bd\u03bf\u03c2 \u03ad\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "\u0388\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2 \u03b3\u03b9\u03b1 \u03b5\u03bd\u03b7\u03bc\u03b5\u03c1\u03ce\u03c3\u03b5\u03b9\u03c2 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd \u03ba\u03b5\u03bb\u03cd\u03c6\u03bf\u03c5\u03c2 GNOME"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "\u0388\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2 \u03b5\u03bd\u03b7\u03bc\u03b5\u03c1\u03ce\u03c3\u03b5\u03c9\u03bd \u03c4\u03c9\u03bd \u03b5\u03bd\u03b5\u03c1\u03b3\u03bf\u03c0\u03bf\u03b9\u03b7\u03bc\u03ad\u03bd\u03c9\u03bd \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd \u03ba\u03b5\u03bb\u03cd\u03c6\u03bf\u03c5\u03c2 \u03c4\u03bf\u03c5 GNOME"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Your native host connector does not support updates check for enabled GNOME Shell extensions only. Consider update."
-	},
-	"options_update_check_notice": {
-		"message": "Your native host connector does not support check for GNOME Shell extensions updates. Probably python-requests package is missing."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "\u03ac\u03b3\u03bd\u03c9\u03c3\u03c4\u03bf \u03c3\u03c6\u03ac\u03bb\u03bc\u03b1"
-	},
-	"update_available": {
-		"message": "\u03a5\u03c0\u03ac\u03c1\u03c7\u03b5\u03b9 \u03bc\u03b9\u03b1 \u03b4\u03b9\u03b1\u03b8\u03ad\u03c3\u03b9\u03bc\u03b7 \u03b5\u03bd\u03b7\u03bc\u03ad\u03c1\u03c9\u03c3\u03b7 \u03b3\u03b9\u03b1 \u03c4\u03b9\u03c2 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03b9\u03c2 \u03c4\u03bf\u03c5 GNOME Shell"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "\u0391\u03c0\u03ad\u03c4\u03c5\u03c7\u03b5 \u03bf \u03ad\u03bb\u03b5\u03b3\u03c7\u03bf\u03c2 \u03b3\u03b9\u03b1 \u03b5\u03bd\u03b7\u03bc\u03b5\u03c1\u03ce\u03c3\u03b5\u03b9\u03c2 \u03b5\u03c0\u03b5\u03ba\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd \u03ba\u03b5\u03bb\u03cd\u03c6\u03bf\u03c5\u03c2 GNOME: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

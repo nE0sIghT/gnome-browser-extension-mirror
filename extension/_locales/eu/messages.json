@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "GNOME Shell integrazioa"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "ordu"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Hedapen honek GNOME Shell aplikazioarekin eta haren hedapenen biltegiarekin (https://extensions.gnome.org) integratzeko aukera eskaintzen du"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Ireki GNOME Shell hedapenen webgunea"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Eguneratzeak egiaztatzeko denbora-tartea"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Azken egiaztatzea"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Aukerak"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Hurrengo egiaztatzea"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Begiratu GNOME Shell hedapenen eguneratzerik dagoen"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Egiaztatu gaitutako GNOME Shell hedapenen eguneratzeak soilik"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Zure jatorrizko ostalari-konektoreak ez du onartzen gaituta dauden GNOME Shell hedapenen eguneratzeak soilik egiaztatzea. Beharbada eguneratu egin beharko zenuke."
-	},
-	"options_update_check_notice": {
-		"message": "Zure jatorrizko ostalari-konektoreak ez du onartzen GNOME Shell hedapenen eguneratzea egiaztatzea. Beharbada python-requests paketea falta da."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "errore ezezaguna"
-	},
-	"update_available": {
-		"message": "GNOME Shell hedapenen eguneratze bat eskuragarri dago"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Huts egin du GNOME Shell hedapenen eguneratzeen egiaztatzeak: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

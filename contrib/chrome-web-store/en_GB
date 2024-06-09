@@ -1,0 +1,7 @@
+You MUST install native connector for this extension to work.
+
+For Arch Linux there is a PKGBUILD available in the AUR: https://aur.archlinux.org/packages/chrome-gnome-shell-git
+
+For Debian, Fedora, Gentoo and Ubuntu you can install package named "chrome-gnome-shell".
+
+You also can install connector manually. See https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation for install instructions.

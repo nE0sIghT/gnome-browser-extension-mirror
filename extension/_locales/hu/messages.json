@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "GNOME Shell integr\u00e1ci\u00f3"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "\u00f3ra"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Ez a kiterjeszt\u00e9s integr\u00e1ci\u00f3t biztos\u00edt a GNOME Shell-lel, \u00e9s a hozz\u00e1 tartoz\u00f3 https://extensions.gnome.org kiterjeszt\u00e9st\u00e1rol\u00f3val"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "GNOME Shell kiterjeszt\u00e9sek weboldal\u00e1nak megnyit\u00e1sa"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Friss\u00edt\u00e9skeres\u00e9s gyakoris\u00e1ga"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Legut\u00f3bbi keres\u00e9s"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Be\u00e1ll\u00edt\u00e1sok"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "K\u00f6vetkez\u0151 keres\u00e9s"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "GNOME Shell kiterjeszt\u00e9sfriss\u00edt\u00e9s keres\u00e9se"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Csak az enged\u00e9lyezett GNOME Shell kiterjeszt\u00e9sek friss\u00edt\u00e9s\u00e9nek ellen\u0151rz\u00e9se"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "A nat\u00edv gazdacsatlakoz\u00f3ja nem t\u00e1mogatja csak az enged\u00e9lyezett GNOME Shell kiterjeszt\u00e9sek friss\u00edt\u00e9seinek ellen\u0151rz\u00e9s\u00e9t. Fontolja meg a friss\u00edt\u00e9st."
-	},
-	"options_update_check_notice": {
-		"message": "A nat\u00edv gazdacsatlakoz\u00f3ja nem t\u00e1mogatja a GNOME Shell kiterjeszt\u00e9sek friss\u00edt\u00e9seinek ellen\u0151rz\u00e9s\u00e9t. Val\u00f3sz\u00edn\u0171leg a python-requests csomag hi\u00e1nyzik."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "ismeretlen hiba"
-	},
-	"update_available": {
-		"message": "Egy GNOME Shell kiterjeszt\u00e9sfriss\u00edt\u00e9s \u00e9rhet\u0151 el"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "A GNOME Shell kiterjeszt\u00e9sfriss\u00edt\u00e9sek keres\u00e9se sikertelen: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Integrazione con GNOME Shell"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "ore"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Questa estensione fornisce l'integrazione con GNOME Shell e il corrispondente repository delle estensioni https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Apre il sito web delle estensioni di GNOME Shell"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Periodo di verifica aggiornamento"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Ultima verifica"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Opzioni"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Prossima verifica"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Verificare gli aggiornamenti delle estensioni di GNOME Shell"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Verificare gli aggiornamenti solo per le estensioni di GNOME Shell abilitate"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Il connettore nativo non supporta la verifica degli aggiornamenti delle estensioni di GNOME Shell. Potrebbe essere utile aggiornarlo."
-	},
-	"options_update_check_notice": {
-		"message": "Il connettore host nativo non supporta la verifica degli aggiornamenti delle estensioni di GNOME Shell. Probabilmente manca il pacchetto python-requests."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "errore sconosciuto"
-	},
-	"update_available": {
-		"message": "\u00c8 disponibile un aggiornamento delle estensioni di GNOME Shell"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Verifica dell'aggiornamento delle estensioni di GNOME Shell non riuscita: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

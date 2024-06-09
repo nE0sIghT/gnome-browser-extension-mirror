@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "\u05e9\u05d9\u05dc\u05d5\u05d1 \u05de\u05d5\u05dc GNOME Shell"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "\u05e9\u05e2\u05d5\u05ea"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "\u05d4\u05e8\u05d7\u05d1\u05d4 \u05d6\u05d5 \u05de\u05e1\u05e4\u05e7\u05ea \u05e9\u05d9\u05dc\u05d5\u05d1 \u05de\u05d5\u05dc GNOME Shell \u05d5\u05de\u05d0\u05d2\u05e8 \u05d4\u05d4\u05e8\u05d7\u05d1\u05d5\u05ea \u05d4\u05ea\u05d5\u05d0\u05dd https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "\u05e4\u05ea\u05d9\u05d7\u05ea \u05d0\u05ea\u05e8 \u05d4\u05d4\u05e8\u05d7\u05d1\u05d5\u05ea \u05e9\u05dc GNOME Shell"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "\u05d4\u05e4\u05e8\u05e9 \u05d1\u05d9\u05df \u05d0\u05d9\u05ea\u05d5\u05e8\u05d9 \u05e2\u05d3\u05db\u05d5\u05e0\u05d9\u05dd"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "\u05d1\u05d3\u05d9\u05e7\u05d4 \u05d0\u05d7\u05e8\u05d5\u05e0\u05d4"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "\u05d0\u05e4\u05e9\u05e8\u05d5\u05d9\u05d5\u05ea"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "\u05d4\u05d1\u05d3\u05d9\u05e7\u05d4 \u05d4\u05d1\u05d0\u05d4"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "\u05dc\u05d1\u05d3\u05d5\u05e7 \u05d0\u05dd \u05d9\u05e9 \u05e2\u05d3\u05db\u05d5\u05df \u05dc\u05d4\u05e8\u05d7\u05d1\u05d5\u05ea \u05e9\u05dc GNOME Shell"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "\u05dc\u05d1\u05d3\u05d5\u05e7 \u05d0\u05dd \u05d9\u05e9 \u05e2\u05d3\u05db\u05d5\u05df \u05dc\u05d4\u05e8\u05d7\u05d1\u05d5\u05ea GNOME Shell \u05e4\u05e2\u05d9\u05dc\u05d5\u05ea \u05d1\u05dc\u05d1\u05d3"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "\u05de\u05d7\u05d1\u05e8 \u05d4\u05de\u05d0\u05e8\u05d7 \u05d4\u05de\u05d5\u05d1\u05e0\u05d4 \u05e9\u05dc\u05da \u05dc\u05d0 \u05ea\u05d5\u05de\u05da \u05d1\u05d1\u05d3\u05d9\u05e7\u05ea \u05e2\u05d3\u05db\u05d5\u05e0\u05d9\u05dd \u05dc\u05d4\u05e8\u05d7\u05d1\u05d5\u05ea GNOME Shell \u05e4\u05e2\u05d9\u05dc\u05d5\u05ea \u05d1\u05dc\u05d1\u05d3. \u05de\u05d5\u05de\u05dc\u05e5 \u05dc\u05e2\u05d3\u05db\u05df."
-	},
-	"options_update_check_notice": {
-		"message": "\u05de\u05d7\u05d1\u05e8 \u05d4\u05de\u05d0\u05e8\u05d7 \u05d4\u05de\u05d5\u05d1\u05e0\u05d4 \u05e9\u05dc\u05da \u05dc\u05d0 \u05ea\u05d5\u05de\u05da \u05d1\u05d1\u05d3\u05d9\u05e7\u05d5\u05ea \u05d0\u05d7\u05e8 \u05e2\u05d3\u05db\u05d5\u05e0\u05d9\u05dd \u05dc\u05d4\u05e8\u05d7\u05d1\u05d5\u05ea GNOME Shell. \u05db\u05e0\u05e8\u05d0\u05d4 \u05e9\u05d4\u05d7\u05d1\u05d9\u05dc\u05d4 python-requests \u05d7\u05e1\u05e8\u05d4."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "\u05e9\u05d2\u05d9\u05d0\u05d4 \u05dc\u05d0 \u05d9\u05d3\u05d5\u05e2\u05d4"
-	},
-	"update_available": {
-		"message": "\u05d9\u05e9 \u05e2\u05d3\u05db\u05d5\u05df \u05dc\u05d4\u05e8\u05d7\u05d1\u05d5\u05ea GNOME Shell"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "\u05d0\u05d9\u05ea\u05d5\u05e8 \u05e2\u05d3\u05db\u05d5\u05e0\u05d9\u05dd \u05dc\u05d4\u05e8\u05d7\u05d1\u05d5\u05ea GNOME Shell \u05e0\u05db\u05e9\u05dc: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

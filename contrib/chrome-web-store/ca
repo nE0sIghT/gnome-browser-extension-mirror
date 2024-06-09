@@ -1,0 +1,7 @@
+Cal instal·lar el connector nadiu perquè aquesta extensió funcioni.
+
+Per l'Arch Linux hi ha disponible un PKGBUILD a l'AUR: https://aur.archlinux.org/packages/chrome-gnome-shell-git
+
+Per Debian, Fedora, Gentoo i Ubuntu podeu instal·lar un paquet anomenat«chrome-gnome-shell».
+
+També podeu instal·lar el connector manualment. Vegeu les instruccions de la instal·lació a https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation.

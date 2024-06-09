@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Integracja z\u00a0GNOME Shell"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "godz."
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "To rozszerzenie dostarcza integracj\u0119 z\u00a0GNOME Shell i\u00a0repozytorium rozszerze\u0144 https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Otwiera stron\u0119 rozszerze\u0144 GNOME Shell"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Czas mi\u0119dzy wyszukiwaniem aktualizacji"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Ostatnio wyszukano"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Opcje"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Nast\u0119pne wyszukiwanie"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Wyszukiwanie aktualizacji rozszerze\u0144 GNOME Shell"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Wyszukiwanie aktualizacji tylko w\u0142\u0105czonych rozszerze\u0144 GNOME Shell"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Natywny \u0142\u0105cznik serwera nie obs\u0142uguje wyszukiwania aktualizacji tylko w\u0142\u0105czonych rozszerze\u0144 GNOME Shell. Prosz\u0119 go zaktualizowa\u0107."
-	},
-	"options_update_check_notice": {
-		"message": "Natywny \u0142\u0105cznik serwera nie obs\u0142uguje wyszukiwania aktualizacji rozszerze\u0144 GNOME Shell. Prawdopodobnie brakuje pakietu python-requests."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "nieznany b\u0142\u0105d"
-	},
-	"update_available": {
-		"message": "Dost\u0119pna jest aktualizacja rozszerze\u0144 GNOME Shell"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Wyszukanie aktualizacji rozszerze\u0144 GNOME Shell si\u0119 nie powiod\u0142o: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

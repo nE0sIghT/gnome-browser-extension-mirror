@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Integracija GNOME ljuske"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "sata"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Ovo pro\u0161irenje omogu\u0107uje integraciju s GNOME ljuskom i odgovaraju\u0107em repozitoriju pro\u0161irenja https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Otvori web stranicu GNOME pro\u0161irenja"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Razdoblje provjere nadopuna"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Posljednja provjera"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Mogu\u0107nosti"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Sljede\u0107a provjera"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Provjeri nadopune pro\u0161irenja GNOME ljuske"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Provjeri nadopune samo za omogu\u0107ena pro\u0161irenja GNOME ljuske"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Va\u0161a izvorna spojnica poslju\u017eitelja ne podr\u017eava provjeru nadopuna pro\u0161irenja GNOME ljuske. Trebali bi ju nadopuniti."
-	},
-	"options_update_check_notice": {
-		"message": "Va\u0161a izvorna spojnica poslju\u017eitelja ne podr\u017eava provjeru nadopuna pro\u0161irenja GNOME ljuske. Najvjerojatnije python-requests paket nedostaje."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "nepoznata gre\u0161ka"
-	},
-	"update_available": {
-		"message": "Dostupna je nadopuna za pro\u0161irenje GNOME ljuske"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Neuspje\u0161na provjera nadopuna pro\u0161irenja GNOME ljuske: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Integrare Shell GNOME"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "ore"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Aceast\u0103 extensie furnizeaz\u0103 integrarea cu Shell GNOME \u0219i extensiile corespunz\u0103toare depozitului https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Deschide pagina web a extensiilor Shell GNOME"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Perioada de verificare a actualiz\u0103rilor"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Ultima verificare"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Op\u021biuni"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Urm\u0103toarea verificare"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Verifica\u021bi dup\u0103 actualiz\u0103rile extensiilor Shell GNOME"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Verific\u0103 actualiz\u0103rile doar ale extensiilor Shell GNOME activate"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Conectorul de gazd\u0103 nativ nu suport\u0103 verificarea dup\u0103 actualiz\u0103ri doar pentru extensii Shell GNOME activate. Considera\u021bi o actualizare."
-	},
-	"options_update_check_notice": {
-		"message": "Conectorul de gazd\u0103 nativ nu suport\u0103 verificarea dup\u0103 actualiz\u0103ri ale extensiilor Shell GNOME. Probabil c\u0103 pachetul python-requests lipse\u0219te."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "eroare necunoscut\u0103"
-	},
-	"update_available": {
-		"message": "Exist\u0103 o actualizare disponibil\u0103 pentru extensiile Shell GNOME"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Nu s-a putut verifica actualiz\u0103rile extensiilor Shell GNOME: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

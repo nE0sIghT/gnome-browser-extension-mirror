@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Integraci\u00f3n de GNOME Shell"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "horas"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Esta extensi\u00f3n fornece integraci\u00f3n con GNOME SHell e o correspondente repositorio de extensi\u00f3ns https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Abrir o sitio web das extensi\u00f3ns de GNOME Shell"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Per\u00edodo de comprobaci\u00f3n de actualizaci\u00f3ns"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "\u00daltima comprobaci\u00f3n"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Opci\u00f3ns"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Seguinte comprobaci\u00f3n"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -118,23 +102,9 @@
 			}
 		}
 	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Comprobar as actualizaci\u00f3ns das extensi\u00f3ns de GNOME Shell"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "S\u00f3 comprobar actualizaci\u00f3ns para as extensi\u00f3ns de GNOME Shell"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "O seu conector nativo do anfitri\u00f3n non admite a comprobaci\u00f3n de actualizaci\u00f3ns das extensi\u00f3ns de GNOME Shell. Considere actualizar."
-	},
-	"options_update_check_notice": {
-		"message": "O seu conector nativo do anfitri\u00f3n non admite a comprobaci\u00f3n de actualizaci\u00f3ns das extensi\u00f3ns de GNOME Shell. Probablemente falta o paquete python-requests."
-	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
-		"message": "Use light icon (dark theme)"
+		"message": "Usar icona clara (tema escuro)"
 	},
 	"platform_not_supported": {
 		"message": "O conector nativo de anfitri\u00f3n non \u00e9 compat\u00edbel coa s\u00faa plataforma."
@@ -172,7 +142,7 @@
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "Fran Di\u00e9guez <fran.dieguez@gnome.org>, 2017."
+		"message": "Fran Di\u00e9guez <fran.dieguez@gnome.org>, 2017-2023."
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "erro desco\u00f1ecido"
-	},
-	"update_available": {
-		"message": "Hai actualizaci\u00f3ns dispo\u00f1\u00edbeis para as extensi\u00f3ns de GNOME Shell"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Produciuse un fallo ao comprobar as actualizaci\u00f3ns das extensi\u00f3ns de GNOME Shell: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

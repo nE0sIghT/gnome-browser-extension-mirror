@@ -1,0 +1,15 @@
+Aby toto rozšírenie mohlo fungovať, MUSÍTE nainštalovať natívny konektor.
+
+Pre systém Arch Linux je dostupný balík PKGBUILD v repozitári AUR: https://aur.archlinux.org/packages/chrome-gnome-shell-git
+
+Pre systém Debian Linux je dostupný balík vo vydaniach Sid a Stretch: https://tracker.debian.org/pkg/chrome-gnome-shell
+
+Pre systém Fedora Linux je dostupný balík v repozitári Copr: https://copr.fedorainfracloud.org/coprs/region51/chrome-gnome-shell
+
+V systéme Gentoo Linux môžete nainštalovať konektor pomocou príkazu:
+emerge gnome-extra/chrome-gnome-shell
+
+V systéme Ubuntu Linux môžete nainštalovať konektor pomocou príkazu:
+sudo apt install chrome-gnome-shell
+
+Konektor môžete tiež nainštalovať ručne. Pokyny na inštaláciu nájdete na adrese https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation.

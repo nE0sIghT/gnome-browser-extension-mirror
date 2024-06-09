@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "GNOME Shell-Integration"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "Stunden"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Diese Erweiterung erm\u00f6glicht die Integration mit der GNOME Shell und dem dazugeh\u00f6renden Erweiterungs-Repository von https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Webseite der GNOME Shell-Erweiterungen \u00f6ffnen"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Pr\u00fcfintervall f\u00fcr Aktualisierungen"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Letzte Pr\u00fcfung"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Optionen"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "N\u00e4chste Pr\u00fcfung"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Auf Aktualisierungen f\u00fcr GNOME Shell-Erweiterungen pr\u00fcfen"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Nur auf Aktualisierungen pr\u00fcfen, wenn die GNOME Shell-Erweiterungen aktiviert sind"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Ihr nativer Host-Connector unterst\u00fctzt keine Pr\u00fcfung auf Aktualisierungen f\u00fcr aktive GNOME Shell-Erweiterungen. Sie sollten aktualisieren."
-	},
-	"options_update_check_notice": {
-		"message": "Ihr nativer Host-Connector unterst\u00fctzt keine Pr\u00fcfung auf Aktualisierungen f\u00fcr GNOME Shell-Erweiterungen. Wahrscheinlich fehlt das Paket python-requests."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "Unbekannter Fehler"
-	},
-	"update_available": {
-		"message": "Eine Aktualisierung f\u00fcr die GNOME Shell-Erweiterung ist verf\u00fcgbar"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Pr\u00fcfung auf Aktualisierungen f\u00fcr GNOME Shell-Erweiterungen ist fehlgeschlagen: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

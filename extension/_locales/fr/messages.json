@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Int\u00e9gration \u00e0 GNOME\u00a0Shell"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "heures"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Cette extension permet l\u2019int\u00e9gration avec GNOME\u00a0Shell et ses extensions h\u00e9berg\u00e9es sur le d\u00e9p\u00f4t https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Ouvrir le site Web des extensions de GNOME\u00a0Shell"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "P\u00e9riodicit\u00e9 des v\u00e9rifications de mise \u00e0 jour"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Derni\u00e8re v\u00e9rification"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Options"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "V\u00e9rification suivante"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "V\u00e9rifier les mises \u00e0 jour des extensions GNOME\u00a0Shell"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "V\u00e9rifier uniquement les mises \u00e0 jour des extensions de GNOME\u00a0Shell activ\u00e9es"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Votre connecteur d\u2019h\u00f4te natif ne prend pas en charge la v\u00e9rification des mises \u00e0 jour uniquement pour les extensions GNOME\u00a0Shell activ\u00e9es. Une mise \u00e0 jour est conseill\u00e9e."
-	},
-	"options_update_check_notice": {
-		"message": "Votre connecteur d\u2019h\u00f4te natif ne prend pas en charge la v\u00e9rification des mises \u00e0 jour des extensions GNOME\u00a0Shell. Le paquet python-requests est probablement manquant."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "erreur inconnue"
-	},
-	"update_available": {
-		"message": "Une mise \u00e0 jour pour les extensions de GNOME\u00a0Shell est disponible"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Impossible de v\u00e9rifier les mises \u00e0 jour des extensions GNOME\u00a0Shell\u00a0: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

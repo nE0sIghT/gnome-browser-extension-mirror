@@ -8,7 +8,7 @@
 	},
 	"error_connector_response": {
 		"description": "Shown to user when response from connector API call does not follow known format.",
-		"message": "Wrong connector response received"
+		"message": "Prejet je napa\u010den odziv povezovalnika"
 	},
 	"extension_enabled": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension enabled?'",
@@ -20,35 +20,31 @@
 	},
 	"extension_name": {
 		"description": "Used as title, eg in table header. Means 'GNOME Shell extension name'.",
-		"message": "Pripona"
+		"message": "Raz\u0161iritev"
 	},
 	"extension_status_downgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons must be downgraded'.",
-		"message": "must be downgraded"
+		"message": "je treba poni\u017eati na starej\u0161o razli\u010dico."
 	},
 	"extension_status_upgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons can be upgraded'.",
-		"message": "can be upgraded"
+		"message": "je mogo\u010de posodobiti."
 	},
 	"extension_synchronized": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension status synchronized with remote browser storage?'",
-		"message": "Synchronized"
+		"message": "Usklajeno"
 	},
 	"gs_chrome": {
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
-		"message": "GNOME Shell integration"
-	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "ur"
+		"message": "Raz\u0161iritev lupine GNOME"
 	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
-		"message": "This extension provides integration with GNOME Shell and the corresponding extensions repository https://extensions.gnome.org"
+		"message": "Raz\u0161iritev omogo\u010da povezovanje z okoljem Lupine GNOME in ustrezno shrambo raz\u0161iritev https://extensions.gnome.org."
 	},
 	"native_request_failed": {
 		"description": "$REQUEST$ is a placeholder for technical name of request that web extension make via native messaging host application.",
-		"message": "\u00ab$REQUEST$\u00bb native request failed",
+		"message": "Izvorna zahteva \u00ab$REQUEST$\u00bb je spodletela.",
 		"placeholders": {
 			"request": {
 				"content": "$1"
@@ -64,80 +60,54 @@
 	},
 	"no_gnome_shell": {
 		"description": "Shown to user when native connector unable to query GNOME Shell version or settings",
-		"message": "Unable to locate GNOME Shell settings or version. Make sure it is installed and running."
+		"message": "Ni mogo\u010de najti nastavitev in podatkov razli\u010dice okolja Lupine GNOME. Prepri\u010dajte se, da je lupina name\u0161\u010dena in zagnana."
 	},
 	"no_host_connector": {
-		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentation</a> for instructions about installing connector."
+		"message": "\u010ceprav je raz\u0161iritev za povezovanja z Lupino GNOME zagnana, povezovalnika ni mogo\u010de najti. V <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentaciji</a> si oglejte navodila za namestitev."
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
-		"message": "No host response"
+		"message": "Ni odziva gostitelja"
 	},
 	"open_website": {
 		"description": "Tooltip for browser extensions icon.",
-		"message": "Open GNOME Shell extensions website"
-	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Update check period"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Last check"
+		"message": "Odprite spleti\u0161\u010de raz\u0161iritev Lupine GNOME"
 	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Mo\u017enosti"
 	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Next check"
-	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
-		"message": "Options saved."
+		"message": "Mo\u017enosti so shranjene."
 	},
 	"options_show_release_notes": {
 		"description": "Option name. Allow to enable/disable popup with release notes when Web extension is updated.",
-		"message": "Show release notes when browser extension updated"
+		"message": "Poka\u017ei opombe k izdaji ko je raz\u0161iritev brskalnika posodobljena"
 	},
 	"options_synchronize_extensions": {
 		"description": "Option name. Allow to enable/disable synchronization of GNOME Shell extensions with remote browser storage.",
-		"message": "Synchronize GNOME Shell extensions list"
+		"message": "Uskladi seznam raz\u0161iritev lupine GNOME"
 	},
 	"options_synchronize_extensions_notice": {
 		"description": "This is a notice under option name.",
-		"message": "If enabled, your GNOME Shell extensions list will be synchronized with your Google account."
+		"message": "Izbrana mo\u017enost omogo\u010da, da bo seznam raz\u0161iritev lupine GNOME usklajen s povezanim ra\u010dunom Google."
 	},
 	"options_title": {
 		"description": "$GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This string used as title for Options page. This title is not shown in Chrome, but may be shown in other browsers.",
-		"message": "$GS_CHROME$ options",
+		"message": "Mo\u017enosti $GS_CHROME$",
 		"placeholders": {
 			"gs_chrome": {
 				"content": "$1"
 			}
 		}
 	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Check for GNOME Shell extensions update"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Check update of enabled GNOME Shell extensions only"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Your native host connector does not support updates check for enabled GNOME Shell extensions only. Consider update."
-	},
-	"options_update_check_notice": {
-		"message": "Your native host connector does not support check for GNOME Shell extensions updates. Probably python-requests package is missing."
-	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
-		"message": "Use light icon (dark theme)"
+		"message": "Uporabi svetlo ikono (za temne teme)"
 	},
 	"platform_not_supported": {
-		"message": "Native host connector is not supported for your platform."
+		"message": "Privzeti povezovalnik na tem sistemu ni podprt."
 	},
 	"retry": {
 		"message": "Poskusi znova"
@@ -150,11 +120,11 @@
 		"message": "Usklajevanje"
 	},
 	"synchronization_cancel": {
-		"message": "Do not enable synchronization."
+		"message": "Ne omogo\u010di usklajevanja"
 	},
 	"synchronization_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused synchronization failure.",
-		"message": "Failed to synchronize extensions: $CAUSE$",
+		"message": "Usklajevanje raz\u0161iritev je spodletelo: $CAUSE$",
 		"placeholders": {
 			"cause": {
 				"content": "$1"
@@ -162,41 +132,29 @@
 		}
 	},
 	"synchronization_storage_exists": {
-		"message": "Your remote synchronization storage already contains extensions list."
+		"message": "V oddaljeni shrambi je \u017ee seznam raz\u0161iritev."
 	},
 	"synchronization_use_local": {
-		"message": "Use local extensions list, overwrite remote."
+		"message": "Uporabi krajevni seznam raz\u0161iritev in prepi\u0161i oddaljenega."
 	},
 	"synchronization_use_remote": {
-		"message": "Use remote extensions list, overwrite local."
+		"message": "Uporabi oddaljeni seznam raz\u0161iritev in prepi\u0161i krajevnega."
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": ""
+		"message": "Matej Urban\u010di\u010d <mateju@src.gnome.org>"
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
-		"message": "About translation"
+		"message": "O prevodu"
 	},
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "neznana napaka"
 	},
-	"update_available": {
-		"message": "An update for GNOME Shell extensions available"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Failed to check GNOME Shell extensions updates: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
-	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentation</a> for instructions."
+		"message": "Izvorni gostiteljski povezovalnik ne podpira vmesnikov API: $$1. Najverjetneje je treba povezovalnik posodobiti ali pa namestiti manjkajo\u010de pakete. Ve\u010d podrobnosti je zapisanih v <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentaciji</a>."
 	},
 	"yes": {
 		"message": "Da"

@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Integrace do GNOME Shell"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "hodin"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Toto roz\u0161\u00ed\u0159en\u00ed poskytuje integraci s GNOME Shell a shoduje se s repozit\u00e1\u0159em roz\u0161\u00ed\u0159en\u00ed https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Otev\u0159\u00edt webov\u00e9 str\u00e1nky roz\u0161\u00ed\u0159en\u00ed GNOME Shell"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Aktualizovat dobu mezi kontrolami"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Posledn\u00ed kontrola"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Volby"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "P\u0159\u00ed\u0161t\u00ed kontrola"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Kontrolovat aktualizace roz\u0161\u00ed\u0159en\u00ed GNOME Shell"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Kontrolovat aktualizace jen pro povolen\u00e1 roz\u0161\u00ed\u0159en\u00ed GNOME Shell"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "V\u00e1\u0161 konektor pro p\u0159irozen\u00e9ho hostitele nepodporuje kontrolu aktualizac\u00ed jen pro zapnut\u00e1 roz\u0161\u00ed\u0159en\u00ed GNOME Shellu. Zva\u017ete p\u0159echod na nov\u011bj\u0161\u00ed verzi."
-	},
-	"options_update_check_notice": {
-		"message": "V\u00e1\u0161 konektor pro p\u0159irozen\u00e9ho hostitele nepodporuje kontrolu pro aktualizace roz\u0161\u00ed\u0159en\u00ed GNOME Shellu. Nejsp\u00ed\u0161e chyb\u00ed bal\u00ed\u010dek python-requests."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "nezn\u00e1m\u00e1 chyba"
-	},
-	"update_available": {
-		"message": "Je dostupn\u00e1 aktualizace roz\u0161\u00ed\u0159en\u00ed GNOME Shell"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Selhala kontrola aktualizac\u00ed roz\u0161\u00ed\u0159en\u00ed GNOME Shell: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

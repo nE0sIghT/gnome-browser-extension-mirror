@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Amalachadh slige GNOMW"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "uair(ean) a th\u00ecde"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Bheir an leudachan seo dhut amalachadh le Slige GNOME agus Shell ionad-tasgaidh nan leudachan co-cheangailte rithe https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "L\u00e0rach-l\u00ecn leudachan Slige GNOME fosgailte"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "\u00c0m a' toirt s\u00f9il airson \u00f9rachadh"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "An sgr\u00f9dadh mu dheireadh"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Roghainnean"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "An t-ath-sgr\u00f9dadh"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Thoir s\u00f9il airson \u00f9rachadh nan leudachan Slige GNOME"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Check update of enabled GNOME Shell extensions only"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Your native host connector does not support updates check for enabled GNOME Shell extensions only. Consider update."
-	},
-	"options_update_check_notice": {
-		"message": "Cha doir ceangladair t\u00f9sail an \u00f2stair agad taic ri \u00f9rachadh leudachan Slige GNOME. Saoil gu bheil pacaid python-request a dh\u00ecth ort?"
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "mearachd nach aithne dhuinn"
-	},
-	"update_available": {
-		"message": "Tha \u00f9rachadh air leudachain Slige GNOME ri fhaighinn"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Cha deach leinn s\u00f9il a thoirt airson \u00f9rachaidhean nan leudachan Slige GNOME: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

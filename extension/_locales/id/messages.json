@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Integrasi Shell GNOME"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "jam"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "Ekstensi ini menyediakan integrasi dengan Shell GNOME dan repositori ekstensi yang berhubungan https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Buka situs web ekstensi GNOME Shell"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Mutakhirkan perioda periksa"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Pemeriksaan terakhir"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Pilihan"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Pemeriksaan selanjutnya"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Periksa pemutakhiran ekstensi GNOME Shell"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Periksa pembaruan ekstensi GNOME Shell yang diaktifkan saja"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Konektor host native Anda tidak mendukung pemeriksaan pembaruan hanya untuk ekstensi GNOME Shell yang difungsikan. Pertimbangkan memperbarui."
-	},
-	"options_update_check_notice": {
-		"message": "Konektor host native Anda tidak mendukung pengecekan untuk pemutakhiran ekstensi GNOME Shell. Mungkin paket python-requests hilang."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "galat tak dikenal"
-	},
-	"update_available": {
-		"message": "Tersedia pemutakhiran untuk Shell GNOME"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Gagal memeriksa pemutakhiran ekstensi GNOME Shell: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

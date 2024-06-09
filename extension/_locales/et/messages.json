@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Integratsioon GNOME Shelliga"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "tundi"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "See laiendus v\u00f5imaldab integratsiooni GNOME Shelli ja selle laienduste hoidlaga aadressil https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Ava GNOME Shelli laienduste veebileht"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Uuenduste kontrolli periood"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Viimane kontroll"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Valikud"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "J\u00e4rgmine kontroll"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Uuenduste kontroll GNOME Shelli laiendustele"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Uuendusi kontrollitakse ainult sissel\u00fclitatud GNOME Shelli laiendustele"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Your native host connector does not support updates check for enabled GNOME Shell extensions only. Consider update."
-	},
-	"options_update_check_notice": {
-		"message": "Your native host connector does not support check for GNOME Shell extensions updates. Probably python-requests package is missing."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "tundmatu viga"
-	},
-	"update_available": {
-		"message": "GNOME Shelli laiendustele on saadaval uuendusi"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Uuenduste kontroll GNOME Shelli laiendustele nurjus: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

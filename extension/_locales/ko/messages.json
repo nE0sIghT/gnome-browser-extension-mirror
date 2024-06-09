@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "\uadf8\ub188 \uc178 \ud655\uc7a5 \uae30\ub2a5"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "\uc2dc\uac04"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "\uc774 \ud655\uc7a5 \uae30\ub2a5\uc740 \uadf8\ub188 \uc178 \ud1b5\ud569 \uae30\ub2a5\uc774 \uc788\uc73c\uba70 \uad00\ub828 \ud655\uc7a5 \uae30\ub2a5 \uc800\uc7a5\uc18c\ub294 https://extensions.gnome.org\uc5d0 \uc788\uc2b5\ub2c8\ub2e4"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "\uadf8\ub188 \uc178 \ud655\uc7a5 \uae30\ub2a5 \uc6f9\uc0ac\uc774\ud2b8 \uc5f4\uae30"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "\uc5c5\ub370\uc774\ud2b8 \ud655\uc778 \uc8fc\uae30"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "\ucd5c\uadfc \ud655\uc778"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "\uc635\uc158"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "\ub2e4\uc74c \ud655\uc778"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "\uadf8\ub188 \uc178 \ud655\uc7a5 \uae30\ub2a5 \uc5c5\ub370\uc774\ud2b8 \ud655\uc778"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "\ud65c\uc131 \uadf8\ub188 \uc178 \ud655\uc7a5 \uae30\ub2a5\uc758 \uc5c5\ub370\uc774\ud2b8\ub9cc \uac80\uc0ac"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "\uc790\uccb4 \ud638\uc2a4\ud2b8 \uc5f0\uacb0 \ud504\ub85c\uadf8\ub7a8\uc5d0\uc11c \ud65c\uc131 \uadf8\ub188 \uc178 \ud655\uc7a5 \uae30\ub2a5 \uc5c5\ub370\uc774\ud2b8 \uac80\uc0ac \uae30\ub2a5\uc744 \uc9c0\uc6d0\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4."
-	},
-	"options_update_check_notice": {
-		"message": "\uc774 \uc790\uccb4 \ud50c\ub7ab\ud3fc \uc5f0\uacb0 \ud504\ub85c\uadf8\ub7a8\uc5d0\uc11c \uadf8\ub188 \uc178 \ud655\uc7a5 \uae30\ub2a5 \uc5c5\ub370\uc774\ud2b8 \ud655\uc778\uc744 \uc9c0\uc6d0\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. python-request \ud328\ud0a4\uc9c0\uac00 \ube60\uc9c4 \uac83 \uac19\uc2b5\ub2c8\ub2e4."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "\uc54c \uc218 \uc5c6\ub294 \uc624\ub958"
-	},
-	"update_available": {
-		"message": "\uadf8\ub188 \uc178 \ud655\uc7a5 \uae30\ub2a5 \uc5c5\ub370\uc774\ud2b8\uac00 \uc788\uc2b5\ub2c8\ub2e4"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "\uadf8\ub188 \uc178 \ud655\uc7a5 \uae30\ub2a5 \uc5c5\ub370\uc774\ud2b8 \ud655\uc778\uc5d0 \uc2e4\ud328\ud588\uc2b5\ub2c8\ub2e4: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

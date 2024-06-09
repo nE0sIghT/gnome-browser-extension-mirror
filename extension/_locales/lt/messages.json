@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "GNOME apvalkalo integracija"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "val."
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "\u0160is pl\u0117tinys suteikia integracij\u0105 su GNOME apvalkalu ir atitinkama pl\u0117tini\u0173 saugykla https://extensions.gnome.org"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Atverti GNOME apvalkalo pl\u0117tini\u0173 tinklalap\u012f"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "Atnaujinim\u0173 tikrinimo intervalas"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Paskutinis tikrinimas"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Parametrai"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Kitas tikrinimas"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Tikrinti GNOME apvalkalo pl\u0117tini\u0173 atnaujinimus"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Tikrinti tik \u012fjungt\u0173 GNOME apvalkalo pl\u0117tini\u0173 atnaujinimus"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "J\u016bs\u0173 savas kompiuterio jungiklis nepalaiko tik \u012fjungt\u0173 GNOME apvalkalo pl\u0117tini\u0173 atnaujinim\u0173 tikrinimo. Apsvarstykite galimyb\u0119 atsinaujinti."
-	},
-	"options_update_check_notice": {
-		"message": "J\u016bs\u0173 kompiuterio jungiklis nepalaiko GNOME apvalkalo pl\u0117tini\u0173 atnaujinim\u0173 tikrinimo. Tikriausiai, tr\u016bksta python-requests paketo."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "ne\u017einoma klaida"
-	},
-	"update_available": {
-		"message": "Yra prieinamas GNOME apvalkalo pl\u0117tini\u0173 atnaujinimas"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Nepavyko patikrinti GNOME apvalkalo pl\u0117tini\u0173 atnaujinim\u0173: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",

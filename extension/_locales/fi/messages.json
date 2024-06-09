@@ -38,10 +38,6 @@
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
 		"message": "Gnome Shell -integraatio"
 	},
-	"hours": {
-		"description": "This is a part of phrase 'Update check period: xx hours'",
-		"message": "tuntia"
-	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
 		"message": "T\u00e4m\u00e4 laajennus tarjoaa integraation Gnome Shellin ja Gnome Shellin laajennustietovaraston https://extensions.gnome.org kanssa"
@@ -77,21 +73,9 @@
 		"description": "Tooltip for browser extensions icon.",
 		"message": "Avaa Gnome Shell -laajennusten verkkosivusto"
 	},
-	"options_check_period": {
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks.",
-		"message": "P\u00e4ivitysten tarkistusv\u00e4li"
-	},
-	"options_last_check": {
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check.",
-		"message": "Viimeisin tarkistus"
-	},
 	"options_link": {
 		"description": "Link name for options tab.",
 		"message": "Valinnat"
-	},
-	"options_next_check": {
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check.",
-		"message": "Seuraava tarkistus"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
@@ -117,20 +101,6 @@
 				"content": "$1"
 			}
 		}
-	},
-	"options_update_check": {
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions.",
-		"message": "Tarkista Gnome Shell -laajennuksen p\u00e4ivitykset"
-	},
-	"options_update_check_enabled": {
-		"description": "Option name.",
-		"message": "Check update of enabled GNOME Shell extensions only"
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Your native host connector does not support updates check for enabled GNOME Shell extensions only. Consider update."
-	},
-	"options_update_check_notice": {
-		"message": "Your native host connector does not support check for GNOME Shell extensions updates. Probably python-requests package is missing."
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
@@ -181,18 +151,6 @@
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
 		"message": "tuntematon virhe"
-	},
-	"update_available": {
-		"message": "P\u00e4ivitys Gnome Shell -laajennuksiin on tarjolla"
-	},
-	"update_check_failed": {
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"message": "Gnome Shell -laajennusten p\u00e4ivitysten tarkistaminen ep\u00e4onnistui: $CAUSE$",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
