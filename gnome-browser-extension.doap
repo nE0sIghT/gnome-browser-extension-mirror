@@ -11,9 +11,9 @@
 		Browser extension that provides integration with GNOME Shell and the corresponding
 		extensions repository https://extensions.gnome.org/.
 	</description>
-	<homepage rdf:resource="https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome" />
-	<bug-database rdf:resource="https://gitlab.gnome.org/GNOME/chrome-gnome-shell/issues" />
-	<download-page rdf:resource="https://gitlab.gnome.org/GNOME/chrome-gnome-shell/-/tags" />
+	<homepage rdf:resource="https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/" />
+	<bug-database rdf:resource="https://gitlab.gnome.org/GNOME/gnome-browser-extension/-/issues" />
+	<download-page rdf:resource="https://gitlab.gnome.org/GNOME/gnome-browser-extension/-/tags" />
 	<programming-language>JavaScript</programming-language>
 	<programming-language>Python</programming-language>
 
