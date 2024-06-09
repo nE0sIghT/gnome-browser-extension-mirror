@@ -1,31 +1,37 @@
 // SPDX-License-Identifer: GPL-3.0-or-later
 
-GSC.update = (function () {
+import bus from "./bus.js";
+import constants from "./constants.js";
+import { m } from "./i18n.js";
+import Integration from "./integration.js";
+import Notifications from "./notifications.js";
+
+const Updater = (function () {
     function schedule(updateCheckPeriod, skipCheck) {
         if (!skipCheck) {
             check();
         }
 
         chrome.alarms.create(
-            ALARM_UPDATE_CHECK,
+            constants.ALARM_UPDATE_CHECK,
             {
                 delayInMinutes: updateCheckPeriod * 60,
                 periodInMinutes: updateCheckPeriod * 60
             }
         );
 
-        chrome.runtime.sendMessage(GS_CHROME_ID, MESSAGE_NEXT_UPDATE_CHANGED);
+        chrome.runtime.sendMessage(constants.GS_CHROME_ID, constants.MESSAGE_NEXT_UPDATE_CHANGED);
     }
 
     function check() {
-        GSC.onInitialize().then(response => {
+        Integration.onInitialize().then(response => {
             if (response.success) {
-                if (GSC.nativeUpdateCheckSupported(response)) {
-                    chrome.storage.sync.get(DEFAULT_SYNC_OPTIONS, function (options) {
-                        GSC.sendNativeRequest(
+                if (Integration.nativeUpdateCheckSupported(response)) {
+                    chrome.storage.sync.get(constants.DEFAULT_SYNC_OPTIONS, function (options) {
+                        Integration.sendNativeRequest(
                             {
                                 execute: 'checkUpdate',
-                                url: UPDATE_URL,
+                                url: constants.UPDATE_URL,
                                 enabledOnly: options.updateCheckEnabledOnly
                             }, function (response) {
                                 if (response.success) {
@@ -61,7 +67,7 @@ GSC.update = (function () {
         }
 
         if (toUpgrade.length > 0) {
-            GSC.notifications.create(NOTIFICATION_UPDATE_AVAILABLE, {
+            Notifications.create(constants.NOTIFICATION_UPDATE_AVAILABLE, {
                 type: chrome.notifications.TemplateType.LIST,
                 title: m('update_available'),
                 message: '',
@@ -75,75 +81,40 @@ GSC.update = (function () {
     }
 
     function init() {
-        function onNotificationAction(notificationId, buttonIndex) {
-            if (NOTIFICATION_UPDATE_AVAILABLE == notificationId)
-                return;
-
-            GSC.notifications.remove(notificationId);
-        }
-
-        function onNotificationClicked(notificationId) {
-            if (notificationId === NOTIFICATION_UPDATE_AVAILABLE) {
-                chrome.tabs.create({
-                    url: EXTENSIONS_WEBSITE + 'local/',
-                    active: true
-                });
-            }
-        }
-
         chrome.alarms.onAlarm.addListener(function (alarm) {
-            if (alarm.name === ALARM_UPDATE_CHECK) {
+            if (alarm.name === constants.ALARM_UPDATE_CHECK) {
                 check();
 
-                chrome.alarms.get(ALARM_UPDATE_CHECK, function (alarm) {
+                chrome.alarms.get(constants.ALARM_UPDATE_CHECK, function (alarm) {
                     if (alarm && alarm.periodInMinutes && ((alarm.scheduledTime - Date.now()) / 1000 / 60 < alarm.periodInMinutes * 0.9)) {
                         schedule(alarm.periodInMinutes / 60, true);
                     }
                     else {
-                        chrome.runtime.sendMessage(GS_CHROME_ID, MESSAGE_NEXT_UPDATE_CHANGED);
+                        chrome.runtime.sendMessage(constants.GS_CHROME_ID, constants.MESSAGE_NEXT_UPDATE_CHANGED);
                     }
                 });
             }
         });
 
-        GSC.onInitialize().then(response => {
-            /*
-                @Deprecated: remove browser notifications in version 9
-             */
-            if (!GSC.nativeNotificationsSupported(response)) {
-                chrome.notifications.onClicked.addListener(function (notificationId) {
-                    onNotificationClicked(notificationId);
-                });
-
-                chrome.notifications.onButtonClicked.addListener(onNotificationAction);
-            }
-            else {
-                window.addEventListener("message", function (event) {
-                    if (event.source == window && event.data && event.data.signal) {
-                        if (event.data.signal == SIGNAL_NOTIFICATION_ACTION) {
-                            onNotificationAction(event.data.name, event.data.button_id);
-                        }
-                        else if (event.data.signal == SIGNAL_NOTIFICATION_CLICKED) {
-                            onNotificationClicked(event.data.name);
-                        }
-                    }
-                });
+        Integration.onInitialize().then(response => {
+            if (!Integration.nativeNotificationsSupported(response)) {
+                bus.removeEventListener("message", on_message);
             }
         });
 
         chrome.storage.onChanged.addListener(function (changes, areaName) {
             if (changes.updateCheck) {
                 if (!changes.updateCheck.newValue) {
-                    chrome.alarms.clear(ALARM_UPDATE_CHECK);
+                    chrome.alarms.clear(constants.ALARM_UPDATE_CHECK);
                 }
                 else {
-                    chrome.storage.sync.get(DEFAULT_SYNC_OPTIONS, function (options) {
+                    chrome.storage.sync.get(constants.DEFAULT_SYNC_OPTIONS, function (options) {
                         schedule(options.updateCheckPeriod);
                     });
                 }
             }
             else if (changes.updateCheckPeriod) {
-                chrome.storage.sync.get(DEFAULT_SYNC_OPTIONS, function (options) {
+                chrome.storage.sync.get(constants.DEFAULT_SYNC_OPTIONS, function (options) {
                     if (options.updateCheck) {
                         schedule(options.updateCheckPeriod);
                     }
@@ -151,9 +122,9 @@ GSC.update = (function () {
             }
         });
 
-        chrome.storage.sync.get(DEFAULT_SYNC_OPTIONS, function (options) {
+        chrome.storage.sync.get(constants.DEFAULT_SYNC_OPTIONS, function (options) {
             if (options.updateCheck) {
-                chrome.alarms.get(ALARM_UPDATE_CHECK, function (alarm) {
+                chrome.alarms.get(constants.ALARM_UPDATE_CHECK, function (alarm) {
                     if (!alarm || !alarm.periodInMinutes || alarm.periodInMinutes !== options.updateCheckPeriod * 60) {
                         schedule(options.updateCheckPeriod);
                     }
@@ -162,9 +133,46 @@ GSC.update = (function () {
         });
     }
 
+    function on_message(event) {
+        function onNotificationAction(notificationId, buttonIndex) {
+            if (constants.NOTIFICATION_UPDATE_AVAILABLE == notificationId)
+                return;
+
+            Notifications.remove(notificationId);
+        }
+
+        function onNotificationClicked(notificationId) {
+            if (notificationId === constants.NOTIFICATION_UPDATE_AVAILABLE) {
+                chrome.tabs.create({
+                    url: constants.EXTENSIONS_MAIN_WEBSITE + 'local/',
+                    active: true
+                });
+            }
+        }
+
+        Integration.onInitialize().then(response => {
+            if (!Integration.nativeNotificationsSupported(response)) {
+                return
+            }
+
+            if (event?.data?.signal) {
+                if (event.data.signal == constants.SIGNAL_NOTIFICATION_ACTION) {
+                    onNotificationAction(event.data.name, event.data.button_id);
+                }
+                else if (event.data.signal == constants.SIGNAL_NOTIFICATION_CLICKED) {
+                    onNotificationClicked(event.data.name);
+                }
+            }
+        });
+    }
+
+    bus.addEventListener("message", on_message);
+
     return {
         init: init,
         check: check,
         schedule: schedule
     };
 })();
+
+export default Updater;

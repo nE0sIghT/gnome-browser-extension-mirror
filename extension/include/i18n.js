@@ -1,7 +1,9 @@
 // # SPDX-License-Identifer: GPL-3.0-or-later
 
-m = chrome.i18n.getMessage;
-i18n = (() => {
+import { $$ } from "./dom.js";
+
+const m = chrome.i18n.getMessage;
+const i18n = (() => {
     $$('[data-i18n]').forEach((element) => {
         let data = element.dataset.i18n.split(',').map((value) => {
             value = value.trim();
@@ -25,3 +27,5 @@ i18n = (() => {
         }
     });
 });
+
+export { i18n, m };

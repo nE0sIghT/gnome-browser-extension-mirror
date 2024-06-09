@@ -1,21 +1,20 @@
 {
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
       "id": "chrome-gnome-shell@gnome.org",
-      "strict_min_version": "56.0"
+      "strict_min_version": "126.0"
     }
   },
-  "options_ui": {
-    "page": "options.html",
-    "browser_style": true,
-    "open_in_tab": true
+
+  "background": {
+    "page": "extension.html"
   },
+
   "permissions": [
     "alarms",
     "nativeMessaging",
     "notifications",
     "storage",
-    "tabs",
-    "https://extensions.gnome.org/"
+    "tabs"
   ]
 }

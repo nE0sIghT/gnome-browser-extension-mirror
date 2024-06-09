@@ -1,6 +1,10 @@
 // SPDX-License-Identifer: GPL-3.0-or-later
 
-GSC.notifications = (function () {
+import bus from './bus.js';
+import { m } from './i18n.js';
+import Integration from './integration.js';
+
+const Notifications = (function () {
     var DEFAULT_NOTIFICATION_OPTIONS = {
         type: chrome.notifications.TemplateType.BASIC,
         iconUrl: 'icons/GnomeLogo-128.png',
@@ -12,6 +16,14 @@ GSC.notifications = (function () {
         isClickable: true,
         requireInteraction: true
     };
+
+    function remove_notification() {
+        Integration.onInitialize().then(response => {
+            if (Integration.nativeNotificationsSupported(response)) {
+                native.remove.apply(this, arguments);
+            }
+        });
+    }
 
     function remove_list(options) {
         if (options.items) {
@@ -35,117 +47,15 @@ GSC.notifications = (function () {
         return options;
     }
 
-    /*
-        @Deprecated: remove browser notifications in version 9
-     */
-    var browser = (function () {
-        function init() {
-            chrome.runtime.onStartup.addListener(function () {
-                // Do nothing. We just need this callback to restore notifications
-            });
-
-            chrome.notifications.onClosed.addListener(function (notificationId, byUser) {
-                if (!byUser) {
-                    update(notificationId);
-                }
-                else {
-                    remove(notificationId);
-                }
-            });
-
-            chrome.notifications.onClicked.addListener(function (notificationId) {
-                GSC.notifications.remove(notificationId);
-            });
-
-            restore();
-        }
-
-        function create(name, options) {
-            chrome.storage.local.get({
-                notifications: {}
-            }, function (items) {
-                var notifications = items.notifications;
-
-                notifications[name] = { ...DEFAULT_NOTIFICATION_OPTIONS, ...options };
-
-                _create(name, notifications[name], function (notificationId) {
-                    chrome.storage.local.set({
-                        notifications: notifications
-                    });
-                });
-            });
-        }
-
-        function _create(name, options, callback) {
-            if (!COMPAT.NOTIFICATIONS_BUTTONS && options.buttons) {
-                delete options.buttons;
-            }
-
-            if (callback) {
-                chrome.notifications.create(name, options, callback);
-            }
-            else {
-                chrome.notifications.create(name, options);
-            }
-        }
-
-        function update(notificationId) {
-            chrome.storage.local.get({
-                notifications: {}
-            }, function (items) {
-                var notifications = items.notifications;
-
-                if (notifications[notificationId]) {
-                    _create(notificationId, notifications[notificationId]);
-                }
-            });
-        }
-
-        function remove(notificationId) {
-            chrome.storage.local.get({
-                notifications: {}
-            }, function (items) {
-                var notifications = items.notifications;
-
-                if (notifications[notificationId]) {
-                    delete notifications[notificationId];
-                    chrome.storage.local.set({
-                        notifications: notifications
-                    });
-                }
-
-                chrome.notifications.clear(notificationId);
-            });
-        }
-
-        function restore() {
-            chrome.storage.local.get({
-                notifications: {}
-            }, function (items) {
-                var notifications = items.notifications;
-
-                for (notificationId in notifications) {
-                    update(notificationId);
-                }
-            });
-        }
-
-        return {
-            create: create,
-            remove: remove,
-            init: init
-        };
-    })();
-
     var native = (function () {
         function create(name, options) {
             options = remove_list(options);
 
-            window.postMessage({
+            bus.postMessage({
                 execute: 'createNotification',
                 name: name,
                 options: { ...DEFAULT_NOTIFICATION_OPTIONS, ...options }
-            }, "*");
+            });
         }
 
         function remove(notificationId) {
@@ -161,32 +71,16 @@ GSC.notifications = (function () {
         };
     })();
 
-    GSC.onInitialize().then(response => {
-        if (!GSC.nativeNotificationsSupported(response)) {
-            browser.init();
-        }
-    });
-
     return {
         create: function () {
-            GSC.onInitialize().then(response => {
-                if (GSC.nativeNotificationsSupported(response)) {
+            Integration.onInitialize().then(response => {
+                if (Integration.nativeNotificationsSupported(response)) {
                     native.create.apply(this, arguments);
-                }
-                else {
-                    browser.create.apply(this, arguments);
                 }
             });
         },
-        remove: function () {
-            GSC.onInitialize().then(response => {
-                if (GSC.nativeNotificationsSupported(response)) {
-                    native.remove.apply(this, arguments);
-                }
-                else {
-                    browser.remove.apply(this, arguments);
-                }
-            });
-        }
+        remove: remove_notification,
     };
 })();
+
+export default Notifications;

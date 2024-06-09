@@ -1,10 +1,10 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
 
   "name": "__MSG_gs_chrome__",
   "short_name": "GS Chrome",
   "description": "__MSG_manifest_description__",
-  "version": "11.1",
+  "version": "12",
 
   "default_locale": "en",
 
@@ -18,21 +18,11 @@
   },
 
   "background": {
-    "scripts": [
-      "include/i18n.js",
-      "include/constants.js",
-      "include/compat-common.js",
-      "include/gsc.js",
-      "include/notifications.js",
-      "include/update.js",
-      "include/sync.js",
-      "include/toolbar.js",
-      "extension.js"
-    ],
-    "persistent": false
+    "service_worker": "extension.js",
+    "type": "module"
   },
 
-  "browser_action": {
+  "action": {
     "default_icon": {
       "16": "icons/GnomeLogo-16.png",
       "32": "icons/GnomeLogo-32.png"
@@ -47,12 +37,13 @@
     ],
       "run_at": "document_start",
       "js": [
-        "include/constants.js",
+        "include/constants-script.js",
         "include/compat-content-script.js",
         "content-script-start.js"
       ]
     }
   ],
+
   "externally_connectable": {
       "matches": [
         "https://extensions.gnome.org/*"
@@ -60,17 +51,28 @@
   },
   "options_ui": {
     "page": "options.html",
-    "chrome_style": true
+    "open_in_tab": false
   },
   "permissions": [
     "alarms",
     "nativeMessaging",
     "notifications",
-    "storage",
-    "https://extensions.gnome.org/"
+    "storage"
   ],
   "optional_permissions": [
     "idle"
   ],
-  "web_accessible_resources": ["include/sweettooth-api.js"]
+  "host_permissions": [
+    "https://extensions.gnome.org/"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "include/sweettooth-api.js"
+      ],
+      "matches": [
+        "https://extensions.gnome.org/*"
+      ]
+    }
+  ]
 }

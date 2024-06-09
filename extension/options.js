@@ -1,5 +1,35 @@
 // SPDX-License-Identifer: GPL-3.0-or-later
 
+import constants from "./include/constants.js";
+import { $ } from "./include/dom.js";
+import { i18n } from "./include/i18n.js";
+import Integration from "./include/integration.js";
+import Synchronize from "./include/sync.js";
+
+function empty(element) {
+    while (element.firstChild) element.removeChild(element.firstChild);
+}
+
+function isEmptyObject(object) {
+    for (const k in object) return false;
+    return true;
+}
+
+function showWithDelay(element, delay, message) {
+    if (message) {
+        element.innerHTML = message;
+    }
+
+    element.classList.remove('hide');
+    element.classList.add('show');
+    setTimeout(() => {
+        element.classList.remove('show');
+        setTimeout(() => {
+            element.classList.add('hide');
+        }, 250);
+    }, delay);
+}
+
 function init_tabs() {
     let tabLinks = $("[data-tabs]").querySelectorAll('a');
     let updateTabs = (active = null) => {
@@ -44,12 +74,12 @@ function save_options() {
             useLightIcon: useLightIcon
         }, function () {
             if (syncExtensions) {
-                syncType = document.getElementById('syncChoice').returnValue;
+                let syncType = document.getElementById('syncChoice').returnValue;
                 if (!syncType || syncType === 'local') {
-                    GSC.sync.getExtensions().then((extensions) => {
+                    Synchronize.getExtensions().then((extensions) => {
                         var localExtensions = {};
                         for (const [uuid, extension] of Object.entries(extensions)) {
-                            if (extension.local && extension.localState != EXTENSION_STATE.UNINSTALLED) {
+                            if (extension.local && extension.localState != constants.EXTENSION_STATE.UNINSTALLED) {
                                 localExtensions[extension.uuid] = {
                                     uuid: extension.uuid,
                                     name: extension.name,
@@ -68,7 +98,7 @@ function save_options() {
                     });
                 }
                 else if (syncType === 'remote') {
-                    chrome.runtime.sendMessage(GS_CHROME_ID, MESSAGE_SYNC_FROM_REMOTE);
+                    chrome.runtime.sendMessage(constants.GS_CHROME_ID, constants.MESSAGE_SYNC_FROM_REMOTE);
                     showSuccessStatus();
                 }
             }
@@ -87,7 +117,7 @@ function showSuccessStatus() {
 function restore_options() {
     init_tabs();
 
-    chrome.storage.sync.get(DEFAULT_SYNC_OPTIONS, function (items) {
+    chrome.storage.sync.get(constants.DEFAULT_SYNC_OPTIONS, function (items) {
         function toggle_notice(show, id) {
             let notice = $('#' + id)
                 .closest('dl')
@@ -133,8 +163,8 @@ function restore_options() {
             toggle_update_enable_notice(true);
         }
 
-        GSC.onInitialize().then(function (response) {
-            if (!GSC.nativeUpdateCheckSupported(response)) {
+        Integration.onInitialize().then(function (response) {
+            if (!Integration.nativeUpdateCheckSupported(response)) {
                 disable_update_check();
             }
             else {
@@ -144,7 +174,7 @@ function restore_options() {
                 retrieveUpdateTimes();
             }
 
-            if (!GSC.nativeUpdateCheckEnabledOnlySupported(response)) {
+            if (!Integration.nativeUpdateCheckEnabledOnlySupported(response)) {
                 disable_update_enabled_only();
             }
             else {
@@ -161,15 +191,9 @@ function restore_options() {
         setReleaseNotes(items.showReleaseNotes);
     });
 
-    if (COMPAT.SYNC_STORAGE) {
-        updateSynchronizationStatus();
-    }
-    else {
-        $('a[data-i18n="synchronization"]').parentNode.remove();
-        $('#synchronize_extensions_yes').closest('dl').style.display = 'none';
-    }
+    updateSynchronizationStatus();
 
-    chrome.storage.local.get(DEFAULT_LOCAL_OPTIONS, function (items) {
+    chrome.storage.local.get(constants.DEFAULT_LOCAL_OPTIONS, function (items) {
         if (items.syncExtensions) {
             chrome.permissions.contains({
                 permissions: ["idle"]
@@ -177,7 +201,7 @@ function restore_options() {
                 setSyncExtensions(result);
             });
         }
-        else if (COMPAT.SYNC_STORAGE) {
+        else {
             setSyncExtensions(false);
         }
 
@@ -201,7 +225,7 @@ function retrieveUpdateTimes() {
 }
 
 function retrieveNextUpdateTime() {
-    chrome.alarms.get(ALARM_UPDATE_CHECK, function (alarm) {
+    chrome.alarms.get(constants.ALARM_UPDATE_CHECK, function (alarm) {
         if (alarm) {
             $('#next_update_check').innerText = new Date(alarm.scheduledTime).toLocaleString();
         }
@@ -252,10 +276,6 @@ function handleSynchronize() {
             permissions: ["idle"]
         }, function (granted) {
             if (granted) {
-                if (!COMPAT.PERMISSIONS_EVENTS) {
-                    chrome.runtime.sendMessage(GS_CHROME_ID, MESSAGE_IDLE_PERMISSION_ADDED);
-                }
-
                 chrome.storage.sync.get({
                     extensions: {}
                 }, function (options) {
@@ -265,10 +285,6 @@ function handleSynchronize() {
                 });
             }
             else {
-                if (!COMPAT.PERMISSIONS_EVENTS) {
-                    chrome.runtime.sendMessage(GS_CHROME_ID, MESSAGE_IDLE_PERMISSION_REMOVED);
-                }
-
                 setSyncExtensions(false);
             }
         });
@@ -277,17 +293,13 @@ function handleSynchronize() {
         chrome.permissions.remove({
             permissions: ["idle"]
         }, function (removed) {
-            if (removed && !COMPAT.PERMISSIONS_EVENTS) {
-                chrome.runtime.sendMessage(GS_CHROME_ID, MESSAGE_IDLE_PERMISSION_REMOVED);
-            }
-
             setSyncExtensions(!removed);
         });
     }
 }
 
 function updateSynchronizationStatus() {
-    GSC.sync.getExtensions().then((extensions) => {
+    Synchronize.getExtensions().then((extensions) => {
         var keys = Object.keys(extensions).sort(function (a, b) {
             var nameA = extensions[a].name.toLowerCase();
             var nameB = extensions[b].name.toLowerCase();
@@ -312,7 +324,7 @@ function updateSynchronizationStatus() {
                 `<tr>
 					<td>${extension.name}</td>
 					<td class='${extension.local && 'ok' || 'fail'}'></td>
-					<td class='${extension.localState == EXTENSION_STATE.ENABLED && 'ok' || 'fail'}'></td>
+					<td class='${extension.localState == constants.EXTENSION_STATE.ENABLED && 'ok' || 'fail'}'></td>
 					<td class='${extension.remote && 'ok' || 'fail'}'></td>
 				</tr>`
             );
@@ -337,10 +349,6 @@ document.getElementById('syncChoice').addEventListener('close', function () {
         chrome.permissions.remove({
             permissions: ["idle"]
         }, function (removed) {
-            if (removed && !COMPAT.PERMISSIONS_EVENTS) {
-                chrome.runtime.sendMessage(GS_CHROME_ID, MESSAGE_IDLE_PERMISSION_REMOVED);
-            }
-
             setSyncExtensions(!removed);
         });
     }
@@ -364,11 +372,11 @@ chrome.storage.onChanged.addListener(function (changes, areaName) {
 
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
-        if (sender.id && sender.id === GS_CHROME_ID && request) {
-            if (request === MESSAGE_NEXT_UPDATE_CHANGED) {
+        if (sender.id && sender.id === constants.GS_CHROME_ID && request) {
+            if (request === constants.MESSAGE_NEXT_UPDATE_CHANGED) {
                 retrieveNextUpdateTime();
             }
-            else if (request.signal && request.signal === SIGNAL_EXTENSION_CHANGED) {
+            else if (request.signal && request.signal === constants.SIGNAL_EXTENSION_CHANGED) {
                 updateSynchronizationStatus();
             }
         }

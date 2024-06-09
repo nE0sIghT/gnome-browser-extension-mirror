@@ -2,19 +2,29 @@
 
 "use strict";
 
-GSC.getMessage = function (key) {
-    if (GSC && GSC.i18n && GSC.i18n[key]) {
-        var message = GSC.i18n[key];
+var GSC = (function () {
+    const dataset = document.getElementsByTagName("gnome-browser-integration")[0].dataset;
 
-        for (var i = 1; i < arguments.length; i++) {
-            message = message.replace('$' + i, arguments[i]);
-        }
-
-        return message;
+    function getData(key) {
+        return dataset[key];
     }
 
-    return key;
-};
+    return {
+        GS_CHROME_ID: getData('extensionId'),
+        getMessage: function (key) {
+            let message = getData(key);
+            if (message) {
+                for (let i = 1; i < arguments.length; i++) {
+                    message = message.replace('$' + i, arguments[i]);
+                }
+
+                return message;
+            }
+
+            return key;
+        },
+    }
+}());
 
 window.SweetTooth = function () {
     var apiObject = {
@@ -24,7 +34,7 @@ window.SweetTooth = function () {
         userExtensionsDisabled: false,
 
         getChromeExtensionId: function () {
-            return GS_CHROME_ID;
+            return GSC.GS_CHROME_ID;
         },
 
         getExtensionErrors: function (uuid) {
@@ -84,7 +94,7 @@ window.SweetTooth = function () {
 
             var ready = new Promise(function (resolve, reject) {
                 sendExtensionMessage("initialize", response => {
-                    if (response && response.success && response.properties && response.properties.shellVersion) {
+                    if (response?.success && response?.properties?.shellVersion) {
                         resolve(response.properties);
                     }
                     else {
@@ -136,7 +146,7 @@ window.SweetTooth = function () {
 
     window.addEventListener("message", function (event) {
         // We only accept messages from ourselves
-        if (event.source != window) {
+        if (event.source !== window) {
             return;
         }
 

@@ -1,9 +1,14 @@
 // SPDX-License-Identifer: GPL-3.0-or-later
 
+import constants from "./constants.js";
+import { m } from "./i18n.js";
+import Integration from "./integration.js";
+import Notifications from "./notifications.js";
+
 /*
  * Main object that handles extensions synchronization with remote storage.
  */
-GSC.sync = (function ($) {
+const Synchronize = (function ($) {
     var enabled = true;
     var extensionChangedTimeout = false;
     var extensionChangedQueue = {};
@@ -14,18 +19,13 @@ GSC.sync = (function ($) {
      * Initialization rutines.
      */
     function init() {
-        if (!COMPAT.SYNC_STORAGE) {
-            enabled = false;
-            return;
-        }
-
         function onIdleStateChanged(state) {
             if (state === 'locked') {
                 enabled = false;
 
                 // Remove all disabled extensions from queue
                 for (const [extensionId, extension] of Object.entries(extensionChangedQueue)) {
-                    if (extension.state == EXTENSION_STATE.DISABLED) {
+                    if (extension.state == constants.EXTENSION_STATE.DISABLED) {
                         delete extensionChangedQueue[extensionId];
                     }
                 };
@@ -61,11 +61,11 @@ GSC.sync = (function ($) {
         });
 
         function onNotificationAction(notificationId, buttonIndex) {
-            if (notificationId !== NOTIFICATION_SYNC_FAILED) {
+            if (notificationId !== constants.NOTIFICATION_SYNC_FAILED) {
                 return;
             }
 
-            GSC.notifications.remove(notificationId);
+            Notifications.remove(notificationId);
         }
 
         onSyncFromRemote();
@@ -77,28 +77,22 @@ GSC.sync = (function ($) {
 
         chrome.runtime.onMessage.addListener(
             function (request, sender, sendResponse) {
-                if (sender.id && sender.id === GS_CHROME_ID && request) {
-                    if (request === MESSAGE_SYNC_FROM_REMOTE) {
+                if (sender.id && sender.id === constants.GS_CHROME_ID && request) {
+                    if (request === constants.MESSAGE_SYNC_FROM_REMOTE) {
                         onSyncFromRemote();
                     }
                 }
             }
         );
 
-        GSC.onInitialize().then(response => {
-            /*
-                @Deprecated: remove browser notifications in version 9
-             */
-            if (!GSC.nativeNotificationsSupported(response)) {
-                chrome.notifications.onButtonClicked.addListener(onNotificationAction);
-            }
-            else {
+        Integration.onInitialize().then(response => {
+            if (Integration.nativeNotificationsSupported(response)) {
                 chrome.runtime.onMessage.addListener(
                     function (request, sender, sendResponse) {
                         if (
-                            sender.id && sender.id === GS_CHROME_ID &&
+                            sender.id && sender.id === constants.GS_CHROME_ID &&
                             request && request.signal) {
-                            if (request.signal == SIGNAL_NOTIFICATION_ACTION) {
+                            if (request.signal == constants.SIGNAL_NOTIFICATION_ACTION) {
                                 onNotificationAction(request.name, request.button_id);
                             }
                         }
@@ -124,7 +118,7 @@ GSC.sync = (function ($) {
      */
     function getExtensions(remoteExtensions) {
         return new Promise((resolve, reject) => {
-            GSC.sendNativeRequest({
+            Integration.sendNativeRequest({
                 execute: 'listExtensions'
             }, function (response) {
                 if (response && response.success) {
@@ -191,7 +185,7 @@ GSC.sync = (function ($) {
                 extensions[extension.uuid] = {
                     uuid: extension.uuid,
                     name: extension.name,
-                    remoteState: EXTENSION_STATE.UNINSTALLED,
+                    remoteState: constants.EXTENSION_STATE.UNINSTALLED,
                     localState: extension.state,
                     remote: false,
                     local: true
@@ -209,7 +203,7 @@ GSC.sync = (function ($) {
         extensionChangedTimeout = false;
 
         if (!isEmptyObject(extensionChangedQueue)) {
-            GSC.sendNativeRequest({
+            Integration.sendNativeRequest({
                 execute: 'listExtensions'
             }, function (response) {
                 if (response && response.success && response.extensions) {
@@ -217,13 +211,13 @@ GSC.sync = (function ($) {
                         extensions: {}
                     }, function (options) {
                         for (const [extensionId, extension] of Object.entries(extensionChangedQueue)) {
-                            if ([EXTENSION_STATE.ENABLED, EXTENSION_STATE.DISABLED, EXTENSION_STATE.UNINSTALLED].includes(extension.state)) {
+                            if ([constants.EXTENSION_STATE.ENABLED, constants.EXTENSION_STATE.DISABLED, constants.EXTENSION_STATE.UNINSTALLED].includes(extension.state)) {
                                 // Extension can be uninstalled already
                                 if (response.extensions[extensionId] && !isEmptyObject(response.extensions[extensionId])) {
                                     extension = response.extensions[extensionId];
                                 }
 
-                                if (extension.state === EXTENSION_STATE.UNINSTALLED && options.extensions[extension.uuid]) {
+                                if (extension.state === constants.EXTENSION_STATE.UNINSTALLED && options.extensions[extension.uuid]) {
                                     delete options.extensions[extension.uuid];
                                 }
                                 else {
@@ -261,13 +255,13 @@ GSC.sync = (function ($) {
             for ([uuid, extension] of Object.entries(extensions)) {
                 if (extension.remote) {
                     if (!extension.local) {
-                        GSC.sendNativeRequest({
+                        Integration.sendNativeRequest({
                             execute: "installExtension",
                             uuid: extension.uuid
                         }, onInstallUninstall);
                     }
                     else if (extension.remoteState !== extension.localState) {
-                        if (extension.remoteState === EXTENSION_STATE.ENABLED) {
+                        if (extension.remoteState === constants.EXTENSION_STATE.ENABLED) {
                             enableExtensions.push({
                                 uuid: extension.uuid,
                                 enable: true
@@ -282,7 +276,7 @@ GSC.sync = (function ($) {
                     }
                 }
                 else if (extension.local) {
-                    GSC.sendNativeRequest({
+                    Integration.sendNativeRequest({
                         execute: "uninstallExtension",
                         uuid: extension.uuid
                     }, onInstallUninstall);
@@ -290,7 +284,7 @@ GSC.sync = (function ($) {
             };
 
             if (enableExtensions.length > 0) {
-                GSC.sendNativeRequest({
+                Integration.sendNativeRequest({
                     execute: "enableExtension",
                     extensions: enableExtensions
                 });
@@ -320,7 +314,7 @@ GSC.sync = (function ($) {
      * enabled.
      */
     function onExtensionChanged(request) {
-        if (!COMPAT.SYNC_STORAGE || !enabled) {
+        if (!enabled) {
             return;
         }
 
@@ -329,15 +323,15 @@ GSC.sync = (function ($) {
                 clearTimeout(extensionChangedTimeout);
             }
 
-            extensionChangedQueue[request.parameters[EXTENSION_CHANGED_UUID]] = {
-                uuid: request.parameters[EXTENSION_CHANGED_UUID],
-                state: request.parameters[EXTENSION_CHANGED_STATE],
-                error: request.parameters[EXTENSION_CHANGED_ERROR]
+            extensionChangedQueue[request.parameters[constants.EXTENSION_CHANGED_UUID]] = {
+                uuid: request.parameters[constants.EXTENSION_CHANGED_UUID],
+                state: request.parameters[constants.EXTENSION_CHANGED_STATE],
+                error: request.parameters[constants.EXTENSION_CHANGED_ERROR]
             };
 
             extensionChangedTimeout = setTimeout(function () {
                 localExtensionsChanged();
-            }, SYNC_QUEUE_TIMEOUT);
+            }, constants.SYNC_QUEUE_TIMEOUT);
         });
     }
 
@@ -346,10 +340,6 @@ GSC.sync = (function ($) {
      * enabled.
      */
     function onSyncFromRemote(remoteExtensions) {
-        if (!COMPAT.SYNC_STORAGE) {
-            return;
-        }
-
         runIfSyncEnabled(function () {
             remoteExtensionsChanged(remoteExtensions);
         });
@@ -381,7 +371,7 @@ GSC.sync = (function ($) {
      * Create notification when synchronization failed.
      */
     function createSyncFailedNotification(cause) {
-        GSC.notifications.create(NOTIFICATION_SYNC_FAILED, {
+        Notifications.create(constants.NOTIFICATION_SYNC_FAILED, {
             message: m('synchronization_failed', cause ? cause : m('unknown_error'))
         });
     }
@@ -395,3 +385,5 @@ GSC.sync = (function ($) {
         onExtensionChanged: onExtensionChanged
     };
 })();
+
+export default Synchronize;

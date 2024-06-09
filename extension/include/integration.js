@@ -1,17 +1,19 @@
 // SPDX-License-Identifer: GPL-3.0-or-later
 
-GSC = (function () {
+import constants from "./constants.js";
+import { m } from "./i18n.js";
+
+const Integration = (function () {
     var ready = new Promise(function (resolve, reject) {
         chrome.runtime.getPlatformInfo(function (info) {
-            if (PLATFORMS_WHITELIST.indexOf(info.os) === -1) {
+            if (constants.PLATFORMS_WHITELIST.indexOf(info.os) === -1) {
                 reject();
             }
             else {
                 resolve();
             }
         });
-    });
-    ready.catch(function () { });
+    }).catch(() => { });
 
     var onInitialize = new Promise((resolve, reject) => {
         sendNativeRequest({ execute: "initialize" }, (response) => {
@@ -28,7 +30,7 @@ GSC = (function () {
         ready.then(function () {
             if (sendResponse) {
                 chrome.runtime.sendNativeMessage(
-                    NATIVE_HOST,
+                    constants.NATIVE_HOST,
                     request,
                     function (response) {
                         if (response) {
@@ -55,7 +57,7 @@ GSC = (function () {
                 );
             }
             else {
-                chrome.runtime.sendNativeMessage(NATIVE_HOST, request);
+                chrome.runtime.sendNativeMessage(constants.NATIVE_HOST, request);
             }
         }, function () {
             if (sendResponse) {
@@ -124,3 +126,5 @@ GSC = (function () {
         }
     };
 })();
+
+export default Integration;

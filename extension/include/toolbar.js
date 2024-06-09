@@ -1,14 +1,16 @@
 // SPDX-License-Identifer: GPL-3.0-or-later
 
+import constants from "./constants.js";
+
 /*
  * Main object that handles toolbar icon.
  */
-GSC.toolbar = (function () {
+const Toolbar = (function () {
     /*
      * Initialization rutines.
      */
     function init() {
-        chrome.storage.local.get(DEFAULT_LOCAL_OPTIONS, function (options) {
+        chrome.storage.local.get(constants.DEFAULT_LOCAL_OPTIONS, function (options) {
             if (options.useLightIcon) {
                 setLightIcon();
             }
@@ -27,7 +29,7 @@ GSC.toolbar = (function () {
     }
 
     function setLightIcon() {
-        chrome.browserAction.setIcon({
+        chrome.action.setIcon({
             path: {
                 "16": "icons/GnomeLogo-light-16.png",
                 "32": "icons/GnomeLogo-light-32.png"
@@ -36,7 +38,7 @@ GSC.toolbar = (function () {
     }
 
     function setDarkicon() {
-        chrome.browserAction.setIcon({
+        chrome.action.setIcon({
             path: {
                 "16": "icons/GnomeLogo-16.png",
                 "32": "icons/GnomeLogo-32.png"
@@ -51,3 +53,5 @@ GSC.toolbar = (function () {
         init: init
     };
 })();
+
+export default Toolbar;

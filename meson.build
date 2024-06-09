@@ -65,7 +65,7 @@ if get_option('build_extension')
     command: [
       py_install.path(),
       CONTRIB_PATH / 'merge_json.py',
-      '--delete', 'key',
+      '--delete', 'key,externally_connectable',
       '--output', '@OUTPUT@',
       '@INPUT@'
     ],
@@ -86,6 +86,15 @@ if get_option('build_extension')
     '--ignore', extension_exclude,
     EXTENSION_PATH,
     CHROME_BUILD_DIR,
+    check: true,
+  )
+  run_command(
+    py_install.path(),
+    cp,
+    '--es6-module',
+    '--rename', 'constants-script.js',
+    EXTENSION_PATH / 'include/constants.js',
+    CHROME_BUILD_DIR / 'include',
     check: true,
   )
   custom_target('chrome-zip',
@@ -113,6 +122,15 @@ if get_option('build_extension')
     '--ignore', extension_exclude,
     EXTENSION_PATH,
     FIREFOX_BUILD_DIR,
+    check: true,
+  )
+  run_command(
+    py_install.path(),
+    cp,
+    '--es6-module',
+    '--rename', 'constants-script.js',
+    EXTENSION_PATH / 'include/constants.js',
+    FIREFOX_BUILD_DIR / 'include',
     check: true,
   )
   custom_target('firefox-zip',
