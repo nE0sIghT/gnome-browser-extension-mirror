@@ -2,6 +2,7 @@
 
 const EXTENSIONS_WEBSITES = [
     'https://extensions.gnome.org/',
+    'https://extensions-next.gnome.org/',
 ];
 
 const constants = {
