@@ -1,0 +1,87 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.234.0/containers/python-3
+{
+    "name": "gnome-browser-extension",
+
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "gnome-browser-extension-vscode",
+
+    "workspaceFolder": "/workspace",
+
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "black-formatter.args": [
+                    "--preview"
+                ],
+                "black-formatter.importStrategy": "fromEnvironment",
+
+                "isort.check": true,
+
+                "editor.codeActionsOnSave": {
+                    "source.organizeImports": "explicit"
+                },
+                "json.format.enable": false,
+
+                "python.analysis.autoImportCompletions": true,
+                "python.autoComplete.extraPaths": [
+                    "${workspaceRoot}"
+                ],
+                "python.analysis.extraPaths": [
+                    "${workspaceRoot}"
+                ],
+
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.formatting.provider": "black",
+
+                "[javascript]": {
+                    "editor.formatOnSave": true
+                },
+                "[python]": {
+                    "editor.defaultFormatter": "ms-python.black-formatter",
+                    "editor.formatOnSave": true
+                },
+
+                "files.exclude": {
+                    "**/.git": true,
+                    "**/.svn": true,
+                    "**/.hg": true,
+                    "**/CVS": true,
+                    "**/.DS_Store": true,
+                    "**/Thumbs.db": true,
+                    "**/*.egg-info": true,
+                    "builddir/": true
+                },
+                "search.exclude": {
+                    "**/node_modules": true,
+                    "**/bower_components": true,
+                    "**/*.code-search": true,
+                    "**/*.egg-info": true,
+                    "builddir/**": true
+                }
+            },
+            "extensions": [
+                "mesonbuild.mesonbuild",
+                "ms-azuretools.vscode-docker",
+                "ms-python.python",
+                "ms-python.black-formatter",
+                "ms-python.flake8",
+                "ms-python.isort",
+                "ms-python.pylint",
+                "ms-python.vscode-pylance",
+                "bungcip.better-toml"
+            ]
+        }
+    },
+
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    "forwardPorts": [],
+
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "pip3 install --user -r requirements.txt",
+
+    // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+    "remoteUser": "vscode"
+}

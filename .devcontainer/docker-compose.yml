@@ -1,0 +1,15 @@
+services:
+  gnome-browser-extension-vscode:
+    build:
+      context: ../
+      dockerfile: .devcontainer/Dockerfile
+      args:
+        PYTHON_VERSION: '3.10'
+    image: gnome-browser-extension-vscode
+    volumes:
+      - "../:/workspace:cached"
+    networks:
+      - gnome-browser-extension
+
+networks:
+  gnome-browser-extension:
