@@ -19,6 +19,8 @@ RUN \
     ;\
     pip install \
         meson \
+        polib \
+        pytz \
     ;\
     adduser --disabled-password --gecos '' vscode ;\
     echo "vscode ALL=(root) NOPASSWD: ALL" > /etc/sudoers.d/vscode
