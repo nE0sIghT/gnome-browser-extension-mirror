@@ -13,7 +13,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
         chrome.storage.sync.get(constants.DEFAULT_SYNC_OPTIONS, function (options) {
             if (options.showReleaseNotes) {
                 chrome.tabs.create({
-                    url: 'https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/ReleaseNotes/' + version,
+                    url: `https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/extension-${version}.html`,
                     active: true
                 });
             }
