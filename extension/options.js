@@ -3,7 +3,6 @@
 import constants from "./include/constants.js";
 import { $ } from "./include/dom.js";
 import { i18n } from "./include/i18n.js";
-import Integration from "./include/integration.js";
 import Synchronize from "./include/sync.js";
 
 function empty(element) {
@@ -57,17 +56,10 @@ function init_tabs() {
 function save_options() {
     var showReleaseNotes = $('#show_release_notes_yes').checked;
     var syncExtensions = $('#synchronize_extensions_yes').checked;
-    var updateCheck = $('#update_check_yes').checked;
-    var updateCheckEnabledOnly = $('#update_check_enabled_yes').checked;
-    var updateCheckPeriod = $('#update_check_period').value;
     var useLightIcon = $('#use_light_icon_yes').checked;
-    updateCheckPeriod = Math.max(3, updateCheckPeriod);
 
     chrome.storage.sync.set({
         showReleaseNotes: showReleaseNotes,
-        updateCheck: updateCheck,
-        updateCheckEnabledOnly: updateCheckEnabledOnly,
-        updateCheckPeriod: updateCheckPeriod
     }, function () {
         chrome.storage.local.set({
             syncExtensions: syncExtensions,
@@ -131,63 +123,6 @@ function restore_options() {
             }
         }
 
-        function toggle_update_notice(show) {
-            toggle_notice(show, "update_check_yes");
-        }
-
-        function toggle_update_enable_notice(show) {
-            toggle_notice(show, "update_check_enabled_yes");
-        }
-
-        function disable_update_check() {
-            if (items.updateCheck) {
-                items.updateCheck = false;
-
-                chrome.storage.sync.set({
-                    updateCheck: items.updateCheck
-                });
-            }
-
-            toggle_update_notice(true);
-        }
-
-        function disable_update_enabled_only() {
-            if (items.updateCheckEnabledOnly) {
-                items.updateCheckEnabledOnly = false;
-
-                chrome.storage.sync.set({
-                    updateCheckEnabledOnly: items.updateCheckEnabledOnly
-                });
-            }
-
-            toggle_update_enable_notice(true);
-        }
-
-        Integration.onInitialize().then(function (response) {
-            if (!Integration.nativeUpdateCheckSupported(response)) {
-                disable_update_check();
-            }
-            else {
-                $$("input[name='update_check'], #update_check_period").forEach((input) => input.disabled = false);
-                $('#update_check_period').value = items.updateCheckPeriod;
-                toggle_update_notice(false);
-                retrieveUpdateTimes();
-            }
-
-            if (!Integration.nativeUpdateCheckEnabledOnlySupported(response)) {
-                disable_update_enabled_only();
-            }
-            else {
-                $("input[name='update_check_enabled']").disabled = false;
-                toggle_update_enable_notice(false);
-            }
-
-            setCheckUpdate(items.updateCheck);
-            setCheckUpdateEnabledOnly(items.updateCheckEnabledOnly);
-        }, function (response) {
-            disable_update_check();
-        });
-
         setReleaseNotes(items.showReleaseNotes);
     });
 
@@ -207,46 +142,6 @@ function restore_options() {
 
         setLightIcon(items.useLightIcon);
     });
-}
-
-function retrieveUpdateTimes() {
-    chrome.storage.local.get({
-        lastUpdateCheck: null
-    }, function (items) {
-        if (items.lastUpdateCheck) {
-            $('#last_update_check').innerText = items.lastUpdateCheck;
-        }
-        else {
-            $('#last_update_check').innerText = m('never');
-        }
-    });
-
-    retrieveNextUpdateTime();
-}
-
-function retrieveNextUpdateTime() {
-    chrome.alarms.get(constants.ALARM_UPDATE_CHECK, function (alarm) {
-        if (alarm) {
-            $('#next_update_check').innerText = new Date(alarm.scheduledTime).toLocaleString();
-        }
-        else {
-            $('#next_update_check').innerText = m('never');
-        }
-    });
-}
-
-function setCheckUpdate(result) {
-    if (result)
-        $('#update_check_yes').checked = true;
-    else
-        $('#update_check_no').checked = true;
-}
-
-function setCheckUpdateEnabledOnly(result) {
-    if (result)
-        $('#update_check_enabled_yes').checked = true;
-    else
-        $('#update_check_enabled_no').checked = true;
 }
 
 function setLightIcon(result) {
@@ -359,12 +254,6 @@ if (!$('#translation_credits div').firstChild) {
 }
 
 chrome.storage.onChanged.addListener(function (changes, areaName) {
-    if (areaName === 'local') {
-        if (changes.lastUpdateCheck && changes.lastUpdateCheck.newValue) {
-            $('#last_update_check').innerText = changes.lastUpdateCheck.newValue;
-        }
-    }
-
     if (areaName === 'sync' && changes.extensions) {
         updateSynchronizationStatus();
     }
@@ -373,10 +262,7 @@ chrome.storage.onChanged.addListener(function (changes, areaName) {
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         if (sender.id && sender.id === constants.GS_CHROME_ID && request) {
-            if (request === constants.MESSAGE_NEXT_UPDATE_CHANGED) {
-                retrieveNextUpdateTime();
-            }
-            else if (request.signal && request.signal === constants.SIGNAL_EXTENSION_CHANGED) {
+            if (request.signal && request.signal === constants.SIGNAL_EXTENSION_CHANGED) {
                 updateSynchronizationStatus();
             }
         }

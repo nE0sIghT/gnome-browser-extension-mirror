@@ -5,7 +5,6 @@ import constants from "./include/constants.js";
 import Integration from "./include/integration.js";
 import Synchronize from "./include/sync.js";
 import Toolbar from "./include/toolbar.js";
-import Updater from "./include/update.js";
 
 chrome.runtime.onInstalled.addListener(function (details) {
     var version = chrome.runtime.getManifest().version;
@@ -185,7 +184,6 @@ bus.addEventListener("message", function (event) {
 
 chrome.runtime.getPlatformInfo(function (info) {
     if (constants.PLATFORMS_WHITELIST.indexOf(info.os) !== -1) {
-        Updater.init();
         Synchronize.init();
     }
 });

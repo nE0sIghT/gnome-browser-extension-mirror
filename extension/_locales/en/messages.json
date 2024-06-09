@@ -55,18 +55,6 @@
 	"platform_not_supported": {
 		"message": "Native host connector is not supported for your platform."
 	},
-	"update_check_failed": {
-		"message": "Failed to check GNOME Shell extensions updates: $CAUSE$",
-		"description": "$CAUSE$ is placeholder for error that caused update failure.",
-		"placeholders": {
-			"cause": {
-				"content": "$1"
-			}
-		}
-	},
-	"update_available": {
-		"message": "An update for GNOME Shell extensions available"
-	},
 	"options_title": {
 		"message": "$GS_CHROME$ options",
 		"description": "$GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This string used as title for Options page. This title is not shown in Chrome, but may be shown in other browsers.",
@@ -84,24 +72,6 @@
 		"message": "Options saved.",
 		"description": "Means 'Options were saved successfully after user clicked Save button'"
 	},
-	"options_update_check": {
-		"message": "Check for GNOME Shell extensions update",
-		"description": "Option name. Allow enable/disable update check for GNOME Shell extensions."
-	},
-	"options_update_check_enabled": {
-		"message": "Check update of enabled GNOME Shell extensions only",
-		"description": "Option name."
-	},
-	"options_update_check_notice": {
-		"message": "Your native host connector does not support check for GNOME Shell extensions updates. Probably python-requests package is missing."
-	},
-	"options_update_check_enabled_notice": {
-		"message": "Your native host connector does not support updates check for enabled GNOME Shell extensions only. Consider update."
-	},
-	"options_check_period": {
-		"message": "Update check period",
-		"description": "Option name. Allow to set interval between GNOME Shell extensions update checks."
-	},
 	"options_show_release_notes": {
 		"message": "Show release notes when browser extension updated",
 		"description": "Option name. Allow to enable/disable popup with release notes when Web extension is updated."
@@ -113,14 +83,6 @@
 	"options_synchronize_extensions_notice": {
 		"message": "If enabled, your GNOME Shell extensions list will be synchronized with your Google account.",
 		"description": "This is a notice under option name."
-	},
-	"options_last_check": {
-		"message": "Last check",
-		"description": "This is a start of phrase (followed by date/time) of last GNOME Shell extensions update check."
-	},
-	"options_next_check": {
-		"message": "Next check",
-		"description": "This is a start of phrase (followed by date/time) of next GNOME Shell extensions update check."
 	},
 	"options_use_light_icon": {
 		"message": "Use light icon (dark theme)",
@@ -162,10 +124,6 @@
 	"unknown_error": {
 		"message": "unknown error",
 		"description": "This should newer be shown to user. However better safe than sorry."
-	},
-	"hours": {
-		"message": "hours",
-		"description": "This is a part of phrase 'Update check period: xx hours'"
 	},
 	"yes": {
 		"message": "Yes"

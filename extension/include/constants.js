@@ -10,9 +10,7 @@ const constants = {
 
     NOTIFICATION_SYNC_FAILED: 'gs-chrome-sync-fail',
     NOTIFICATION_UPDATE_AVAILABLE: 'gs-chrome-update',
-    ALARM_UPDATE_CHECK: 'gs-chrome-update-check',
 
-    MESSAGE_NEXT_UPDATE_CHANGED: 'gs-next-update-changed',
     MESSAGE_SYNC_FROM_REMOTE: 'gs-sync-from-remote',
 
     SIGNAL_EXTENSION_CHANGED: 'ExtensionStatusChanged',
@@ -33,9 +31,6 @@ const constants = {
 
     DEFAULT_SYNC_OPTIONS: {
         showReleaseNotes: true,
-        updateCheck: true,
-        updateCheckEnabledOnly: true,
-        updateCheckPeriod: 6
     },
 
     DEFAULT_LOCAL_OPTIONS: {
