@@ -56,7 +56,6 @@
     "open_in_tab": false
   },
   "permissions": [
-    "alarms",
     "nativeMessaging",
     "notifications",
     "storage"
