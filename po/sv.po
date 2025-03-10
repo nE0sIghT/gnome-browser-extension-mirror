@@ -1,14 +1,14 @@
 # Swedish translation for chrome-gnome-shell.
-# Copyright © 2016, 2017, 2018, 2020 chrome-gnome-shell's COPYRIGHT HOLDER
+# Copyright © 2016-2025 chrome-gnome-shell's COPYRIGHT HOLDER
 # This file is distributed under the same license as the chrome-gnome-shell package.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2016, 2017, 2018, 2020.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2016, 2017, 2018, 2020, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2020-05-04 19:33+0000\n"
-"PO-Revision-Date: 2020-05-27 00:54+0200\n"
+"POT-Creation-Date: 2025-03-04 06:18+0000\n"
+"PO-Revision-Date: 2025-03-10 23:11+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 3.5\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -67,11 +67,6 @@ msgstr "Synkroniserad"
 msgid "GNOME Shell integration"
 msgstr "GNOME Shell-integration"
 
-#. This is a part of phrase 'Update check period: xx hours'
-#: chrome-gnome-shell-key-hours:1
-msgid "hours"
-msgstr "timmar"
-
 #. Used as extension description in Chrome Store
 #: chrome-gnome-shell-key-manifest_description:1
 msgid ""
@@ -113,14 +108,15 @@ msgstr ""
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
+"is not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
+"browser-integration/pages/installation-guide.html'>documentation</a> for "
 "instructions about installing connector."
 msgstr ""
 "Även om tillägget för GNOME Shell-integration körs, så hittades inget "
-"inhemskt värdanslutningsprogram. Se <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>dokumentationen</a> för "
-"instruktioner om hur ett anslutningsprogram installeras."
+"inhemskt värdanslutningsprogram. Se <a href='https://"
+"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+"guide.html'>dokumentationen</a> för instruktioner om hur ett "
+"anslutningsprogram installeras."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -133,28 +129,10 @@ msgstr "Inget värdsvar"
 msgid "Open GNOME Shell extensions website"
 msgstr "Öppna webbplatsen för GNOME Shell-tillägg"
 
-#. Option name. Allow to set interval between GNOME Shell extensions update
-#. checks.
-#: chrome-gnome-shell-key-options_check_period:1
-msgid "Update check period"
-msgstr "Intervall för uppdateringskontroll"
-
-#. This is a start of phrase (followed by date/time) of last GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_last_check:1
-msgid "Last check"
-msgstr "Senaste kontroll"
-
 #. Link name for options tab.
 #: chrome-gnome-shell-key-options_link:1
 msgid "Options"
 msgstr "Alternativ"
-
-#. This is a start of phrase (followed by date/time) of next GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_next_check:1
-msgid "Next check"
-msgstr "Nästa kontroll"
 
 #. Means 'Options were saved successfully after user clicked Save button'
 #: chrome-gnome-shell-key-options_saved:1
@@ -192,32 +170,6 @@ msgstr ""
 #: chrome-gnome-shell-key-options_title:1
 msgid "$GS_CHROME$ options"
 msgstr "$GS_CHROME$-alternativ"
-
-#. Option name. Allow enable/disable update check for GNOME Shell extensions.
-#: chrome-gnome-shell-key-options_update_check:1
-msgid "Check for GNOME Shell extensions update"
-msgstr "Sök efter uppdateringar för GNOME Shell-tillägg"
-
-#. Option name.
-#: chrome-gnome-shell-key-options_update_check_enabled:1
-msgid "Check update of enabled GNOME Shell extensions only"
-msgstr "Sök endast efter uppdatering för aktiverade GNOME Shell-tillägg"
-
-#: chrome-gnome-shell-key-options_update_check_enabled_notice:1
-msgid ""
-"Your native host connector does not support updates check for enabled GNOME "
-"Shell extensions only. Consider update."
-msgstr ""
-"Ditt inhemska värdanslutningsprogram stöder inte sökning efter uppdateringar "
-"av endast aktiverade GNOME Shell-tillägg. Överväg att uppdatera."
-
-#: chrome-gnome-shell-key-options_update_check_notice:1
-msgid ""
-"Your native host connector does not support check for GNOME Shell extensions "
-"updates. Probably python-requests package is missing."
-msgstr ""
-"Ditt inhemska värdanslutningsprogram stöder inte sökning efter uppdateringar "
-"av GNOME Shell-tillägg. Troligen saknas paketet python-requests."
 
 #. Use light icon that is looked better with dark themes.
 #: chrome-gnome-shell-key-options_use_light_icon:1
@@ -283,33 +235,20 @@ msgstr "Om översättning"
 msgid "unknown error"
 msgstr "okänt fel"
 
-#: chrome-gnome-shell-key-update_available:1
-msgid "An update for GNOME Shell extensions available"
-msgstr "En uppdatering för GNOME Shell-tillägg finns tillgänglig"
-
-#. $CAUSE$ is placeholder for error that caused update failure.
-#.
-#. String placeholders:
-#. cause
-#.
-#: chrome-gnome-shell-key-update_check_failed:1
-msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
-msgstr "Kunde inte söka efter uppdateringar för GNOME Shell-tillägg: $CAUSE$"
-
 #. $$1 is a placeholder for a list of missing APIs
 #: chrome-gnome-shell-key-warning_apis_missing:1
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
+"Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
+"integration/pages/installation-guide.html'>documentation</a> for "
 "instructions."
 msgstr ""
 "Ditt inhemska värdanslutningsprogram stöder inte följande API:er: $$1. Du "
 "bör troligen uppgradera det inhemska värdanslutningsprogrammet eller "
-"installera insticksmoduler för saknade API:er. Se <a href='https://wiki."
-"gnome.org/Projects/GnomeShellIntegrationForChrome/"
-"Installation'>dokumentationen</a> för instruktioner."
+"installera insticksmoduler för saknade API:er. Se <https://"
+"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+"guide.html'>dokumentationen</a> för instruktioner."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -332,9 +271,50 @@ msgstr ""
 "För Arch Linux, Debian, Fedora, Gentoo och Ubuntu kan du installera paketet "
 "med namnet ”chrome-gnome-shell”.\n"
 "\n"
-"Du kan också installera anslutningsprogrammet manuellt. Se https://wiki."
-"gnome.org/Projects/GnomeShellIntegrationForChrome/Installation för "
+"Du kan också installera anslutningsprogrammet manuellt. Se https://"
+"wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation för "
 "installationsinstruktioner.\n"
+
+#~ msgid "hours"
+#~ msgstr "timmar"
+
+#~ msgid "Update check period"
+#~ msgstr "Intervall för uppdateringskontroll"
+
+#~ msgid "Last check"
+#~ msgstr "Senaste kontroll"
+
+#~ msgid "Next check"
+#~ msgstr "Nästa kontroll"
+
+#~ msgid "Check for GNOME Shell extensions update"
+#~ msgstr "Sök efter uppdateringar för GNOME Shell-tillägg"
+
+#~ msgid "Check update of enabled GNOME Shell extensions only"
+#~ msgstr "Sök endast efter uppdatering för aktiverade GNOME Shell-tillägg"
+
+#~ msgid ""
+#~ "Your native host connector does not support updates check for enabled "
+#~ "GNOME Shell extensions only. Consider update."
+#~ msgstr ""
+#~ "Ditt inhemska värdanslutningsprogram stöder inte sökning efter "
+#~ "uppdateringar av endast aktiverade GNOME Shell-tillägg. Överväg att "
+#~ "uppdatera."
+
+#~ msgid ""
+#~ "Your native host connector does not support check for GNOME Shell "
+#~ "extensions updates. Probably python-requests package is missing."
+#~ msgstr ""
+#~ "Ditt inhemska värdanslutningsprogram stöder inte sökning efter "
+#~ "uppdateringar av GNOME Shell-tillägg. Troligen saknas paketet python-"
+#~ "requests."
+
+#~ msgid "An update for GNOME Shell extensions available"
+#~ msgstr "En uppdatering för GNOME Shell-tillägg finns tillgänglig"
+
+#~ msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
+#~ msgstr ""
+#~ "Kunde inte söka efter uppdateringar för GNOME Shell-tillägg: $CAUSE$"
 
 #~ msgid ""
 #~ "A network error has occurred. Please check your Internet connection and/"
