@@ -1,22 +1,22 @@
 # GNOME Shell integration for Chrome
 # This file is auto generated with chrome-messages2pot tool.
 # Enrico Nicoletto <liverig@gmail.com>, 2016.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2016-2020.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2016-2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 10.0\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2020-05-04 19:33+0000\n"
-"PO-Revision-Date: 2020-05-17 21:53-0300\n"
+"POT-Creation-Date: 2025-03-04 06:18+0000\n"
+"PO-Revision-Date: 2025-03-12 19:20-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
-"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
+"Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"X-Generator: Gtranslator 47.1\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -67,11 +67,6 @@ msgstr "Sincronizada"
 msgid "GNOME Shell integration"
 msgstr "Integração com GNOME Shell"
 
-#. This is a part of phrase 'Update check period: xx hours'
-#: chrome-gnome-shell-key-hours:1
-msgid "hours"
-msgstr "horas"
-
 #. Used as extension description in Chrome Store
 #: chrome-gnome-shell-key-manifest_description:1
 msgid ""
@@ -113,14 +108,14 @@ msgstr ""
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
+"is not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
+"browser-integration/pages/installation-guide.html'>documentation</a> for "
 "instructions about installing connector."
 msgstr ""
 "Apesar da extensão de integração do GNOME Shell estar em execução, o "
-"conector nativo de máquina não foi detectado. Veja a <a href='https://wiki."
-"gnome.org/Projects/GnomeShellIntegrationForChrome/Installation/"
-"pt_BR'>documentação</a> para instruções sobre instalação do conector."
+"conector nativo de máquina não foi detectado. Veja a <a href='https://"
+"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+"guide.html'>documentação</a> para instruções sobre instalação do conector."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -133,28 +128,10 @@ msgstr "Nenhuma resposta da máquina"
 msgid "Open GNOME Shell extensions website"
 msgstr "Abre o site de extensões do GNOME Shell"
 
-#. Option name. Allow to set interval between GNOME Shell extensions update
-#. checks.
-#: chrome-gnome-shell-key-options_check_period:1
-msgid "Update check period"
-msgstr "Intervalo de verificação por atualização"
-
-#. This is a start of phrase (followed by date/time) of last GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_last_check:1
-msgid "Last check"
-msgstr "Última verificação"
-
 #. Link name for options tab.
 #: chrome-gnome-shell-key-options_link:1
 msgid "Options"
 msgstr "Opções"
-
-#. This is a start of phrase (followed by date/time) of next GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_next_check:1
-msgid "Next check"
-msgstr "Próxima verificação"
 
 #. Means 'Options were saved successfully after user clicked Save button'
 #: chrome-gnome-shell-key-options_saved:1
@@ -192,34 +169,6 @@ msgstr ""
 #: chrome-gnome-shell-key-options_title:1
 msgid "$GS_CHROME$ options"
 msgstr "Opções de $GS_CHROME$"
-
-#. Option name. Allow enable/disable update check for GNOME Shell extensions.
-#: chrome-gnome-shell-key-options_update_check:1
-msgid "Check for GNOME Shell extensions update"
-msgstr "Verificar atualização de extensões do GNOME Shell"
-
-#. Option name.
-#: chrome-gnome-shell-key-options_update_check_enabled:1
-msgid "Check update of enabled GNOME Shell extensions only"
-msgstr ""
-"Verificar atualização somente para extensões do GNOME Shell habilitadas"
-
-#: chrome-gnome-shell-key-options_update_check_enabled_notice:1
-msgid ""
-"Your native host connector does not support updates check for enabled GNOME "
-"Shell extensions only. Consider update."
-msgstr ""
-"Seu conector nativo de máquina não oferece suporte a verificação por "
-"atualizações de extensões do GNOME Shell habilitadas. Considere atualizá-lo."
-
-#: chrome-gnome-shell-key-options_update_check_notice:1
-msgid ""
-"Your native host connector does not support check for GNOME Shell extensions "
-"updates. Probably python-requests package is missing."
-msgstr ""
-"Seu conector nativo de máquina não oferece suporte a verificação por "
-"atualizações de extensões do GNOME Shell. Provavelmente está faltando o "
-"pacote python-requests."
 
 #. Use light icon that is looked better with dark themes.
 #: chrome-gnome-shell-key-options_use_light_icon:1
@@ -287,33 +236,20 @@ msgstr "Sobre a tradução"
 msgid "unknown error"
 msgstr "erro desconhecido"
 
-#: chrome-gnome-shell-key-update_available:1
-msgid "An update for GNOME Shell extensions available"
-msgstr "Atualização disponível para extensões do GNOME Shell"
-
-#. $CAUSE$ is placeholder for error that caused update failure.
-#.
-#. String placeholders:
-#. cause
-#.
-#: chrome-gnome-shell-key-update_check_failed:1
-msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
-msgstr "Falha ao verificar atualizações de extensões do GNOME Shell: $CAUSE$"
-
 #. $$1 is a placeholder for a list of missing APIs
 #: chrome-gnome-shell-key-warning_apis_missing:1
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
+"Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
+"integration/pages/installation-guide.html'>documentation</a> for "
 "instructions."
 msgstr ""
 "Seu conector nativo de máquina não oferece suporte a seguinte API: $$1. "
 "Provavelmente você deveria atualizar o conector nativo de máquina ou "
-"instalar plug-ins para as APIs em falta. Veja a <a href='https://wiki.gnome."
-"org/Projects/GnomeShellIntegrationForChrome/Installation/"
-"pt_BR'>documentação</a> para instruções."
+"instalar plug-ins para as APIs em falta. Veja a <a href='https://"
+"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+"guide.html'>documentação</a> para instruções."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -321,18 +257,6 @@ msgstr "Sim"
 
 #. Chrome store description
 #: chrome-gnome-shell-store-description:1
-#| msgid ""
-#| "You MUST install native connector for this extension to work.\n"
-#| "\n"
-#| "For Arch Linux there is a PKGBUILD available in the AUR: https://aur."
-#| "archlinux.org/packages/chrome-gnome-shell-git\n"
-#| "\n"
-#| "For Debian, Fedora, Gentoo and Ubuntu you can install package named "
-#| "\"chrome-gnome-shell\".\n"
-#| "\n"
-#| "You also can install connector manually. See https://wiki.gnome.org/"
-#| "Projects/GnomeShellIntegrationForChrome/Installation for install "
-#| "instructions.\n"
 msgid ""
 "You MUST install native connector for this extension to work.\n"
 "\n"
@@ -347,9 +271,51 @@ msgstr ""
 "No Arch Linux, Debian, Fedora, Gentoo e Ubuntu, você pode instalar um pacote "
 "chamado “chrome-gnome-shell”.\n"
 "\n"
-"Você também pode instalar o conector manualmente. Veja https://wiki.gnome."
-"org/Projects/GnomeShellIntegrationForChrome/Installation/pt_BR para "
-"instruções de instalação.\n"
+"Você também pode instalar o conector manualmente. Veja https://"
+"wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation/pt_BR "
+"para instruções de instalação.\n"
+
+#~ msgid "hours"
+#~ msgstr "horas"
+
+#~ msgid "Update check period"
+#~ msgstr "Intervalo de verificação por atualização"
+
+#~ msgid "Last check"
+#~ msgstr "Última verificação"
+
+#~ msgid "Next check"
+#~ msgstr "Próxima verificação"
+
+#~ msgid "Check for GNOME Shell extensions update"
+#~ msgstr "Verificar atualização de extensões do GNOME Shell"
+
+#~ msgid "Check update of enabled GNOME Shell extensions only"
+#~ msgstr ""
+#~ "Verificar atualização somente para extensões do GNOME Shell habilitadas"
+
+#~ msgid ""
+#~ "Your native host connector does not support updates check for enabled "
+#~ "GNOME Shell extensions only. Consider update."
+#~ msgstr ""
+#~ "Seu conector nativo de máquina não oferece suporte a verificação por "
+#~ "atualizações de extensões do GNOME Shell habilitadas. Considere atualizá-"
+#~ "lo."
+
+#~ msgid ""
+#~ "Your native host connector does not support check for GNOME Shell "
+#~ "extensions updates. Probably python-requests package is missing."
+#~ msgstr ""
+#~ "Seu conector nativo de máquina não oferece suporte a verificação por "
+#~ "atualizações de extensões do GNOME Shell. Provavelmente está faltando o "
+#~ "pacote python-requests."
+
+#~ msgid "An update for GNOME Shell extensions available"
+#~ msgstr "Atualização disponível para extensões do GNOME Shell"
+
+#~ msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
+#~ msgstr ""
+#~ "Falha ao verificar atualizações de extensões do GNOME Shell: $CAUSE$"
 
 #~ msgid ""
 #~ "A network error has occurred. Please check your Internet connection and/"
