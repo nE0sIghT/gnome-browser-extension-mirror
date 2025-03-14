@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2020-05-04 19:33+0000\n"
+"POT-Creation-Date: 2025-03-04 06:18+0000\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Ser82-png <sw@atrus.ru>\n"
+"Last-Translator: Artur So <arturios2005@mail.ru>\n"
 "Language-Team: ru\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.5\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -66,11 +66,6 @@ msgstr "Синхронизировано"
 msgid "GNOME Shell integration"
 msgstr "GNOME Shell integration"
 
-#. This is a part of phrase 'Update check period: xx hours'
-#: chrome-gnome-shell-key-hours:1
-msgid "hours"
-msgstr "часов"
-
 #. Used as extension description in Chrome Store
 #: chrome-gnome-shell-key-manifest_description:1
 msgid ""
@@ -112,13 +107,13 @@ msgstr ""
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
+"is not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
+"browser-integration/pages/installation-guide.html'>documentation</a> for "
 "instructions about installing connector."
 msgstr ""
 "Хотя расширение GNOME Shell integration работает, нативный хост-коннектор не "
-"обнаружен. Обратитесь к <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation/ru'>документации</a> за "
+"обнаружен. Обратитесь к <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
+"browser-integration/pages/installation-guide.html'>документации</a> за "
 "инструкциями по установке коннектора."
 
 #. Means 'Web extension does not received answer from native messaging host
@@ -132,28 +127,10 @@ msgstr "Нет ответа от хост-коннектора"
 msgid "Open GNOME Shell extensions website"
 msgstr "Открыть сайт расширений GNOME Shell"
 
-#. Option name. Allow to set interval between GNOME Shell extensions update
-#. checks.
-#: chrome-gnome-shell-key-options_check_period:1
-msgid "Update check period"
-msgstr "Период проверки обновлений"
-
-#. This is a start of phrase (followed by date/time) of last GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_last_check:1
-msgid "Last check"
-msgstr "Последняя проверка"
-
 #. Link name for options tab.
 #: chrome-gnome-shell-key-options_link:1
 msgid "Options"
 msgstr "Настройки"
-
-#. This is a start of phrase (followed by date/time) of next GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_next_check:1
-msgid "Next check"
-msgstr "Следующая проверка"
 
 #. Means 'Options were saved successfully after user clicked Save button'
 #: chrome-gnome-shell-key-options_saved:1
@@ -192,32 +169,6 @@ msgstr ""
 msgid "$GS_CHROME$ options"
 msgstr "Настройки расширения $GS_CHROME$"
 
-#. Option name. Allow enable/disable update check for GNOME Shell extensions.
-#: chrome-gnome-shell-key-options_update_check:1
-msgid "Check for GNOME Shell extensions update"
-msgstr "Проверять обновления дополнений GNOME Shell"
-
-#. Option name.
-#: chrome-gnome-shell-key-options_update_check_enabled:1
-msgid "Check update of enabled GNOME Shell extensions only"
-msgstr "Проверять обновления только включенных расширений GNOME Shell"
-
-#: chrome-gnome-shell-key-options_update_check_enabled_notice:1
-msgid ""
-"Your native host connector does not support updates check for enabled GNOME "
-"Shell extensions only. Consider update."
-msgstr ""
-"Ваш нативный коннектор не поддерживает проверку обновлений только включенных "
-"расширений GNOME Shell. Пожалуйста, установите обновление."
-
-#: chrome-gnome-shell-key-options_update_check_notice:1
-msgid ""
-"Your native host connector does not support check for GNOME Shell extensions "
-"updates. Probably python-requests package is missing."
-msgstr ""
-"Ваш нативный коннектор не поддерживает проверку обновлений расширений GNOME "
-"Shell. Вероятно отсутствует пакет python-requests."
-
 #. Use light icon that is looked better with dark themes.
 #: chrome-gnome-shell-key-options_use_light_icon:1
 msgid "Use light icon (dark theme)"
@@ -242,7 +193,7 @@ msgstr "Синхронизация"
 
 #: chrome-gnome-shell-key-synchronization_cancel:1
 msgid "Do not enable synchronization."
-msgstr "Не включать синхронизацию"
+msgstr "Не включать синхронизацию."
 
 #. $CAUSE$ is placeholder for error that caused synchronization failure.
 #.
@@ -282,33 +233,20 @@ msgstr "О переводе"
 msgid "unknown error"
 msgstr "неизвестная ошибка"
 
-#: chrome-gnome-shell-key-update_available:1
-msgid "An update for GNOME Shell extensions available"
-msgstr "Доступно обновление расширений GNOME Shell"
-
-#. $CAUSE$ is placeholder for error that caused update failure.
-#.
-#. String placeholders:
-#. cause
-#.
-#: chrome-gnome-shell-key-update_check_failed:1
-msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
-msgstr "Ошибка проверки обновлений расширений GNOME Shell: $CAUSE$"
-
 #. $$1 is a placeholder for a list of missing APIs
 #: chrome-gnome-shell-key-warning_apis_missing:1
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
+"Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
+"integration/pages/installation-guide.html'>documentation</a> for "
 "instructions."
 msgstr ""
 "Ваш нативный хост-коннектор не поддерживает следующие API: $$1. Вероятно, вы "
 "должны обновить нативный хост-коннектор или установить плагины для "
-"отсутствующих API. Обратитесь к <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation/ru'>документации</a> за "
-"инструкциями."
+"отсутствующих API. Обратитесь к <a href='https://gnome.pages.gitlab.gnome."
+"org/gnome-browser-integration/pages/installation-guide.html'>документации</"
+"a> за инструкциями."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -334,6 +272,44 @@ msgstr ""
 "Вы также можете установить коннектор вручную. Инструкция по установке "
 "находится по адресу https://wiki.gnome.org/Projects/"
 "GnomeShellIntegrationForChrome/Installation/ru.\n"
+
+#~ msgid "hours"
+#~ msgstr "часов"
+
+#~ msgid "Update check period"
+#~ msgstr "Период проверки обновлений"
+
+#~ msgid "Last check"
+#~ msgstr "Последняя проверка"
+
+#~ msgid "Next check"
+#~ msgstr "Следующая проверка"
+
+#~ msgid "Check for GNOME Shell extensions update"
+#~ msgstr "Проверять обновления дополнений GNOME Shell"
+
+#~ msgid "Check update of enabled GNOME Shell extensions only"
+#~ msgstr "Проверять обновления только включенных расширений GNOME Shell"
+
+#~ msgid ""
+#~ "Your native host connector does not support updates check for enabled "
+#~ "GNOME Shell extensions only. Consider update."
+#~ msgstr ""
+#~ "Ваш нативный коннектор не поддерживает проверку обновлений только "
+#~ "включенных расширений GNOME Shell. Пожалуйста, установите обновление."
+
+#~ msgid ""
+#~ "Your native host connector does not support check for GNOME Shell "
+#~ "extensions updates. Probably python-requests package is missing."
+#~ msgstr ""
+#~ "Ваш нативный коннектор не поддерживает проверку обновлений расширений "
+#~ "GNOME Shell. Вероятно отсутствует пакет python-requests."
+
+#~ msgid "An update for GNOME Shell extensions available"
+#~ msgstr "Доступно обновление расширений GNOME Shell"
+
+#~ msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
+#~ msgstr "Ошибка проверки обновлений расширений GNOME Shell: $CAUSE$"
 
 #~ msgid ""
 #~ "A network error has occurred. Please check your Internet connection and/"
