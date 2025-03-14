@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2020-05-04 19:33+0000\n"
-"PO-Revision-Date: 2022-02-03 18:39+0200\n"
+"POT-Creation-Date: 2025-03-04 06:18+0000\n"
+"PO-Revision-Date: 2025-03-14 14:09+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.5\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -67,19 +67,14 @@ msgstr "מסונכרן"
 msgid "GNOME Shell integration"
 msgstr "שילוב מול GNOME Shell"
 
-#. This is a part of phrase 'Update check period: xx hours'
-#: chrome-gnome-shell-key-hours:1
-msgid "hours"
-msgstr "שעות"
-
 #. Used as extension description in Chrome Store
 #: chrome-gnome-shell-key-manifest_description:1
 msgid ""
 "This extension provides integration with GNOME Shell and the corresponding "
 "extensions repository https://extensions.gnome.org"
 msgstr ""
-"הרחבה זו מספקת שילוב מול GNOME Shell ומאגר ההרחבות התואם https://extensions."
-"gnome.org"
+"הרחבה זו מספקת שילוב מול GNOME Shell ומאגר ההרחבות התואם https://"
+"extensions.gnome.org"
 
 #. $REQUEST$ is a placeholder for technical name of request that web extension
 #. make via native messaging host application.
@@ -111,13 +106,13 @@ msgstr "לא ניתן לאתר את הגדרות או גירסת GNOME Shell. נ
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
+"is not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
+"browser-integration/pages/installation-guide.html'>documentation</a> for "
 "instructions about installing connector."
 msgstr ""
-"למרות שהרחבת שילוב GNOME Shell פעילה, לא זוהה מחבר מארח טבעי. יש הנחיות איך "
-"להתקין את המחבר ב<a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>תיעוד</a>."
+"למרות שהרחבת שילוב GNOME Shell פעילה, לא זוהה מחבר מארח מובנה. יש הנחיות איך "
+"להתקין את המחבר ב<a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
+"integration/pages/installation-guide.html'>תיעוד</a>."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -130,28 +125,10 @@ msgstr "אין תגובה מהמארח"
 msgid "Open GNOME Shell extensions website"
 msgstr "פתיחת אתר ההרחבות של GNOME Shell"
 
-#. Option name. Allow to set interval between GNOME Shell extensions update
-#. checks.
-#: chrome-gnome-shell-key-options_check_period:1
-msgid "Update check period"
-msgstr "הפרש בין איתורי עדכונים"
-
-#. This is a start of phrase (followed by date/time) of last GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_last_check:1
-msgid "Last check"
-msgstr "בדיקה אחרונה"
-
 #. Link name for options tab.
 #: chrome-gnome-shell-key-options_link:1
 msgid "Options"
 msgstr "אפשרויות"
-
-#. This is a start of phrase (followed by date/time) of next GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_next_check:1
-msgid "Next check"
-msgstr "הבדיקה הבאה"
 
 #. Means 'Options were saved successfully after user clicked Save button'
 #: chrome-gnome-shell-key-options_saved:1
@@ -189,32 +166,6 @@ msgstr ""
 #: chrome-gnome-shell-key-options_title:1
 msgid "$GS_CHROME$ options"
 msgstr "אפשרויות $GS_CHROME$"
-
-#. Option name. Allow enable/disable update check for GNOME Shell extensions.
-#: chrome-gnome-shell-key-options_update_check:1
-msgid "Check for GNOME Shell extensions update"
-msgstr "לבדוק אם יש עדכון להרחבות של GNOME Shell"
-
-#. Option name.
-#: chrome-gnome-shell-key-options_update_check_enabled:1
-msgid "Check update of enabled GNOME Shell extensions only"
-msgstr "לבדוק אם יש עדכון להרחבות GNOME Shell פעילות בלבד"
-
-#: chrome-gnome-shell-key-options_update_check_enabled_notice:1
-msgid ""
-"Your native host connector does not support updates check for enabled GNOME "
-"Shell extensions only. Consider update."
-msgstr ""
-"מחבר המארח המובנה שלך לא תומך בבדיקת עדכונים להרחבות GNOME Shell פעילות "
-"בלבד. מומלץ לעדכן."
-
-#: chrome-gnome-shell-key-options_update_check_notice:1
-msgid ""
-"Your native host connector does not support check for GNOME Shell extensions "
-"updates. Probably python-requests package is missing."
-msgstr ""
-"מחבר המארח המובנה שלך לא תומך בבדיקות אחר עדכונים להרחבות GNOME Shell. כנראה "
-"שהחבילה python-requests חסרה."
 
 #. Use light icon that is looked better with dark themes.
 #: chrome-gnome-shell-key-options_use_light_icon:1
@@ -280,32 +231,18 @@ msgstr "על התרגום"
 msgid "unknown error"
 msgstr "שגיאה לא ידועה"
 
-#: chrome-gnome-shell-key-update_available:1
-msgid "An update for GNOME Shell extensions available"
-msgstr "יש עדכון להרחבות GNOME Shell"
-
-#. $CAUSE$ is placeholder for error that caused update failure.
-#.
-#. String placeholders:
-#. cause
-#.
-#: chrome-gnome-shell-key-update_check_failed:1
-msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
-msgstr "איתור עדכונים להרחבות GNOME Shell נכשל: $CAUSE$"
-
 #. $$1 is a placeholder for a list of missing APIs
 #: chrome-gnome-shell-key-warning_apis_missing:1
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
-"instructions."
+"Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/"
+"pages/installation-guide.html'>documentation</a> for instructions."
 msgstr ""
 "מחבר המארח המובנה שלך לא תומך במנשקי ה־API הבאים: $$1. כנראה שעליך לשדרג את "
 "מחבר המארח המובנה או להתקין תוספים למנשקי ה־API החסרים. יש הנחיות ב<a "
-"href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/"
-"Installation'>תיעוד</a>."
+"href='https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/"
+"installation-guide.html'>תיעוד</a>."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -327,6 +264,44 @@ msgstr ""
 "‫עבור ארץ׳ לינוקס, דביאן, פדורה, ג׳נטו ואובונטו ניתן להתקין חבילה בשם „chrome-"
 "gnome-shell”.\n"
 "‬\n"
-"‫ניתן להתקין המחבר גם באופן ידני. הנחיות ההתקנה מופיעות בכתובת https://wiki."
-"gnome.org/Projects/GnomeShellIntegrationForChrome/Installation.\n"
+"‫ניתן להתקין המחבר גם באופן ידני. הנחיות ההתקנה מופיעות בכתובת https://"
+"wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation.\n"
 "‬\n"
+
+#~ msgid "hours"
+#~ msgstr "שעות"
+
+#~ msgid "Update check period"
+#~ msgstr "הפרש בין איתורי עדכונים"
+
+#~ msgid "Last check"
+#~ msgstr "בדיקה אחרונה"
+
+#~ msgid "Next check"
+#~ msgstr "הבדיקה הבאה"
+
+#~ msgid "Check for GNOME Shell extensions update"
+#~ msgstr "לבדוק אם יש עדכון להרחבות של GNOME Shell"
+
+#~ msgid "Check update of enabled GNOME Shell extensions only"
+#~ msgstr "לבדוק אם יש עדכון להרחבות GNOME Shell פעילות בלבד"
+
+#~ msgid ""
+#~ "Your native host connector does not support updates check for enabled "
+#~ "GNOME Shell extensions only. Consider update."
+#~ msgstr ""
+#~ "מחבר המארח המובנה שלך לא תומך בבדיקת עדכונים להרחבות GNOME Shell פעילות "
+#~ "בלבד. מומלץ לעדכן."
+
+#~ msgid ""
+#~ "Your native host connector does not support check for GNOME Shell "
+#~ "extensions updates. Probably python-requests package is missing."
+#~ msgstr ""
+#~ "מחבר המארח המובנה שלך לא תומך בבדיקות אחר עדכונים להרחבות GNOME Shell. "
+#~ "כנראה שהחבילה python-requests חסרה."
+
+#~ msgid "An update for GNOME Shell extensions available"
+#~ msgstr "יש עדכון להרחבות GNOME Shell"
+
+#~ msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
+#~ msgstr "איתור עדכונים להרחבות GNOME Shell נכשל: $CAUSE$"
