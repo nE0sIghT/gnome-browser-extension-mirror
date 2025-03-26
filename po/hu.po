@@ -1,24 +1,24 @@
 # Hungarian translation for chrome-gnome-shell.
-# Copyright (C) 2016, 2017, 2018, 2020 Free Software Foundation, Inc.
+# Copyright (C) 2016, 2017, 2018, 2020, 2025 Free Software Foundation, Inc.
 # This file is distributed under the same license as the chrome-gnome-shell package.
 #
 # Balázs Meskó <mesko.balazs at fsf dot hu>, 2016.
 # Gabor Kelemen <kelemeng at ubuntu dot com>, 2016.
-# Balázs Úr <ur.balazs at fsf dot hu>, 2017, 2018, 2020.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2017, 2018, 2020, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2020-05-04 19:33+0000\n"
-"PO-Revision-Date: 2020-09-05 01:23+0200\n"
+"POT-Creation-Date: 2025-03-04 06:18+0000\n"
+"PO-Revision-Date: 2025-03-27 00:21+0100\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
-"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
+"Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 19.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -69,11 +69,6 @@ msgstr "Szinkronizált"
 msgid "GNOME Shell integration"
 msgstr "GNOME Shell integráció"
 
-#. This is a part of phrase 'Update check period: xx hours'
-#: chrome-gnome-shell-key-hours:1
-msgid "hours"
-msgstr "óra"
-
 #. Used as extension description in Chrome Store
 #: chrome-gnome-shell-key-manifest_description:1
 msgid ""
@@ -113,16 +108,21 @@ msgstr ""
 "hogy telepítve van-e és fut-e."
 
 #: chrome-gnome-shell-key-no_host_connector:1
+#| msgid ""
+#| "Although GNOME Shell integration extension is running, native host "
+#| "connector is not detected. Refer <a href='https://wiki.gnome.org/Projects/"
+#| "GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
+#| "instructions about installing connector."
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
+"is not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
+"browser-integration/pages/installation-guide.html'>documentation</a> for "
 "instructions about installing connector."
 msgstr ""
-"Ugyan a GNOME Shell integrációs kiterjesztés fut, a natív gazdacsatlakozó "
-"nem észlelhető. Nézze meg a <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>dokumentációt</a> a csatlakozó "
-"telepítési utasításaiért."
+"Ugyan a GNOME Shell integrációs kiterjesztés fut, a natív gazdacsatlakozó nem"
+" észlelhető. Nézze meg a <a href='https://gnome.pages.gitlab.gnome.org/gnome-b"
+"rowser-integration/pages/installation-guide.html'>dokumentációt</a> a"
+" csatlakozó telepítési utasításaiért."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -135,28 +135,10 @@ msgstr "Nincs válasz a gazdától"
 msgid "Open GNOME Shell extensions website"
 msgstr "GNOME Shell kiterjesztések weboldalának megnyitása"
 
-#. Option name. Allow to set interval between GNOME Shell extensions update
-#. checks.
-#: chrome-gnome-shell-key-options_check_period:1
-msgid "Update check period"
-msgstr "Frissítéskeresés gyakorisága"
-
-#. This is a start of phrase (followed by date/time) of last GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_last_check:1
-msgid "Last check"
-msgstr "Legutóbbi keresés"
-
 #. Link name for options tab.
 #: chrome-gnome-shell-key-options_link:1
 msgid "Options"
 msgstr "Beállítások"
-
-#. This is a start of phrase (followed by date/time) of next GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_next_check:1
-msgid "Next check"
-msgstr "Következő keresés"
 
 #. Means 'Options were saved successfully after user clicked Save button'
 #: chrome-gnome-shell-key-options_saved:1
@@ -195,33 +177,6 @@ msgstr ""
 #: chrome-gnome-shell-key-options_title:1
 msgid "$GS_CHROME$ options"
 msgstr "$GS_CHROME$ beállítások"
-
-#. Option name. Allow enable/disable update check for GNOME Shell extensions.
-#: chrome-gnome-shell-key-options_update_check:1
-msgid "Check for GNOME Shell extensions update"
-msgstr "GNOME Shell kiterjesztésfrissítés keresése"
-
-#. Option name.
-#: chrome-gnome-shell-key-options_update_check_enabled:1
-msgid "Check update of enabled GNOME Shell extensions only"
-msgstr ""
-"Csak az engedélyezett GNOME Shell kiterjesztések frissítésének ellenőrzése"
-
-#: chrome-gnome-shell-key-options_update_check_enabled_notice:1
-msgid ""
-"Your native host connector does not support updates check for enabled GNOME "
-"Shell extensions only. Consider update."
-msgstr ""
-"A natív gazdacsatlakozója nem támogatja csak az engedélyezett GNOME Shell "
-"kiterjesztések frissítéseinek ellenőrzését. Fontolja meg a frissítést."
-
-#: chrome-gnome-shell-key-options_update_check_notice:1
-msgid ""
-"Your native host connector does not support check for GNOME Shell extensions "
-"updates. Probably python-requests package is missing."
-msgstr ""
-"A natív gazdacsatlakozója nem támogatja a GNOME Shell kiterjesztések "
-"frissítéseinek ellenőrzését. Valószínűleg a python-requests csomag hiányzik."
 
 #. Use light icon that is looked better with dark themes.
 #: chrome-gnome-shell-key-options_use_light_icon:1
@@ -287,33 +242,26 @@ msgstr "A fordítás névjegye"
 msgid "unknown error"
 msgstr "ismeretlen hiba"
 
-#: chrome-gnome-shell-key-update_available:1
-msgid "An update for GNOME Shell extensions available"
-msgstr "Egy GNOME Shell kiterjesztésfrissítés érhető el"
-
-#. $CAUSE$ is placeholder for error that caused update failure.
-#.
-#. String placeholders:
-#. cause
-#.
-#: chrome-gnome-shell-key-update_check_failed:1
-msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
-msgstr "A GNOME Shell kiterjesztésfrissítések keresése sikertelen: $CAUSE$"
-
 #. $$1 is a placeholder for a list of missing APIs
 #: chrome-gnome-shell-key-warning_apis_missing:1
+#| msgid ""
+#| "Your native host connector do not support following APIs: $$1. Probably "
+#| "you should upgrade native host connector or install plugins for missing "
+#| "APIs. Refer <a href='https://wiki.gnome.org/Projects/"
+#| "GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
+#| "instructions."
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
+"Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
+"integration/pages/installation-guide.html'>documentation</a> for "
 "instructions."
 msgstr ""
-"A natív gazdacsatlakozó nem támogatja a következő API-kat: $$1. Valószínűleg "
-"frissítenie kell a natív gazdacsatlakozót, vagy bővítményeket kell "
-"telepítenie a hiányzó API-khoz. Nézz meg a <a href='https://wiki.gnome.org/"
-"Projects/GnomeShellIntegrationForChrome/Installation'>dokumentációt</a> az "
-"utasításokért."
+"A natív gazdacsatlakozó nem támogatja a következő API-kat: $$1. Valószínűleg"
+" frissítenie kell a natív gazdacsatlakozót, vagy bővítményeket kell"
+" telepítenie a hiányzó API-khoz. Nézz meg a <a"
+" href='https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/in"
+"stallation-guide.html'>dokumentációt</a> az utasításokért."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -321,18 +269,6 @@ msgstr "Igen"
 
 #. Chrome store description
 #: chrome-gnome-shell-store-description:1
-#| msgid ""
-#| "You MUST install native connector for this extension to work.\n"
-#| "\n"
-#| "For Arch Linux there is a PKGBUILD available in the AUR: https://aur."
-#| "archlinux.org/packages/chrome-gnome-shell-git\n"
-#| "\n"
-#| "For Debian, Fedora, Gentoo and Ubuntu you can install package named "
-#| "\"chrome-gnome-shell\".\n"
-#| "\n"
-#| "You also can install connector manually. See https://wiki.gnome.org/"
-#| "Projects/GnomeShellIntegrationForChrome/Installation for install "
-#| "instructions.\n"
 msgid ""
 "You MUST install native connector for this extension to work.\n"
 "\n"
@@ -344,9 +280,9 @@ msgid ""
 msgstr ""
 "A kiterjesztés működéséhez telepíteni KELL a natív csatlakozót.\n"
 "\n"
-"Arch Linux, Debian, Fedora, Gentoo és Ubuntu használatakor a"
-" „chrome-gnome-shell” nevű csomagot telepítheti.\n"
+"Arch Linux, Debian, Fedora, Gentoo és Ubuntu használatakor a „chrome-gnome-"
+"shell” nevű csomagot telepítheti.\n"
 "\n"
-"Kézzel is telepítheti a csatlakozót. Nézze meg a"
-" https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation"
-" oldalt a telepítési utasításokért.\n"
+"Kézzel is telepítheti a csatlakozót. Nézze meg a https://wiki.gnome.org/"
+"Projects/GnomeShellIntegrationForChrome/Installation oldalt a telepítési "
+"utasításokért.\n"
