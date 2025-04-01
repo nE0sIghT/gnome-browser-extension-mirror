@@ -1,21 +1,21 @@
 # Persian translation for chrome-gnome-shell.
 # Copyright (C) 2021 chrome-gnome-shell's COPYRIGHT HOLDER
 # This file is distributed under the same license as the chrome-gnome-shell package.
-# Danial Behzadi <dani.behzi@ubuntu.com>, 2021.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2021-2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2020-05-04 19:33+0000\n"
+"POT-Creation-Date: 2025-03-04 06:18+0000\n"
+"PO-Revision-Date: 2025-04-01 07:12+0330\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
+"Language-Team: Persian <fa@li.org>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2021-09-05 13:40+0430\n"
-"Language-Team: Persian <fa@li.org>\n"
-"Language: fa\n"
-"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.5\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -66,11 +66,6 @@ msgstr "همگام شده"
 msgid "GNOME Shell integration"
 msgstr "یکپارچگی پوستهٔ گنوم"
 
-#. This is a part of phrase 'Update check period: xx hours'
-#: chrome-gnome-shell-key-hours:1
-msgid "hours"
-msgstr "ساعت"
-
 #. Used as extension description in Chrome Store
 #: chrome-gnome-shell-key-manifest_description:1
 msgid ""
@@ -103,23 +98,23 @@ msgstr "خیر"
 #. settings
 #: chrome-gnome-shell-key-no_gnome_shell:1
 msgid ""
-"Unable to locate GNOME Shell settings or version. Make sure it is installed "
-"and running."
+"Unable to locate GNOME Shell settings or version. Make sure it is installed and "
+"running."
 msgstr ""
-"ناتوان در تعیین مکان نگارش یا تنظیمات پوستهٔ گنوم. مطمئن شوید نصب شده و در "
-"حال اجراست."
+"ناتوان در تعیین مکان نگارش یا تنظیمات پوستهٔ گنوم. مطمئن شوید نصب شده و در حال "
+"اجراست."
 
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
-"Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
-"instructions about installing connector."
+"Although GNOME Shell integration extension is running, native host connector is "
+"not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
+"integration/pages/installation-guide.html'>documentation</a> for instructions "
+"about installing connector."
 msgstr ""
-"با این که افزونهٔ یکپارچگی با پوستهٔ گنوم در حال اجراست، رابط میزبان بومی "
-"تشخیص داده نشد. برای دستورالعمل‌ها دربارهٔ نصب رابط به <a href='https://wiki."
-"gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>مستندات</a> "
-"مراجعه کنید."
+"با این که افزونهٔ یکپارچگی با پوستهٔ گنوم در حال اجراست، رابط میزبان بومی تشخیص "
+"داده نشد. برای دستورالعمل‌ها دربارهٔ نصب رابط به <a href='https://"
+"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+"guide.html'>مستندات</a> مراجعه کنید."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -132,28 +127,10 @@ msgstr "بدون پاسخ میزبان"
 msgid "Open GNOME Shell extensions website"
 msgstr "گشودن پایگاه وب افزونه‌های پوستهٔ گنوم"
 
-#. Option name. Allow to set interval between GNOME Shell extensions update
-#. checks.
-#: chrome-gnome-shell-key-options_check_period:1
-msgid "Update check period"
-msgstr "دورهٔ بررسی به‌روز رسانی"
-
-#. This is a start of phrase (followed by date/time) of last GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_last_check:1
-msgid "Last check"
-msgstr "آخرین بررسی"
-
 #. Link name for options tab.
 #: chrome-gnome-shell-key-options_link:1
 msgid "Options"
 msgstr "گزینه‌ها"
-
-#. This is a start of phrase (followed by date/time) of next GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_next_check:1
-msgid "Next check"
-msgstr "بررسی بعدی"
 
 #. Means 'Options were saved successfully after user clicked Save button'
 #: chrome-gnome-shell-key-options_saved:1
@@ -178,8 +155,7 @@ msgid ""
 "If enabled, your GNOME Shell extensions list will be synchronized with your "
 "Google account."
 msgstr ""
-"اگر به کار افتد، سیاههٔ افزونه‌های پوستهٔ گنومتان با حساب گوگلتان همگام خواهد "
-"شد."
+"اگر به کار افتد، سیاههٔ افزونه‌های پوستهٔ گنومتان با حساب گوگلتان همگام خواهد شد."
 
 #. $GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This
 #. string used as title for Options page. This title is not shown in Chrome,
@@ -191,32 +167,6 @@ msgstr ""
 #: chrome-gnome-shell-key-options_title:1
 msgid "$GS_CHROME$ options"
 msgstr "گزینه‌های $GS_CHROME$"
-
-#. Option name. Allow enable/disable update check for GNOME Shell extensions.
-#: chrome-gnome-shell-key-options_update_check:1
-msgid "Check for GNOME Shell extensions update"
-msgstr "بررسی به‌روز رسانی افزونه‌های پوستهٔ گنوم"
-
-#. Option name.
-#: chrome-gnome-shell-key-options_update_check_enabled:1
-msgid "Check update of enabled GNOME Shell extensions only"
-msgstr "بررسی به‌روز رسانی فقط برای افزونه‌های پوستهٔ گنوم به کار افتاده"
-
-#: chrome-gnome-shell-key-options_update_check_enabled_notice:1
-msgid ""
-"Your native host connector does not support updates check for enabled GNOME "
-"Shell extensions only. Consider update."
-msgstr ""
-"رابط مزبان بومیتان،‌بررسی به‌روز رسانی‌ها فقط برای افزونه‌های پوستهٔ گنوم به کار "
-"افتاده را پشتیبانی نمی‌کند. به‌روزش کنید."
-
-#: chrome-gnome-shell-key-options_update_check_notice:1
-msgid ""
-"Your native host connector does not support check for GNOME Shell extensions "
-"updates. Probably python-requests package is missing."
-msgstr ""
-"رابط مزبان بومیتان،‌بررسی به‌روز رسانی‌های افزونه‌های پوستهٔ گنوم به کار افتاده "
-"را پشتیبانی نمی‌کند. احتمالاً بستهٔ python-requests نصب نشده."
 
 #. Use light icon that is looked better with dark themes.
 #: chrome-gnome-shell-key-options_use_light_icon:1
@@ -282,32 +232,18 @@ msgstr "دربارهٔ ترجمه"
 msgid "unknown error"
 msgstr "خطای ناشناخته"
 
-#: chrome-gnome-shell-key-update_available:1
-msgid "An update for GNOME Shell extensions available"
-msgstr "به‌روز رسانی‌ای برای افزونه‌های پوستهٔ گنوم موجود است"
-
-#. $CAUSE$ is placeholder for error that caused update failure.
-#.
-#. String placeholders:
-#. cause
-#.
-#: chrome-gnome-shell-key-update_check_failed:1
-msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
-msgstr "شکست در بررسی به‌روز رسانی‌های افزونه‌های پوستهٔ گنوم: $CAUSE$"
-
 #. $$1 is a placeholder for a list of missing APIs
 #: chrome-gnome-shell-key-warning_apis_missing:1
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
-"should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
-"instructions."
+"should upgrade native host connector or install plugins for missing APIs. Refer "
+"<a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/"
+"installation-guide.html'>documentation</a> for instructions."
 msgstr ""
 "رابط میزبان بومیتان، این APIها را پشتیبانی نمی‌کند: $$1. احتمالاً باید رابط "
 "میزبان بومیتان را ارتقا داده یا افزایه‌هایی را برای APIهای ناموجود نصب کنید. "
-"برای دستورالعمل‌ها به <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>مستندات</a> مراجعه کنید."
+"برای دستورالعمل‌ها به <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
+"browser-integration/pages/installation-guide.html'>مستندات</a> مراجعه کنید."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -318,8 +254,8 @@ msgstr "بله"
 msgid ""
 "You MUST install native connector for this extension to work.\n"
 "\n"
-"For Arch Linux, Debian, Fedora, Gentoo and Ubuntu you can install package "
-"named \"chrome-gnome-shell\".\n"
+"For Arch Linux, Debian, Fedora, Gentoo and Ubuntu you can install package named "
+"\"chrome-gnome-shell\".\n"
 "\n"
 "You also can install connector manually. See https://wiki.gnome.org/Projects/"
 "GnomeShellIntegrationForChrome/Installation for install instructions.\n"
@@ -330,5 +266,42 @@ msgstr ""
 "کنید.\n"
 "\n"
 "همچنین می‌توانید رابط را به صورت دستی نصب کنید. برای دستورالعمل‌ها، https://"
-"wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation را "
-"ببینید.\n"
+"wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation را ببینید.\n"
+
+#~ msgid "hours"
+#~ msgstr "ساعت"
+
+#~ msgid "Update check period"
+#~ msgstr "دورهٔ بررسی به‌روز رسانی"
+
+#~ msgid "Last check"
+#~ msgstr "آخرین بررسی"
+
+#~ msgid "Next check"
+#~ msgstr "بررسی بعدی"
+
+#~ msgid "Check for GNOME Shell extensions update"
+#~ msgstr "بررسی به‌روز رسانی افزونه‌های پوستهٔ گنوم"
+
+#~ msgid "Check update of enabled GNOME Shell extensions only"
+#~ msgstr "بررسی به‌روز رسانی فقط برای افزونه‌های پوستهٔ گنوم به کار افتاده"
+
+#~ msgid ""
+#~ "Your native host connector does not support updates check for enabled GNOME "
+#~ "Shell extensions only. Consider update."
+#~ msgstr ""
+#~ "رابط مزبان بومیتان،‌بررسی به‌روز رسانی‌ها فقط برای افزونه‌های پوستهٔ گنوم به کار "
+#~ "افتاده را پشتیبانی نمی‌کند. به‌روزش کنید."
+
+#~ msgid ""
+#~ "Your native host connector does not support check for GNOME Shell extensions "
+#~ "updates. Probably python-requests package is missing."
+#~ msgstr ""
+#~ "رابط مزبان بومیتان،‌بررسی به‌روز رسانی‌های افزونه‌های پوستهٔ گنوم به کار افتاده "
+#~ "را پشتیبانی نمی‌کند. احتمالاً بستهٔ python-requests نصب نشده."
+
+#~ msgid "An update for GNOME Shell extensions available"
+#~ msgstr "به‌روز رسانی‌ای برای افزونه‌های پوستهٔ گنوم موجود است"
+
+#~ msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
+#~ msgstr "شکست در بررسی به‌روز رسانی‌های افزونه‌های پوستهٔ گنوم: $CAUSE$"
