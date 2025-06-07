@@ -1,20 +1,22 @@
 # Azerbaijani translation for chrome-gnome-shell.
 # Copyright (C) 2025 chrome-gnome-shell's COPYRIGHT HOLDER
 # This file is distributed under the same license as the chrome-gnome-shell package.
-# Ramal Rəhimov <jhonaluman@gmail.com>, 2025.
+# Ramal Rəhimov <jhoaluman@gmail.com>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
 "POT-Creation-Date: 2025-03-04 06:18+0000\n"
+"PO-Revision-Date: 2025-06-08 02:40+0400\n"
+"Last-Translator: Ramal Rəhimov <jhoaluman@gmail.com>\n"
+"Language-Team: Azerbaijani <contact@azlinux.org>\n"
+"Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-03-04 06:18+0000\n"
-"Last-Translator: Ramal Rəhimov <jhonaluman@gmail.com>\n"
-"Language-Team: Azerbaijan Linux Community <contact@azlinux.org>\n"
-"Language: az\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 46.0\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -71,7 +73,8 @@ msgid ""
 "This extension provides integration with GNOME Shell and the corresponding "
 "extensions repository https://extensions.gnome.org"
 msgstr ""
-"Bu əlavə GNOME Shell ilə və müvafiq əlavələr anbarı https://extensions.gnome.org ilə inteqrasiyanı təmin edir"
+"Bu əlavə GNOME Shell ilə və müvafiq əlavələr anbarı https://extensions.gnome."
+"org ilə inteqrasiyanı təmin edir"
 
 #. $REQUEST$ is a placeholder for technical name of request that web extension
 #. make via native messaging host application.
@@ -99,7 +102,8 @@ msgid ""
 "Unable to locate GNOME Shell settings or version. Make sure it is installed "
 "and running."
 msgstr ""
-"GNOME Shell parametrləri və ya versiyası tapıla bilmədi. Onun quraşdırıldığından və işlədiyindən əmin olun."
+"GNOME Shell parametrləri və ya versiyası tapıla bilmədi. Onun "
+"quraşdırıldığından və işlədiyindən əmin olun."
 
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
@@ -108,7 +112,10 @@ msgid ""
 "browser-integration/pages/installation-guide.html'>documentation</a> for "
 "instructions about installing connector."
 msgstr ""
-"GNOME Shell inteqrasiya əlavəsi işləsə də, yerli birləşdirici aşkar edilmir. Birləşdiricinin quraşdırılması haqqında təlimatlar üçün <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html'>sənədlərə</a> baxın."
+"GNOME Shell inteqrasiya əlavəsi işləsə də, yerli birləşdirici aşkar edilmir. "
+"Birləşdiricinin quraşdırılması haqqında təlimatlar üçün <a href='https://"
+"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+"guide.html'>sənədlərə</a> baxın."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -149,7 +156,8 @@ msgid ""
 "If enabled, your GNOME Shell extensions list will be synchronized with your "
 "Google account."
 msgstr ""
-"Aktiv edilərsə, GNOME Shell əlavələr siyahınız Google hesabınızla sinxronlaşdırılacaq."
+"Aktiv edilərsə, GNOME Shell əlavələr siyahınız Google hesabınızla "
+"sinxronlaşdırılacaq."
 
 #. $GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This
 #. string used as title for Options page. This title is not shown in Chrome,
@@ -221,7 +229,7 @@ msgstr "Tərcümə: Ramal Rəhimov <jhonaluman@gmail.com>"
 msgid "About translation"
 msgstr "Tərcümə haqqında"
 
-#. This should never be shown to user. However better safe than sorry.
+#. This should newer be shown to user. However better safe than sorry.
 #: chrome-gnome-shell-key-unknown_error:1
 msgid "unknown error"
 msgstr "naməlum xəta"
@@ -235,7 +243,11 @@ msgid ""
 "integration/pages/installation-guide.html'>documentation</a> for "
 "instructions."
 msgstr ""
-"Yerli birləşdiriciniz aşağıdakı API-ləri dəstəkləmir: $$1. Ehtimal ki, yerli birləşdiricini yeniləməli və ya çatışmayan API-lər üçün plaginlər quraşdırmalısınız. Təlimatlar üçün <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html'>sənədlərə</a> baxın."
+"Yerli birləşdiriciniz aşağıdakı API-ləri dəstəkləmir: $$1. Ehtimal ki, yerli "
+"birləşdiricini yeniləməli və ya çatışmayan API-lər üçün plaginlər "
+"quraşdırmalısınız. Təlimatlar üçün <a href='https://gnome.pages.gitlab.gnome."
+"org/gnome-browser-integration/pages/installation-guide.html'>sənədlərə</a> "
+"baxın."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -249,11 +261,15 @@ msgid ""
 "For Arch Linux, Debian, Fedora, Gentoo and Ubuntu you can install package "
 "named \"chrome-gnome-shell\".\n"
 "\n"
-"You also can install connector manually. See https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation for install instructions.\n"
+"You also can install connector manually. See https://gnome.pages.gitlab."
+"gnome.org/gnome-browser-integration/pages/installation-guide.html for "
+"install instructions.\n"
 msgstr ""
 "Bu əlavənin işləməsi üçün yerli birləşdiricini quraşdırmalısınız.\n"
 "\n"
-"Arch Linux, Debian, Fedora, Gentoo və Ubuntu üçün \"chrome-gnome-shell\" adlı paketi quraşdıra bilərsiniz.\n"
+"Arch Linux, Debian, Fedora, Gentoo və Ubuntu üçün \"chrome-gnome-shell\" "
+"adlı paketi quraşdıra bilərsiniz.\n"
 "\n"
-"Birləşdiricini əl ilə də quraşdıra bilərsiniz. Quraşdırma təlimatları üçün https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation səhifəsinə baxın.\n"
+"Birləşdiricini əl ilə də quraşdıra bilərsiniz. Quraşdırma təlimatları üçün "
+"https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/"
+"installation-guide.html səhifəsinə baxın.\n"
