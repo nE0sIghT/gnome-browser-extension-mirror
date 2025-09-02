@@ -4,7 +4,6 @@ import bus from "./include/bus.js";
 import constants from "./include/constants.js";
 import Integration from "./include/integration.js";
 import Synchronize from "./include/sync.js";
-import Toolbar from "./include/toolbar.js";
 
 chrome.runtime.onInstalled.addListener(function (details) {
     var version = chrome.runtime.getManifest().version;
@@ -187,5 +186,3 @@ chrome.runtime.getPlatformInfo(function (info) {
         Synchronize.init();
     }
 });
-
-Toolbar.init();

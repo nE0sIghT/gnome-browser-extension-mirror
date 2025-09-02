@@ -7,7 +7,7 @@ import Integration from './integration.js';
 const Notifications = (function () {
     var DEFAULT_NOTIFICATION_OPTIONS = {
         type: chrome.notifications.TemplateType.BASIC,
-        iconUrl: 'icons/GnomeLogo-128.png',
+        iconUrl: 'icons/GnomeLogo.svg',
         title: m('gs_chrome'),
         buttons: [
             { title: m('close') }
