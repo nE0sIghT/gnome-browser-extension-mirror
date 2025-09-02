@@ -36,7 +36,6 @@ const constants = {
 
     DEFAULT_LOCAL_OPTIONS: {
         syncExtensions: false,
-        useLightIcon: false
     },
 
     EXTERNAL_MESSAGES: [
