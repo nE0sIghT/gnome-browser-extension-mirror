@@ -31,7 +31,7 @@ Unpacked extensions are also available in the `builddir/extension` folder which 
 
 ## Translations
 
-This project uses the [GNOME Translation Project](https://wiki.gnome.org/TranslationProject).   Translation statistics can be obtained on the corresponding Damned Lies page.
+This project uses the [GNOME Translation Project](https://welcome.gnome.org/ru/team/translation/).   Translation statistics can be obtained on the corresponding Damned Lies page.
 
 ### Translation strings handling
 
@@ -55,4 +55,4 @@ This process is fully compatible with Damned Lies.
 There is a limited number of [supported locales](https://developer.chrome.com/webstore/i18n?csw=1#localeTable).  
 If you use an unsupported locale, Google Chrome will ignore it.
 
-To create a new translation, you can use the `msginit` command (or any po editor) and the gettext template. Please refer to the [Translation Project wiki page](https://wiki.gnome.org/TranslationProject) for further information about optimal translation workflow.
+To create a new translation, you can use the `msginit` command (or any po editor) and the gettext template. Please refer to the [Translation Project wiki page](https://welcome.gnome.org/ru/team/translation/) for further information about optimal translation workflow.

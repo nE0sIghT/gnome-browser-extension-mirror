@@ -37,7 +37,7 @@ const Integration = (function () {
                             sendResponse(response);
                         }
                         else {
-                            var message = m('no_host_connector');
+                            var message = m('no_host_connector', 'https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html');
                             if (
                                 chrome.runtime.lastError &&
                                 chrome.runtime.lastError.message &&

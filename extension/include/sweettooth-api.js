@@ -128,9 +128,7 @@ window.SweetTooth = function () {
                 }
 
                 if (REQUIRED_APIS.length > 0) {
-                    require(['messages'], function (messages) {
-                        messages.addWarning(GSC.getMessage('warning_apis_missing', REQUIRED_APIS.join(", ")));
-                    });
+                    console.warn(GSC.getMessage('warning_apis_missing', REQUIRED_APIS.join(", "), "https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html"));
                 }
             }, function (message) {
                 apiObject.apiVersion = null;

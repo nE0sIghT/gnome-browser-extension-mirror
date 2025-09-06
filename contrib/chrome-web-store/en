@@ -2,4 +2,4 @@ You MUST install native connector for this extension to work.
 
 For Arch Linux, Debian, Fedora, Gentoo and Ubuntu you can install package named "chrome-gnome-shell".
 
-You also can install connector manually. See https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation for install instructions.
+You also can install connector manually. See https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html for install instructions.
