@@ -1,0 +1,122 @@
+---
+variables:
+  FF_NETWORK_PER_BUILD: 'true'
+  FF_SCRIPT_SECTIONS: 'true'
+
+  DOCKER_VERSION: '28'
+  PYTHON_VERSION: '3.10'
+  PYTHON_IMAGE: python
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_REF_PROTECTED == "true"
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
+stages:
+  - validate
+  - test
+  - security
+  - build
+
+.pip cache:
+  cache:
+    paths:
+      - $PIP_CACHE_DIR
+    when: always
+  variables:
+    PIP_CACHE_DIR: $CI_PROJECT_DIR/.cache/pip
+
+.security defaults:
+  stage: security
+  allow_failure: true
+  needs: []
+
+.test defaults:
+  extends:
+    - .pip cache
+  image: docker.io/$PYTHON_IMAGE:$PYTHON_VERSION
+  before_script:
+    - python --version
+
+    - pip install -r requirements.txt
+  needs: []
+
+.validate defaults:
+  extends:
+    - .test defaults
+  stage: validate
+  script:
+    - >-
+      "${VALIDATE_TOOL}" ${VALIDATE_TOOL_ARGS}
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+  variables:
+    VALIDATE_TOOL: ruff
+
+lint:
+  extends:
+    - .validate defaults
+  variables:
+    VALIDATE_TOOL_ARGS: check
+
+format:
+  extends:
+    - .validate defaults
+  variables:
+    VALIDATE_TOOL_ARGS: format --check --diff
+
+
+# https://gitlab.freedesktop.org/freedesktop/ci-templates/-/blob/801093be0b88f23c8dbabe9cfce7134548f7ccdc/templates/ci-fairy.yml
+# https://gitlab.gnome.org/GNOME/gnome-shell/-/blob/876ca5d2de92efbea3f2379839073747c9e0dd55/.gitlab-ci.yml#L82
+check commits:
+  stage: validate
+  image: quay.io/freedesktop.org/ci-templates:ci-fairy-sha256-eb20531b68e57da06f4e631402fd494869b1529e2c4ad05cfe24ef3fb8038815
+  script:
+    - ci-fairy check-commits --junit-xml=commit-message-junit-report.xml
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - commit-message-junit-report.xml
+    reports:
+      junit: commit-message-junit-report.xml
+  variables:
+    GIT_DEPTH: "100"
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
+security (trivy):
+  extends:
+    - .security defaults
+  image:
+    name: aquasec/trivy
+    entrypoint: [""]
+  before_script:
+    - trivy --version
+  script:
+    - trivy fs .
+  cache:
+    paths:
+      - .trivy
+    when: always
+  variables:
+    TRIVY_CACHE_DIR: .trivy
+    TRIVY_EXIT_CODE: 1
+    TRIVY_SCANNERS: vuln,config
+
+build extension:
+  stage: build
+  image: debian:stable
+  before_script:
+    - mkdir -p builddir
+    - apt update
+    - apt install -y
+        gettext
+        meson
+        p7zip-full
+  script:
+    - meson setup --prefix=/usr builddir
+    - cd builddir
+    - meson compile
+  artifacts:
+    paths:
+      - builddir/*.zip
