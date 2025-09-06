@@ -63,7 +63,13 @@
 		"message": "\u7121\u6cd5\u53d6\u5f97 GNOME Shell \u7684\u8a2d\u5b9a\u6216\u7248\u672c\u3002\u78ba\u4fdd\u5176\u5df2\u7d93\u5b89\u88dd\u4e14\u70ba\u57f7\u884c\u72c0\u614b\u3002"
 	},
 	"no_host_connector": {
-		"message": "\u96d6\u7136 GNOME Shell \u6574\u5408\u9644\u52a0\u5143\u4ef6\u70ba\u57f7\u884c\u72c0\u614b\uff0c\u4f46\u672a\u5075\u6e2c\u5230\u539f\u751f\u4e3b\u6a5f\u4ecb\u9762\u3002\u8acb\u53c3\u8003<a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>\u6587\u4ef6</a>\u53d6\u5f97\u5b89\u88dd\u4ecb\u9762\u7684\u6307\u5f15\u8aaa\u660e\u3002"
+		"description": "$url$ is a placeholder for URL",
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
@@ -154,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "\u60a8\u7684\u539f\u751f\u4e3b\u6a5f\u4ecb\u9762\u4e0d\u652f\u63f4\u4ee5\u4e0b API\uff1a$$1\u3002\u53ef\u80fd\u4f60\u9700\u8981\u5347\u7d1a\u539f\u751f\u4e3b\u6a5f\u4ecb\u9762\u3001\u6216\u5b89\u88dd\u907a\u5931 API \u7684\u9644\u52a0\u5143\u4ef6\u3002\u53c3\u8003<a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>\u6587\u4ef6</a>\u53d6\u5f97\u6307\u5f15\u3002"
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
 		"message": "\u662f"

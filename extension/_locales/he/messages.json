@@ -63,7 +63,13 @@
 		"message": "\u05dc\u05d0 \u05e0\u05d9\u05ea\u05df \u05dc\u05d0\u05ea\u05e8 \u05d0\u05ea \u05d4\u05d2\u05d3\u05e8\u05d5\u05ea \u05d0\u05d5 \u05d2\u05d9\u05e8\u05e1\u05ea GNOME Shell. \u05e0\u05d0 \u05dc\u05d5\u05d5\u05d3\u05d0 \u05e9\u05d6\u05d4 \u05de\u05d5\u05ea\u05e7\u05df \u05d5\u05e4\u05e2\u05d9\u05dc."
 	},
 	"no_host_connector": {
-		"message": "\u05dc\u05de\u05e8\u05d5\u05ea \u05e9\u05d4\u05e8\u05d7\u05d1\u05ea \u05e9\u05d9\u05dc\u05d5\u05d1 GNOME Shell \u05e4\u05e2\u05d9\u05dc\u05d4, \u05dc\u05d0 \u05d6\u05d5\u05d4\u05d4 \u05de\u05d7\u05d1\u05e8 \u05de\u05d0\u05e8\u05d7 \u05d8\u05d1\u05e2\u05d9. \u05d9\u05e9 \u05d4\u05e0\u05d7\u05d9\u05d5\u05ea \u05d0\u05d9\u05da \u05dc\u05d4\u05ea\u05e7\u05d9\u05df \u05d0\u05ea \u05d4\u05de\u05d7\u05d1\u05e8 \u05d1<a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>\u05ea\u05d9\u05e2\u05d5\u05d3</a>."
+		"description": "$url$ is a placeholder for URL",
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
@@ -154,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "\u05de\u05d7\u05d1\u05e8 \u05d4\u05de\u05d0\u05e8\u05d7 \u05d4\u05de\u05d5\u05d1\u05e0\u05d4 \u05e9\u05dc\u05da \u05dc\u05d0 \u05ea\u05d5\u05de\u05da \u05d1\u05de\u05e0\u05e9\u05e7\u05d9 \u05d4\u05beAPI \u05d4\u05d1\u05d0\u05d9\u05dd: $$1. \u05db\u05e0\u05e8\u05d0\u05d4 \u05e9\u05e2\u05dc\u05d9\u05da \u05dc\u05e9\u05d3\u05e8\u05d2 \u05d0\u05ea \u05de\u05d7\u05d1\u05e8 \u05d4\u05de\u05d0\u05e8\u05d7 \u05d4\u05de\u05d5\u05d1\u05e0\u05d4 \u05d0\u05d5 \u05dc\u05d4\u05ea\u05e7\u05d9\u05df \u05ea\u05d5\u05e1\u05e4\u05d9\u05dd \u05dc\u05de\u05e0\u05e9\u05e7\u05d9 \u05d4\u05beAPI \u05d4\u05d7\u05e1\u05e8\u05d9\u05dd. \u05d9\u05e9 \u05d4\u05e0\u05d7\u05d9\u05d5\u05ea \u05d1<a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>\u05ea\u05d9\u05e2\u05d5\u05d3</a>."
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
 		"message": "\u05db\u05df"

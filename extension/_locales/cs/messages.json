@@ -63,7 +63,13 @@
 		"message": "Nelze naj\u00edt nastaven\u00ed nebo verzi GNOME Shellu. Ujist\u011bte se, \u017ee je nainstalov\u00e1n a b\u011b\u017e\u00ed."
 	},
 	"no_host_connector": {
-		"message": "A\u010dkoliv roz\u0161\u00ed\u0159en\u00ed integruj\u00edc\u00ed GNOME Shell b\u011b\u017e\u00ed, nebyl nalezen konektor pro p\u0159irozen\u00e9ho hostitele. Pod\u00edvejte se do <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentace</a>, jak konektor nainstalovat."
+		"description": "$url$ is a placeholder for URL",
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
@@ -154,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Konektor pro va\u0161eho p\u0159irozen\u00e9ho hostitele nepodporuje n\u00e1sleduj\u00edc\u00ed API: $$1. Pravd\u011bpodobn\u011b jej budete muset pov\u00fd\u0161it na nov\u011bj\u0161\u00ed verzi nebo nainstalovat z\u00e1suvn\u00fd modul pro chyb\u011bj\u00edc\u00ed API. Na instrukce se pod\u00edvejte se do <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentace</a>."
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
 		"message": "Ano"

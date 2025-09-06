@@ -63,7 +63,13 @@
 		"message": "Nu se pot localiza configur\u0103rile Shell GNOME sau versiunea. Asigura\u021bi-v\u0103 c\u0103 este instalat \u0219i c\u0103 ruleaz\u0103."
 	},
 	"no_host_connector": {
-		"message": "De\u0219i extensia de integrare Shell GNOME ruleaz\u0103, conectorul de gazd\u0103 nativ nu este detectat. Consulta\u021bi <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documenta\u021bia</a> pentru instruc\u021biuni despre instalarea conectorului."
+		"description": "$url$ is a placeholder for URL",
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
@@ -154,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Conectorul de gazd\u0103 nativ nu suport\u0103 urm\u0103toarele API-uri: $$1. Probabil ar trebui s\u0103 actualiza\u021bi conectorul de gazd\u0103 nativ sau s\u0103 instala\u021bi module pentru API-urile care lipsesc. Consulta\u021bi <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documenta\u021bia</a> pentru instruc\u021biuni."
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
 		"message": "Da"

@@ -40,7 +40,7 @@
 	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
-		"message": "Bu uygulama, GNOME Kabuk ve buna uygun uzant\u0131 deposu olan https://extensions.gnome.org ile t\u00fcmle\u015fim sa\u011flar"
+		"message": "Bu uzant\u0131 GNOME Kabuk ve https://extensions.gnome.org uzant\u0131 deposuylat\u00fcmle\u015fim sa\u011flar"
 	},
 	"native_request_failed": {
 		"description": "$REQUEST$ is a placeholder for technical name of request that web extension make via native messaging host application.",
@@ -60,10 +60,16 @@
 	},
 	"no_gnome_shell": {
 		"description": "Shown to user when native connector unable to query GNOME Shell version or settings",
-		"message": "GNOME Kabuk ayarlar\u0131 veya s\u00fcr\u00fcm\u00fc saptanam\u0131yor. Kurulu oldu\u011fundan ve \u00e7al\u0131\u015ft\u0131\u011f\u0131ndan emin olun."
+		"message": "GNOME Kabuk ayarlar\u0131 ya da s\u00fcr\u00fcm\u00fc saptanam\u0131yor. Kuruldu\u011fundan ve \u00e7al\u0131\u015ft\u0131\u011f\u0131ndan emin olun."
 	},
 	"no_host_connector": {
-		"message": "GNOME Kabuk t\u00fcmle\u015fim uzant\u0131s\u0131 \u00e7al\u0131\u015f\u0131yor ancak yerle\u015fik ana makine ba\u011flay\u0131c\u0131 saptanamad\u0131. Ba\u011flay\u0131c\u0131y\u0131 kurmakla ilgili y\u00f6nergeler i\u00e7in <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>belgelendirmeye</a> bak\u0131n."
+		"description": "$url$ is a placeholder for URL",
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
@@ -120,7 +126,7 @@
 		"message": "E\u015fzamanlama"
 	},
 	"synchronization_cancel": {
-		"message": "E\u015fzamanlamay\u0131 etkinle\u015ftirme."
+		"message": "E\u015fzamanlamay\u0131 devre d\u0131\u015f\u0131 b\u0131rak."
 	},
 	"synchronization_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused synchronization failure.",
@@ -142,7 +148,7 @@
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "T\u00fcrk\u00e7e \u00e7eviri: <a href=\"mailto:muhammetk@gmail.com\">Muhammet Kara</a>,\n<a href=\"mailto:etcetin@gmail.com\">Emin Tufan \u00c7etin</a>"
+		"message": "T\u00fcrk\u00e7e \u00e7eviri: Emin Tufan \u00c7etin, Muhammet Kara"
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
@@ -154,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Yerle\u015fik ana makine ba\u011flay\u0131c\u0131 \u015fu API\u2019leri desteklemiyor: $$1. B\u00fcy\u00fck olas\u0131l\u0131kla yerle\u015fik ana makine ba\u011flay\u0131c\u0131y\u0131 g\u00fcncellemelisiniz veya eksik API\u2019ler i\u00e7in eklentileri kurmal\u0131s\u0131n\u0131z. Y\u00f6nergeler i\u00e7in <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>belgelendirmeye</a> bak\u0131n."
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
 		"message": "Evet"

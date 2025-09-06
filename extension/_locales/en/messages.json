@@ -149,10 +149,16 @@
 		"description": "Shown to user when response from connector API call does not follow known format."
 	},
 	"no_host_connector": {
-		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html'>documentation</a> for instructions about installing connector."
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"description": "$url$ is a placeholder for URL",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"warning_apis_missing": {
-		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html'>documentation</a> for instructions.",
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions.",
 		"description": "$$1 is a placeholder for a list of missing APIs"
 	}
 }

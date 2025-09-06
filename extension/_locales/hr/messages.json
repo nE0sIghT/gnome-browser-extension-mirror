@@ -63,7 +63,13 @@
 		"message": "Nemogu\u0107e lociranje postavki GNOME ljuske ili ina\u010dice. Provjerite je li instalirana i pokrenuta."
 	},
 	"no_host_connector": {
-		"message": "Iako je integracijsko pro\u0161irenje GNOME ljuske pokrenuto, izvorna spojnica poslu\u017eitelja nije otkrivena. Pogledajte <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentaciju</a> za upute o instalaciji spojnice."
+		"description": "$url$ is a placeholder for URL",
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
@@ -154,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Va\u0161a izvorna spojnica poslu\u017eitelja ne podr\u017eava sljede\u0107e API-je: $$1. Najvjerojatnije trebate nadograditi izvornu spojnicu poslu\u017eitelja ili instalirati priklju\u010dak za nedostaju\u0107e API-je. Pogledajte <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentaciju</a> za upute."
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
 		"message": "Da"

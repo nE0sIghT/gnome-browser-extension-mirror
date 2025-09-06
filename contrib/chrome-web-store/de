@@ -1,5 +1,0 @@
-Sie müssen den nativen Host-Connector installieren, damit diese Erweiterung funktioniert.
-
-Für Arch Linux, Debian, Fedora, Gentoo und Ubuntu steht ein installierbares Paket namens »chrome-gnome-shell« zur Verfügung.
-
-Sie können den Connector auch manuell installieren. Installationshinweise finden Sie auf https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation.

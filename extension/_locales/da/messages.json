@@ -63,7 +63,13 @@
 		"message": "Kunne ikke finde GNOME Shells indstillinger eller version. S\u00f8rg for at den er installeret og k\u00f8rer."
 	},
 	"no_host_connector": {
-		"message": "Selvom udvidelsen til GNOME Shell-integration k\u00f8rer, kan den oprindelige v\u00e6rtsforbindelseskomponent ikke detekteres. Se <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentation</a> for instruktioner vedr\u00f8rende installering af forbindelseskomponent."
+		"description": "$url$ is a placeholder for URL",
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
@@ -154,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Din oprindelige forbindelseskomponent underst\u00f8tter ikke f\u00f8lgende API'er: $$1. Du skal sandsynligvis opgradere den oprindelige forbindelseskomponent eller installere udvidelsesmoduler til de manglende API'er. Se instruktioner i <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentationen</a>."
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
 		"message": "Ja"

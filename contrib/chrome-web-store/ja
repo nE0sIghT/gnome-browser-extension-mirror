@@ -1,5 +1,0 @@
-この拡張機能は、システムにコネクタがインストールされていないと動作しません。
-
-Arch Linux、Debian、Fedora、Gentoo、Ubuntu では、"chrome-gnome-shell" というパッケージ名でコネクタが用意されています。
-
-コネクタは手動インストールも可能です。手順については、https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation をご覧ください。

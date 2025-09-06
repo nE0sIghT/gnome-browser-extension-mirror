@@ -1,5 +1,0 @@
-이 확장 기능을 활용하려면 자체 연결 프로그램을 설치해야합니다.
-
-아치 리눅스, 데비안, 페도라, 젠투, 우분투에서는 "chrome-gnome-shell" 패키지를 설치하실 수 있습니다
-
-연결 프로그램을 직접 설치할 수도 있습니다. 설치 방법은 https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation 페이지를 참고하십시오.
