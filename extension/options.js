@@ -56,12 +56,14 @@ function init_tabs() {
 function save_options() {
     var showReleaseNotes = $('#show_release_notes_yes').checked;
     var syncExtensions = $('#synchronize_extensions_yes').checked;
+    var useLightIcon = $('#use_light_icon_yes').checked;
 
     chrome.storage.sync.set({
         showReleaseNotes: showReleaseNotes,
     }, function () {
         chrome.storage.local.set({
             syncExtensions: syncExtensions,
+            useLightIcon: useLightIcon
         }, function () {
             if (syncExtensions) {
                 let syncType = document.getElementById('syncChoice').returnValue;
@@ -137,7 +139,16 @@ function restore_options() {
         else {
             setSyncExtensions(false);
         }
+
+        setLightIcon(items.useLightIcon);
     });
+}
+
+function setLightIcon(result) {
+    if (result)
+        $('#use_light_icon_yes').checked = true;
+    else
+        $('#use_light_icon_no').checked = true;
 }
 
 function setReleaseNotes(result) {
