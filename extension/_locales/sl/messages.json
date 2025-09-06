@@ -40,11 +40,11 @@
 	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
-		"message": "Raz\u0161iritev omogo\u010da povezovanje z okoljem Lupine GNOME in ustrezno shrambo raz\u0161iritev https://extensions.gnome.org."
+		"message": "Raz\u0161iritev omogo\u010da povezovanje z okoljem Lupine GNOME in ustrezno shrambo raz\u0161iritev https://extensions.gnome.org"
 	},
 	"native_request_failed": {
 		"description": "$REQUEST$ is a placeholder for technical name of request that web extension make via native messaging host application.",
-		"message": "Izvorna zahteva \u00ab$REQUEST$\u00bb je spodletela.",
+		"message": "Izvorna zahteva \u00ab$REQUEST$\u00bb je spodletela",
 		"placeholders": {
 			"request": {
 				"content": "$1"
@@ -63,7 +63,13 @@
 		"message": "Ni mogo\u010de najti nastavitev in podatkov razli\u010dice okolja Lupine GNOME. Prepri\u010dajte se, da je lupina name\u0161\u010dena in zagnana."
 	},
 	"no_host_connector": {
-		"message": "\u010ceprav je raz\u0161iritev za povezovanja z Lupino GNOME zagnana, povezovalnika ni mogo\u010de najti. V <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentaciji</a> si oglejte navodila za namestitev."
+		"description": "$url$ is a placeholder for URL",
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
@@ -120,7 +126,7 @@
 		"message": "Usklajevanje"
 	},
 	"synchronization_cancel": {
-		"message": "Ne omogo\u010di usklajevanja"
+		"message": "Ne omogo\u010di usklajevanja."
 	},
 	"synchronization_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused synchronization failure.",
@@ -142,7 +148,7 @@
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "Matej Urban\u010di\u010d <mateju@src.gnome.org>"
+		"message": "Matej Urban\u010di\u010d <mateju@src.gnome.org>\nMartin Srebotnjak <miles@filmsi.net>"
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
@@ -154,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Izvorni gostiteljski povezovalnik ne podpira vmesnikov API: $$1. Najverjetneje je treba povezovalnik posodobiti ali pa namestiti manjkajo\u010de pakete. Ve\u010d podrobnosti je zapisanih v <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>dokumentaciji</a>."
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
 		"message": "Da"

@@ -63,7 +63,13 @@
 		"message": "\u65e0\u6cd5\u5b9a\u4f4d GNOME Shell \u8bbe\u7f6e\u6216\u7248\u672c\u3002\u786e\u4fdd\u5df2\u5b89\u88c5\u5e76\u8fd0\u884c\u4e86\u5b83\u3002"
 	},
 	"no_host_connector": {
-		"message": "\u5c3d\u7ba1 GNOME Shell \u96c6\u6210\u6269\u5c55\u6b63\u5728\u8fd0\u884c\uff0c\u672a\u68c0\u6d4b\u5230\u672c\u5730\u4e3b\u673a\u8fde\u63a5\u5668\u3002\u53c2\u8003 <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>\u6587\u6863</a> \u83b7\u53d6\u5173\u4e8e\u5b89\u88c5\u8fde\u63a5\u5668\u7684\u8bf4\u660e\u3002"
+		"description": "$url$ is a placeholder for URL",
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
@@ -142,7 +148,7 @@
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "Dingzhong Chen <wsxy162@gmail.com>, 2016-2018."
+		"message": "Dingzhong Chen <wsxy162@gmail.com>, 2016-2018.\nlumingzh <lumingzh@qq.com>, 2025."
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
@@ -154,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "\u4f60\u7684\u672c\u5730\u4e3b\u673a\u8fde\u63a5\u5668\u4e0d\u652f\u6301\u4e0b\u5217 API\uff1a$$1\u3002\u6216\u8bb8\u4f60\u53ef\u4ee5\u5347\u7ea7\u672c\u5730\u4e3b\u673a\u8fde\u63a5\u5668\uff0c\u6216\u8005\u5b89\u88c5\u7528\u4e8e\u7f3a\u5931 API \u7684\u63d2\u4ef6\u3002\u53c2\u8003 <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentation</a> \u4e0a\u7684\u8bf4\u660e\u3002"
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
 		"message": "\u662f"

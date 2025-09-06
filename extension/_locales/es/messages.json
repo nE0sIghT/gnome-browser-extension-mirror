@@ -8,7 +8,7 @@
 	},
 	"error_connector_response": {
 		"description": "Shown to user when response from connector API call does not follow known format.",
-		"message": "Respuesta del conector incorrecta recibida"
+		"message": "Respuesta de conector incorrecto recibida"
 	},
 	"extension_enabled": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension enabled?'",
@@ -24,7 +24,7 @@
 	},
 	"extension_status_downgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons must be downgraded'.",
-		"message": "se debe bajar de versi\u00f3n"
+		"message": "debe bajarse de versi\u00f3n"
 	},
 	"extension_status_upgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons can be upgraded'.",
@@ -36,15 +36,15 @@
 	},
 	"gs_chrome": {
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
-		"message": "Integraci\u00f3n con GNOME Shell"
+		"message": "Integraci\u00f3n de GNOME Shell"
 	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
-		"message": "Esta extensi\u00f3n proporciona integraci\u00f3n con GNOME Shell y el correspondiente repositorio de extensiones https://extensions.gnome.org"
+		"message": "Esta extensi\u00f3n proporciona una integraci\u00f3n con GNOME Shell y el correspondiente repositorio de extensiones https://extensions.gnome.org"
 	},
 	"native_request_failed": {
 		"description": "$REQUEST$ is a placeholder for technical name of request that web extension make via native messaging host application.",
-		"message": "Fall\u00f3 la respuesta nativa \u00ab$REQUEST$\u00bb",
+		"message": "fall\u00f3 la solicitud nativa \u00ab$REQUEST$\u00bb",
 		"placeholders": {
 			"request": {
 				"content": "$1"
@@ -60,10 +60,16 @@
 	},
 	"no_gnome_shell": {
 		"description": "Shown to user when native connector unable to query GNOME Shell version or settings",
-		"message": "No se puede encontrar la versi\u00f3n o la configuraci\u00f3n de GNOME Shell. Aseg\u00farese de que est\u00e1 instalado y en ejecuci\u00f3n."
+		"message": "No se pudieron localizar las propiedades o la versi\u00f3n de GNOME Shell. Aseg\u00farese que est\u00e1 instalado y funcionando."
 	},
 	"no_host_connector": {
-		"message": "Aunque la extensi\u00f3n de integraci\u00f3n con GNOME Shell est\u00e1 en ejecuci\u00f3n, no se ha detectado el conector del equipo. Consulte la <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentaci\u00f3n</a> para obtener instrucciones sobre c\u00f3mo instalar el conector."
+		"description": "$url$ is a placeholder for URL",
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
@@ -120,7 +126,7 @@
 		"message": "Sincronizaci\u00f3n"
 	},
 	"synchronization_cancel": {
-		"message": "No activar la sincronizaci\u00f3n."
+		"message": "No activar la sincronizaci\u00f3n"
 	},
 	"synchronization_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused synchronization failure.",
@@ -142,7 +148,7 @@
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "Daniel Mustieles <daniel.mustieles@gmail.com>, 2016"
+		"message": "Daniel Mustieles <daniel.mustieles@gmail.com>, 2016-2025Maria Majadas <mmajadas@gnome.org>, 2025"
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
@@ -154,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Su conector nativo del equipo no soporta las siguientes API: $$1. Probablemente necesite actualizar el conector o instalar los complementos para las API que faltan. Consulte la <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentaci\u00f3n</a> para obtener instrucciones ."
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
 		"message": "S\u00ed"

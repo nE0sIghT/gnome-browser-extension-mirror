@@ -63,7 +63,13 @@
 		"message": "Nie mo\u017cna ustali\u0107 ustawie\u0144 ani wersji GNOME Shell. Prosz\u0119 si\u0119 upewni\u0107, \u017ce GNOME Shell jest zainstalowane i\u00a0uruchomione."
 	},
 	"no_host_connector": {
-		"message": "Chocia\u017c rozszerzenie integracji z\u00a0GNOME Shell jest uruchomione, to nie wykryto natywnego \u0142\u0105cznika serwera. <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>Dokumentacja</a> zawiera instrukcje na temat instalacji \u0142\u0105cznika."
+		"description": "$url$ is a placeholder for URL",
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
@@ -154,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Natywny \u0142\u0105cznik serwera nie obs\u0142uguje tych API: $$1. Nale\u017cy go zaktualizowa\u0107 lub zainstalowa\u0107 wtyczki dla brakuj\u0105cych API. <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>Dokumentacja</a> zawiera odpowiednie instrukcje."
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
 		"message": "Tak"

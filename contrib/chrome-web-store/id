@@ -1,5 +1,0 @@
-Anda HARUS memasang konektor native agar ekstensi ini bekerja.
-
-Untuk Arch Linux, Debian, Fedora, Gentoo dan Ubuntu Anda dapat memasang paket yang bernama "chrome-gnome-shell".
-
-Anda dapat juga memasang konektor secara manual. Lihat https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation untuk instruksi pemasangan.

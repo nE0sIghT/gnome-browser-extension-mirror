@@ -63,7 +63,13 @@
 		"message": "Ezin izan dira GNOME Shell ezarpenak edo bertsioa aurkitu. Ziurtatu instalatuta dagoela eta exekutatzen ari dela."
 	},
 	"no_host_connector": {
-		"message": "GNOME Shell integraziorako hedapena exekutatzen ari den arren, jatorrizko ostalari-konektorea ez da aurkitu. Ikusi <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentation</a> konektorea instalatzeko argibideak ezagutzeko."
+		"description": "$url$ is a placeholder for URL",
+		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"placeholders": {
+			"url": {
+				"content": "$1"
+			}
+		}
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
@@ -154,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Zure jatorrizko ostalari-konektoreak ez ditu onartzen honako APIak: $$1. Beharbada jatorrizko ostalari-konektorea eguneratu beharko duzu edo falta diren APIetarako pluginak instalatu beharko dituzu. Ikusi <a href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation'>documentation</a> argibideetarako."
+		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
 		"message": "Bai"

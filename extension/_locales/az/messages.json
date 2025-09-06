@@ -1,50 +1,50 @@
 {
 	"_DO_NOT_EDIT": {
-		"description": "This file is auto generated with po2chrome-messages tool from oc.po.",
+		"description": "This file is auto generated with po2chrome-messages tool from az.po.",
 		"message": ""
 	},
 	"close": {
-		"message": "Tampar"
+		"message": "Ba\u011fla"
 	},
 	"error_connector_response": {
 		"description": "Shown to user when response from connector API call does not follow known format.",
-		"message": "Wrong connector response received"
+		"message": "Yanl\u0131\u015f birl\u0259\u015fdirici cavab\u0131 al\u0131nd\u0131"
 	},
 	"extension_enabled": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension enabled?'",
-		"message": "Activat"
+		"message": "Aktivdir"
 	},
 	"extension_installed": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension installed?'",
-		"message": "Installat"
+		"message": "Qura\u015fd\u0131r\u0131l\u0131b"
 	},
 	"extension_name": {
 		"description": "Used as title, eg in table header. Means 'GNOME Shell extension name'.",
-		"message": "Extension"
+		"message": "\u018flav\u0259"
 	},
 	"extension_status_downgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons must be downgraded'.",
-		"message": "deu \u00e8sser retrogradat"
+		"message": "k\u00f6hn\u0259l\u0259\u015fdirilm\u0259lidir"
 	},
 	"extension_status_upgrade": {
 		"description": "This is a part of phrase like 'Extension Top Icons can be upgraded'.",
-		"message": "p\u00f2t \u00e8sser mes a niv\u00e8l"
+		"message": "yenil\u0259n\u0259 bil\u0259r"
 	},
 	"extension_synchronized": {
 		"description": "Used as title, eg in table header. Means 'Does GNOME Shell extension status synchronized with remote browser storage?'",
-		"message": "Sincronizat"
+		"message": "Sinxronla\u015fd\u0131r\u0131l\u0131b"
 	},
 	"gs_chrome": {
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
-		"message": "Integracion a GNOME Shell"
+		"message": "GNOME Shell inteqrasiyas\u0131"
 	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
-		"message": "Aquesta extension permet l'integracion a GNOME Shell e a las extensions correspondentas del depaus https://extensions.gnome.org"
+		"message": "Bu \u0259lav\u0259 GNOME Shell il\u0259 v\u0259 m\u00fcvafiq \u0259lav\u0259l\u0259r anbar\u0131 https://extensions.gnome.org il\u0259 inteqrasiyan\u0131 t\u0259min edir"
 	},
 	"native_request_failed": {
 		"description": "$REQUEST$ is a placeholder for technical name of request that web extension make via native messaging host application.",
-		"message": "La requ\u00e8sta nativa \u00ab $REQUEST$ \u00bb a fracassat",
+		"message": "\u00ab$REQUEST$\u00bb yerli sor\u011fu u\u011fursuz oldu",
 		"placeholders": {
 			"request": {
 				"content": "$1"
@@ -53,14 +53,14 @@
 	},
 	"never": {
 		"description": "This is a part of phrase 'Last check: never'",
-		"message": "jamai"
+		"message": "he\u00e7 vaxt"
 	},
 	"no": {
-		"message": "Non"
+		"message": "Xeyr"
 	},
 	"no_gnome_shell": {
 		"description": "Shown to user when native connector unable to query GNOME Shell version or settings",
-		"message": "Unable to locate GNOME Shell settings or version. Make sure it is installed and running."
+		"message": "GNOME Shell parametrl\u0259ri v\u0259 ya versiyas\u0131 tap\u0131la bilm\u0259di. Onun qura\u015fd\u0131r\u0131ld\u0131\u011f\u0131ndan v\u0259 i\u015fl\u0259diyind\u0259n \u0259min olun."
 	},
 	"no_host_connector": {
 		"description": "$url$ is a placeholder for URL",
@@ -73,35 +73,35 @@
 	},
 	"no_host_response": {
 		"description": "Means 'Web extension does not received answer from native messaging host application.'",
-		"message": "Pas cap de responsa de l'\u00f2ste"
+		"message": "Ev sahibi cavab\u0131 yoxdur"
 	},
 	"open_website": {
 		"description": "Tooltip for browser extensions icon.",
-		"message": "Open GNOME Shell extensions website"
+		"message": "GNOME Shell \u0259lav\u0259l\u0259ri veb-sayt\u0131n\u0131 a\u00e7"
 	},
 	"options_link": {
 		"description": "Link name for options tab.",
-		"message": "Opcions"
+		"message": "Se\u00e7iml\u0259r"
 	},
 	"options_saved": {
 		"description": "Means 'Options were saved successfully after user clicked Save button'",
-		"message": "Opcions enregistradas."
+		"message": "Se\u00e7iml\u0259r saxlan\u0131ld\u0131."
 	},
 	"options_show_release_notes": {
 		"description": "Option name. Allow to enable/disable popup with release notes when Web extension is updated.",
-		"message": "Show release notes when browser extension updated"
+		"message": "Brauzer \u0259lav\u0259si yenil\u0259n\u0259rk\u0259n burax\u0131l\u0131\u015f qeydl\u0259rini g\u00f6st\u0259r"
 	},
 	"options_synchronize_extensions": {
 		"description": "Option name. Allow to enable/disable synchronization of GNOME Shell extensions with remote browser storage.",
-		"message": "Synchronize GNOME Shell extensions list"
+		"message": "GNOME Shell \u0259lav\u0259l\u0259r siyah\u0131s\u0131n\u0131 sinxronla\u015fd\u0131r"
 	},
 	"options_synchronize_extensions_notice": {
 		"description": "This is a notice under option name.",
-		"message": "Se activat, v\u00f2stra lista d'extensions GNOME Shell ser\u00e0 sincronizada amb v\u00f2stre compte Google."
+		"message": "Aktiv edil\u0259rs\u0259, GNOME Shell \u0259lav\u0259l\u0259r siyah\u0131n\u0131z Google hesab\u0131n\u0131zla sinxronla\u015fd\u0131r\u0131lacaq."
 	},
 	"options_title": {
 		"description": "$GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This string used as title for Options page. This title is not shown in Chrome, but may be shown in other browsers.",
-		"message": "Opcions $GS_CHROME$",
+		"message": "$GS_CHROME$ se\u00e7iml\u0259ri",
 		"placeholders": {
 			"gs_chrome": {
 				"content": "$1"
@@ -110,27 +110,27 @@
 	},
 	"options_use_light_icon": {
 		"description": "Use light icon that is looked better with dark themes.",
-		"message": "Use light icon (dark theme)"
+		"message": "A\u00e7\u0131q i\u015far\u0259ni istifad\u0259 et (qaranl\u0131q tema)"
 	},
 	"platform_not_supported": {
-		"message": "Lo connectador natiu de l'\u00f2ste es pas pres en carga per v\u00f2stra plataforma."
+		"message": "Yerli birl\u0259\u015fdirici sizin platforman\u0131z \u00fc\u00e7\u00fcn d\u0259st\u0259kl\u0259nmir."
 	},
 	"retry": {
-		"message": "Tornar ensajar"
+		"message": "Yenid\u0259n c\u0259hd et"
 	},
 	"save": {
-		"message": "Enregistrar"
+		"message": "Saxla"
 	},
 	"synchronization": {
 		"description": "Link name for synchronization tab in options dialog.",
-		"message": "Sincronizacion"
+		"message": "Sinxronizasiya"
 	},
 	"synchronization_cancel": {
-		"message": "Activar pas la sincronizac*ion."
+		"message": "Sinxronizasiyan\u0131 aktivl\u0259\u015fdirm\u0259."
 	},
 	"synchronization_failed": {
 		"description": "$CAUSE$ is placeholder for error that caused synchronization failure.",
-		"message": "Impossible de sincronizar las extensions : $CAUSE$",
+		"message": "\u018flav\u0259l\u0259ri sinxronla\u015fd\u0131rmaq al\u0131nmad\u0131: $CAUSE$",
 		"placeholders": {
 			"cause": {
 				"content": "$1"
@@ -138,31 +138,31 @@
 		}
 	},
 	"synchronization_storage_exists": {
-		"message": "V\u00f2stre emmagazinatge de sincronizacion distant conten ja una lista d'extensions."
+		"message": "Uzaq sinxronizasiya yadda\u015f\u0131n\u0131z art\u0131q \u0259lav\u0259l\u0259r siyah\u0131s\u0131n\u0131 ehtiva edir."
 	},
 	"synchronization_use_local": {
-		"message": "Utilizar la lista d'extensions locala, espotir la lista distanta."
+		"message": "Yerli \u0259lav\u0259l\u0259r siyah\u0131s\u0131n\u0131 istifad\u0259 et, uzaq olan\u0131 \u00fcz\u0259rin\u0259 yaz."
 	},
 	"synchronization_use_remote": {
-		"message": "Utilizar la lista d'extensions distanta, espotir la lista locala."
+		"message": "Uzaq \u0259lav\u0259l\u0259r siyah\u0131s\u0131n\u0131 istifad\u0259 et, yerli olan\u0131 \u00fcz\u0259rin\u0259 yaz."
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "C\u00e9dric Valmary <cvalmary@yahoo.fr>"
+		"message": "T\u0259rc\u00fcm\u0259: Ramal R\u0259himov <jhonaluman@gmail.com>"
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
-		"message": "Traduit par"
+		"message": "T\u0259rc\u00fcm\u0259 haqq\u0131nda"
 	},
 	"unknown_error": {
 		"description": "This should newer be shown to user. However better safe than sorry.",
-		"message": "Error desconeguda"
+		"message": "nam\u0259lum x\u0259ta"
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
 		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
 	},
 	"yes": {
-		"message": "\u00d2c"
+		"message": "B\u0259li"
 	}
 }
