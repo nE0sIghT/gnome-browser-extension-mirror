@@ -95,7 +95,7 @@ def run():
                 messageEntry = copy(chromeMessages[messageKey])
 
                 entry = find_chrome_entry(po, messageKey)
-                if entry and entry.msgstr and not "fuzzy" in entry.flags:
+                if entry and entry.msgstr and "fuzzy" not in entry.flags:
                     messageEntry["message"] = entry.msgstr
 
                 messages[messageKey] = messageEntry

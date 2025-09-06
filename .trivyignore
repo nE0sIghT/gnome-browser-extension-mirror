@@ -1,0 +1,11 @@
+# I disagree `dist-upgrade` is wrong
+# https://github.com/aquasecurity/trivy/discussions/8008
+AVD-DS-0024
+# https://github.com/aquasecurity/trivy/discussions/8434
+DS001
+# We don't want to migrate to non-root images
+DS002
+DS017
+DS026
+DS029
+KSV116
