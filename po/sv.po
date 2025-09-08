@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2025-03-04 06:18+0000\n"
-"PO-Revision-Date: 2025-07-31 20:15+0200\n"
+"POT-Creation-Date: 2025-09-06 19:37+0000\n"
+"PO-Revision-Date: 2025-09-08 16:32+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.7\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -105,18 +105,20 @@ msgstr ""
 "Kan inte hitta inställningar eller version för GNOME Shell. Säkerställ att "
 "det är installerat och körs."
 
+#. $url$ is a placeholder for URL
+#.
+#. String placeholders:
+#. url
+#.
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
-"browser-integration/pages/installation-guide.html'>documentation</a> for "
-"instructions about installing connector."
+"is not detected. Refer <a href='$url$'>documentation</a> for instructions "
+"about installing connector."
 msgstr ""
 "Även om tillägget för GNOME Shell-integration körs, så hittades inget "
-"inhemskt värdanslutningsprogram. Se <a href='https://"
-"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
-"guide.html'>dokumentationen</a> för instruktioner om hur ett "
-"anslutningsprogram installeras."
+"inhemskt värdanslutningsprogram. Se <a href='$url$'>dokumentationen</a> för "
+"instruktioner om hur ett anslutningsprogram installeras."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -240,15 +242,12 @@ msgstr "okänt fel"
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
-"integration/pages/installation-guide.html'>documentation</a> for "
-"instructions."
+"Refer <a href='$$2'>documentation</a> for instructions."
 msgstr ""
 "Ditt inhemska värdanslutningsprogram stöder inte följande API:er: $$1. Du "
 "bör troligen uppgradera det inhemska värdanslutningsprogrammet eller "
-"installera insticksmoduler för saknade API:er. Se <https://"
-"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
-"guide.html'>dokumentationen</a> för instruktioner."
+"installera insticksmoduler för saknade API:er. Se <a href='$"
+"$2'>dokumentationen</a> för instruktioner."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -275,75 +274,3 @@ msgstr ""
 "Du kan också installera anslutningsprogrammet manuellt. Se https://"
 "gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
 "guide.html för installationsinstruktioner.\n"
-
-#~ msgid "hours"
-#~ msgstr "timmar"
-
-#~ msgid "Update check period"
-#~ msgstr "Intervall för uppdateringskontroll"
-
-#~ msgid "Last check"
-#~ msgstr "Senaste kontroll"
-
-#~ msgid "Next check"
-#~ msgstr "Nästa kontroll"
-
-#~ msgid "Check for GNOME Shell extensions update"
-#~ msgstr "Sök efter uppdateringar för GNOME Shell-tillägg"
-
-#~ msgid "Check update of enabled GNOME Shell extensions only"
-#~ msgstr "Sök endast efter uppdatering för aktiverade GNOME Shell-tillägg"
-
-#~ msgid ""
-#~ "Your native host connector does not support updates check for enabled "
-#~ "GNOME Shell extensions only. Consider update."
-#~ msgstr ""
-#~ "Ditt inhemska värdanslutningsprogram stöder inte sökning efter "
-#~ "uppdateringar av endast aktiverade GNOME Shell-tillägg. Överväg att "
-#~ "uppdatera."
-
-#~ msgid ""
-#~ "Your native host connector does not support check for GNOME Shell "
-#~ "extensions updates. Probably python-requests package is missing."
-#~ msgstr ""
-#~ "Ditt inhemska värdanslutningsprogram stöder inte sökning efter "
-#~ "uppdateringar av GNOME Shell-tillägg. Troligen saknas paketet python-"
-#~ "requests."
-
-#~ msgid "An update for GNOME Shell extensions available"
-#~ msgstr "En uppdatering för GNOME Shell-tillägg finns tillgänglig"
-
-#~ msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
-#~ msgstr ""
-#~ "Kunde inte söka efter uppdateringar för GNOME Shell-tillägg: $CAUSE$"
-
-#~ msgid ""
-#~ "A network error has occurred. Please check your Internet connection and/"
-#~ "or proxy settings."
-#~ msgstr ""
-#~ "Ett nätverksfel har inträffat. Kontrollera din internetanslutning och/"
-#~ "eller proxyinställningar."
-
-#~ msgid "Show information about network errors"
-#~ msgstr "Visa information om nätverksfel"
-
-#~ msgid "Chrome permission «webRequest» required."
-#~ msgstr "Chrome-rättighet «webRequest» krävs."
-
-#~ msgid "older than version 4"
-#~ msgstr "äldre än version 4"
-
-#~ msgid "version $$1"
-#~ msgstr "version $$1"
-
-#~ msgid ""
-#~ "You are using different versions of GNOME Shell integration extension ($"
-#~ "$1) and native host connector ($$2). Some features may not work or work "
-#~ "wrong."
-#~ msgstr ""
-#~ "Du använder olika versioner av tillägget för GNOME Shell-integration ($"
-#~ "$1) och inhemskt värdanslutningsprogram ($$2). Vissa funktioner kan komma "
-#~ "att inte fungera eller fungera felaktigt."
-
-#~ msgid "Connecting to native host application…"
-#~ msgstr "Ansluter till inhemskt värdprogram…"
