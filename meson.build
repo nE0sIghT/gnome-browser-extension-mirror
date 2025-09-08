@@ -166,7 +166,7 @@ if get_option('build_messages')
     run_command(
       msgmerge, '-q', '--update',
       PO_PATH / lang + '.po',
-      PO_PATH / 'chrome-gnome-shell.pot',
+      PO_PATH / 'gnome-browser-extension.pot',
       check: true,
     )
   endforeach
