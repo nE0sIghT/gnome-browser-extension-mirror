@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2025-03-04 06:18+0000\n"
-"PO-Revision-Date: 2025-08-01 12:33+0200\n"
+"POT-Creation-Date: 2025-09-06 19:37+0000\n"
+"PO-Revision-Date: 2025-09-08 22:19+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -109,17 +109,20 @@ msgstr ""
 "Ni mogoče najti nastavitev in podatkov različice okolja Lupine GNOME. "
 "Prepričajte se, da je lupina nameščena in zagnana."
 
+#. $url$ is a placeholder for URL
+#.
+#. String placeholders:
+#. url
+#.
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
-"browser-integration/pages/installation-guide.html'>documentation</a> for "
-"instructions about installing connector."
+"is not detected. Refer <a href='$url$'>documentation</a> for instructions "
+"about installing connector."
 msgstr ""
 "Čeprav je razširitev za povezovanja z Lupino GNOME zagnana, povezovalnika ni "
-"mogoče zaznati. V <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
-"browser-integration/pages/installation-guide.html'>dokumentaciji</a> si "
-"oglejte navodila za namestitev."
+"mogoče zaznati. V <a href='$url$'>dokumentaciji</a> si oglejte navodila za "
+"namestitev."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -245,15 +248,11 @@ msgstr "neznana napaka"
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
-"integration/pages/installation-guide.html'>documentation</a> for "
-"instructions."
+"Refer <a href='$$2'>documentation</a> for instructions."
 msgstr ""
 "Izvorni gostiteljski povezovalnik ne podpira vmesnikov API: $$1. "
 "Najverjetneje je treba povezovalnik posodobiti ali pa namestiti manjkajoče "
-"pakete. Več podrobnosti je zapisanih v <a href='https://gnome.pages.gitlab."
-"gnome.org/gnome-browser-integration/pages/installation-guide."
-"html'>dokumentaciji</a>."
+"pakete. Več podrobnosti je zapisanih v <a href='$$2'>dokumentaciji</a>."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
