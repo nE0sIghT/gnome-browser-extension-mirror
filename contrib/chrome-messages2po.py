@@ -39,7 +39,7 @@ def parseArguments():
         "-p",
         action="store_true",
         dest="write_pot",
-        help="Write pot to chrome-gnome-shell.pot",
+        help="Write pot to gnome-browser-extension.pot",
     )
     parser.add_argument(
         "--generate-po",
@@ -137,7 +137,7 @@ def run():
         )
     )
 
-    pot_path = os.path.join(args.po, "chrome-gnome-shell.pot")
+    pot_path = os.path.join(args.po, "gnome-browser-extension.pot")
     if args.write_pot:
         po.sort()
         po.save(pot_path)

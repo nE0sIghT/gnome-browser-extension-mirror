@@ -37,7 +37,7 @@ This project uses the [GNOME Translation Project](https://welcome.gnome.org/ru/t
 
 All user-visible web extension strings are maintained by developers in the messages.json file, which is located in the `extension/extension/_locale/en/` folder. The file format is described [here](https://developer.chrome.com/extensions/i18n-messages).
 
-The Gettext template is located in `po/chrome-gnome-shell.pot` and automatically generated using meson:
+The Gettext template is located in `po/gnome-browser-extension.pot` and automatically generated using meson:
 
 ```shell
     meson -Dbuild_messages=true -Dbuild_extension=false builddir
@@ -46,7 +46,7 @@ The Gettext template is located in `po/chrome-gnome-shell.pot` and automatically
 ```
 
 As result of those commands:
-1. The new gettext template will be saved in `po/chrome-gnome-shell.pot`.
+1. The new gettext template will be saved in `po/gnome-browser-extension.pot`.
 2. All `po/*.po` files will be updated by `msgmerge` using the new gettext template.
 3. All extension locales (messages.json) will be generated from the gettext po files.
 
