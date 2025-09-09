@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2025-03-04 06:18+0000\n"
-"PO-Revision-Date: 2025-08-02 08:05+0800\n"
+"POT-Creation-Date: 2025-09-06 19:37+0000\n"
+"PO-Revision-Date: 2025-09-09 11:33+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -103,16 +103,19 @@ msgid ""
 "and running."
 msgstr "无法定位 GNOME Shell 设置或版本。确保已安装并运行了它。"
 
+#. $url$ is a placeholder for URL
+#.
+#. String placeholders:
+#. url
+#.
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
-"browser-integration/pages/installation-guide.html'>documentation</a> for "
-"instructions about installing connector."
+"is not detected. Refer <a href='$url$'>documentation</a> for instructions "
+"about installing connector."
 msgstr ""
 "尽管 GNOME Shell 集成扩展正在运行，未检测到本地主机连接器。参考<a "
-"href='https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/"
-"installation-guide.html'>文档</a>获取关于安装连接器的说明。"
+"href='$url$'>文档</a>获取关于安装连接器的说明。"
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -236,13 +239,10 @@ msgstr "未知错误"
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
-"integration/pages/installation-guide.html'>documentation</a> for "
-"instructions."
+"Refer <a href='$$2'>documentation</a> for instructions."
 msgstr ""
 "你的本地主机连接器不支持下列 API：$$1。或许你可以升级本地主机连接器，或者安装"
-"用于缺失 API 的插件。参考<a href='https://gnome.pages.gitlab.gnome.org/gnome-"
-"browser-integration/pages/installation-guide.html'>文档</a>上的说明。"
+"用于缺失 API 的插件。参考<a href='$$2'>文档</a>获取说明。"
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
