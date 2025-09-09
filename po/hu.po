@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2025-03-04 06:18+0000\n"
-"PO-Revision-Date: 2025-08-25 17:09+0200\n"
+"POT-Creation-Date: 2025-09-06 19:37+0000\n"
+"PO-Revision-Date: 2025-09-09 21:51+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
@@ -107,17 +107,25 @@ msgstr ""
 "Nem találhatók a GNOME Shell beállításai vagy verziója. Győződjön meg arról, "
 "hogy telepítve van-e és fut-e."
 
+#. $url$ is a placeholder for URL
+#.
+#. String placeholders:
+#. url
+#.
 #: chrome-gnome-shell-key-no_host_connector:1
+#| msgid ""
+#| "Although GNOME Shell integration extension is running, native host "
+#| "connector is not detected. Refer <a href='https://"
+#| "gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+#| "guide.html'>documentation</a> for instructions about installing connector."
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
-"browser-integration/pages/installation-guide.html'>documentation</a> for "
-"instructions about installing connector."
+"is not detected. Refer <a href='$url$'>documentation</a> for instructions "
+"about installing connector."
 msgstr ""
-"Ugyan a GNOME Shell integrációs kiterjesztés fut, a natív gazdacsatlakozó "
-"nem észlelhető. Nézze meg a <a href='https://gnome.pages.gitlab.gnome.org/"
-"gnome-browser-integration/pages/installation-guide.html'>dokumentációt</a> a "
-"csatlakozó telepítési utasításaiért."
+"Ugyan a GNOME Shell integrációs kiterjesztés fut, a natív gazdacsatlakozó nem "
+"észlelhető. Nézze meg a <a href='$url$'>dokumentációt</a> a csatlakozó telepít"
+"ési utasításaiért."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -239,18 +247,21 @@ msgstr "ismeretlen hiba"
 
 #. $$1 is a placeholder for a list of missing APIs
 #: chrome-gnome-shell-key-warning_apis_missing:1
+#| msgid ""
+#| "Your native host connector do not support following APIs: $$1. Probably "
+#| "you should upgrade native host connector or install plugins for missing "
+#| "APIs. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
+#| "integration/pages/installation-guide.html'>documentation</a> for "
+#| "instructions."
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
-"integration/pages/installation-guide.html'>documentation</a> for "
-"instructions."
+"Refer <a href='$$2'>documentation</a> for instructions."
 msgstr ""
-"A natív gazdacsatlakozó nem támogatja a következő API-kat: $$1. Valószínűleg "
-"frissítenie kell a natív gazdacsatlakozót, vagy bővítményeket kell "
-"telepítenie a hiányzó API-khoz. Nézz meg a <a href='https://"
-"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
-"guide.html'>dokumentációt</a> az utasításokért."
+"A natív gazdacsatlakozó nem támogatja a következő API-kat: $$1. Valószínűleg f"
+"rissítenie kell a natív gazdacsatlakozót, vagy bővítményeket kell telepítenie "
+"a hiányzó API-khoz. Nézz meg a <a href='$$2'>dokumentációt</a> az utasításokér"
+"t."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
