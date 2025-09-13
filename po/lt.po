@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2020-05-04 19:33+0000\n"
-"PO-Revision-Date: 2020-09-06 21:43+0300\n"
-"Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
+"POT-Creation-Date: 2025-09-06 19:37+0000\n"
+"PO-Revision-Date: 2025-09-13 21:18+0300\n"
+"Last-Translator: Aurimas Černius <aurimas.cernius@mailo.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.7\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -69,11 +69,6 @@ msgstr "Sinchronizuota"
 msgid "GNOME Shell integration"
 msgstr "GNOME apvalkalo integracija"
 
-#. This is a part of phrase 'Update check period: xx hours'
-#: chrome-gnome-shell-key-hours:1
-msgid "hours"
-msgstr "val."
-
 #. Used as extension description in Chrome Store
 #: chrome-gnome-shell-key-manifest_description:1
 msgid ""
@@ -112,17 +107,20 @@ msgstr ""
 "Nepavyko nustatyti GNOME apvalkalo nustatymų vietos ar versijos. "
 "Įsitikinkite, kad jie yra įdiegti ir veikia."
 
+#. $url$ is a placeholder for URL
+#.
+#. String placeholders:
+#. url
+#.
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
-"instructions about installing connector."
+"is not detected. Refer <a href='$url$'>documentation</a> for instructions "
+"about installing connector."
 msgstr ""
 "Nors GNOME apvalkalo integracijos plėtinys veikia, tačiau neaptiktas "
-"kompiuterio jungiklis. Nurodymus apie jungiklio įdiegimą rasite <a "
-"href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/"
-"Installation'>dokumentacijoje</a>."
+"kompiuterio jungiklis. Nurodymus apie jungiklio įdiegimą rasite <<a "
+"href='$url$'>dokumentacijoje</a>."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -135,28 +133,10 @@ msgstr "Nėra jokio atsakymo iš kompiuterio"
 msgid "Open GNOME Shell extensions website"
 msgstr "Atverti GNOME apvalkalo plėtinių tinklalapį"
 
-#. Option name. Allow to set interval between GNOME Shell extensions update
-#. checks.
-#: chrome-gnome-shell-key-options_check_period:1
-msgid "Update check period"
-msgstr "Atnaujinimų tikrinimo intervalas"
-
-#. This is a start of phrase (followed by date/time) of last GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_last_check:1
-msgid "Last check"
-msgstr "Paskutinis tikrinimas"
-
 #. Link name for options tab.
 #: chrome-gnome-shell-key-options_link:1
 msgid "Options"
 msgstr "Parametrai"
-
-#. This is a start of phrase (followed by date/time) of next GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_next_check:1
-msgid "Next check"
-msgstr "Kitas tikrinimas"
 
 #. Means 'Options were saved successfully after user clicked Save button'
 #: chrome-gnome-shell-key-options_saved:1
@@ -194,32 +174,6 @@ msgstr ""
 #: chrome-gnome-shell-key-options_title:1
 msgid "$GS_CHROME$ options"
 msgstr "$GS_CHROME$ parametrai"
-
-#. Option name. Allow enable/disable update check for GNOME Shell extensions.
-#: chrome-gnome-shell-key-options_update_check:1
-msgid "Check for GNOME Shell extensions update"
-msgstr "Tikrinti GNOME apvalkalo plėtinių atnaujinimus"
-
-#. Option name.
-#: chrome-gnome-shell-key-options_update_check_enabled:1
-msgid "Check update of enabled GNOME Shell extensions only"
-msgstr "Tikrinti tik įjungtų GNOME apvalkalo plėtinių atnaujinimus"
-
-#: chrome-gnome-shell-key-options_update_check_enabled_notice:1
-msgid ""
-"Your native host connector does not support updates check for enabled GNOME "
-"Shell extensions only. Consider update."
-msgstr ""
-"Jūsų savas kompiuterio jungiklis nepalaiko tik įjungtų GNOME apvalkalo "
-"plėtinių atnaujinimų tikrinimo. Apsvarstykite galimybę atsinaujinti."
-
-#: chrome-gnome-shell-key-options_update_check_notice:1
-msgid ""
-"Your native host connector does not support check for GNOME Shell extensions "
-"updates. Probably python-requests package is missing."
-msgstr ""
-"Jūsų kompiuterio jungiklis nepalaiko GNOME apvalkalo plėtinių atnaujinimų "
-"tikrinimo. Tikriausiai, trūksta python-requests paketo."
 
 #. Use light icon that is looked better with dark themes.
 #: chrome-gnome-shell-key-options_use_light_icon:1
@@ -274,7 +228,7 @@ msgstr "Naudoti nuotolinį plėtinių sąrašą, perrašyti vietinį."
 #: chrome-gnome-shell-key-translation_credits:1
 msgid "translation_credits"
 msgstr ""
-"Išvertė:\n"
+"Aurimas Černius <aurimas.cernius@mailo.com>\n"
 "Moo"
 
 #. Link name for translation credits tab in options dialog.
@@ -287,32 +241,16 @@ msgstr "Apie vertimą"
 msgid "unknown error"
 msgstr "nežinoma klaida"
 
-#: chrome-gnome-shell-key-update_available:1
-msgid "An update for GNOME Shell extensions available"
-msgstr "Yra prieinamas GNOME apvalkalo plėtinių atnaujinimas"
-
-#. $CAUSE$ is placeholder for error that caused update failure.
-#.
-#. String placeholders:
-#. cause
-#.
-#: chrome-gnome-shell-key-update_check_failed:1
-msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
-msgstr "Nepavyko patikrinti GNOME apvalkalo plėtinių atnaujinimų: $CAUSE$"
-
 #. $$1 is a placeholder for a list of missing APIs
 #: chrome-gnome-shell-key-warning_apis_missing:1
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
-"instructions."
+"Refer <a href='$$2'>documentation</a> for instructions."
 msgstr ""
 "Jūsų kompiuterio jungiklis nepalaiko šių API: $$1. Tikriausiai, jums reikėtų "
 "atnaujinti savą kompiuterio jungiklį arba įsidiegti trūkstamų API įskiepius. "
-"Instrukcijas rasite <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>dokumentacijoje</a>."
+"Instrukcijas rasite <a href='$$2'>dokumentacijoje</a>."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -320,26 +258,15 @@ msgstr "Taip"
 
 #. Chrome store description
 #: chrome-gnome-shell-store-description:1
-#| msgid ""
-#| "You MUST install native connector for this extension to work.\n"
-#| "\n"
-#| "For Arch Linux there is a PKGBUILD available in the AUR: https://aur."
-#| "archlinux.org/packages/chrome-gnome-shell-git\n"
-#| "\n"
-#| "For Debian, Fedora, Gentoo and Ubuntu you can install package named "
-#| "\"chrome-gnome-shell\".\n"
-#| "\n"
-#| "You also can install connector manually. See https://wiki.gnome.org/"
-#| "Projects/GnomeShellIntegrationForChrome/Installation for install "
-#| "instructions.\n"
 msgid ""
 "You MUST install native connector for this extension to work.\n"
 "\n"
 "For Arch Linux, Debian, Fedora, Gentoo and Ubuntu you can install package "
 "named \"chrome-gnome-shell\".\n"
 "\n"
-"You also can install connector manually. See https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation for install instructions.\n"
+"You also can install connector manually. See https://"
+"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+"guide.html for install instructions.\n"
 msgstr ""
 "Tam, kad šis plėtinys veiktų, jūs PRIVALOTE įsidiegti jungiklį.\n"
 "\n"
@@ -347,5 +274,43 @@ msgstr ""
 "paketą, pavadinimu „chrome-gnome-shell“.\n"
 "\n"
 "Be to, jungiklį galima įsidiegti ir rankiniu būdu. Įdiegimo instrukcijų, "
-"ieškokite adresu https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation .\n"
+"ieškokite adresu https://gnome.pages.gitlab.gnome.org/gnome-browser-"
+"integration/pages/installation-guide.html.\n"
+
+#~ msgid "hours"
+#~ msgstr "val."
+
+#~ msgid "Update check period"
+#~ msgstr "Atnaujinimų tikrinimo intervalas"
+
+#~ msgid "Last check"
+#~ msgstr "Paskutinis tikrinimas"
+
+#~ msgid "Next check"
+#~ msgstr "Kitas tikrinimas"
+
+#~ msgid "Check for GNOME Shell extensions update"
+#~ msgstr "Tikrinti GNOME apvalkalo plėtinių atnaujinimus"
+
+#~ msgid "Check update of enabled GNOME Shell extensions only"
+#~ msgstr "Tikrinti tik įjungtų GNOME apvalkalo plėtinių atnaujinimus"
+
+#~ msgid ""
+#~ "Your native host connector does not support updates check for enabled "
+#~ "GNOME Shell extensions only. Consider update."
+#~ msgstr ""
+#~ "Jūsų savas kompiuterio jungiklis nepalaiko tik įjungtų GNOME apvalkalo "
+#~ "plėtinių atnaujinimų tikrinimo. Apsvarstykite galimybę atsinaujinti."
+
+#~ msgid ""
+#~ "Your native host connector does not support check for GNOME Shell "
+#~ "extensions updates. Probably python-requests package is missing."
+#~ msgstr ""
+#~ "Jūsų kompiuterio jungiklis nepalaiko GNOME apvalkalo plėtinių atnaujinimų "
+#~ "tikrinimo. Tikriausiai, trūksta python-requests paketo."
+
+#~ msgid "An update for GNOME Shell extensions available"
+#~ msgstr "Yra prieinamas GNOME apvalkalo plėtinių atnaujinimas"
+
+#~ msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
+#~ msgstr "Nepavyko patikrinti GNOME apvalkalo plėtinių atnaujinimų: $CAUSE$"
