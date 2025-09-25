@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2025-03-04 06:18+0000\n"
+"POT-Creation-Date: 2025-09-06 19:37+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Artur So <arturios2005@mail.ru>\n"
 "Language-Team: ru\n"
@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.7\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -104,17 +104,20 @@ msgstr ""
 "Не найдены настройки или версия GNOME Shell. Убедитесь, что приложение "
 "установлено и запущено."
 
+#. $url$ is a placeholder for URL
+#.
+#. String placeholders:
+#. url
+#.
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
-"browser-integration/pages/installation-guide.html'>documentation</a> for "
-"instructions about installing connector."
+"is not detected. Refer <a href='$url$'>documentation</a> for instructions "
+"about installing connector."
 msgstr ""
 "Хотя расширение GNOME Shell integration работает, нативный хост-коннектор не "
-"обнаружен. Обратитесь к <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
-"browser-integration/pages/installation-guide.html'>документации</a> за "
-"инструкциями по установке коннектора."
+"обнаружен. Обратитесь к <a href='$url$'>документации</a> за инструкциями по "
+"установке коннектора."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -238,15 +241,12 @@ msgstr "неизвестная ошибка"
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
-"integration/pages/installation-guide.html'>documentation</a> for "
-"instructions."
+"Refer <a href='$$2'>documentation</a> for instructions."
 msgstr ""
 "Ваш нативный хост-коннектор не поддерживает следующие API: $$1. Вероятно, вы "
 "должны обновить нативный хост-коннектор или установить плагины для "
-"отсутствующих API. Обратитесь к <a href='https://"
-"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
-"guide.html'>документации</a> за инструкциями."
+"отсутствующих API. Обратитесь к <a href='$$2'>документации</a> за "
+"инструкциями."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -271,8 +271,8 @@ msgstr ""
 "«chrome-gnome-shell».\n"
 "\n"
 "Вы также можете установить коннектор вручную. Инструкция по установке "
-"находится по адресу https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
-"guide.html\n"
+"находится по адресу https://gnome.pages.gitlab.gnome.org/gnome-browser-"
+"integration/pages/installation-guide.html\n"
 
 #~ msgid "hours"
 #~ msgstr "часов"
