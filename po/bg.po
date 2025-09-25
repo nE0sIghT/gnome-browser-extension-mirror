@@ -1,0 +1,292 @@
+# Bulgarian translation for chrome-gnome-shell.
+# Copyright (C) 2025 chrome-gnome-shell's COPYRIGHT HOLDER
+# This file is distributed under the same license as the chrome-gnome-shell package.
+# twlvnn kraftwerk <kraft_werk@tutanota.com>,  2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: chrome-gnome-shell master\n"
+"Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
+"POT-Creation-Date: 2025-09-06 19:37+0000\n"
+"PO-Revision-Date: 2025-09-25 09:30+0200\n"
+"Last-Translator: twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
+"Language-Team: Bulgarian <Bulgarian>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
+
+#: chrome-gnome-shell-key-close:1
+msgid "Close"
+msgstr "Затваряне"
+
+#. Shown to user when response from connector API call does not follow known
+#. format.
+#: chrome-gnome-shell-key-error_connector_response:1
+msgid "Wrong connector response received"
+msgstr "Получен е грешен отговор от програмата за свързване"
+
+#. Used as title, eg in table header. Means 'Does GNOME Shell extension
+#. enabled?'
+#: chrome-gnome-shell-key-extension_enabled:1
+msgid "Enabled"
+msgstr "Включено"
+
+#. Used as title, eg in table header. Means 'Does GNOME Shell extension
+#. installed?'
+#: chrome-gnome-shell-key-extension_installed:1
+msgid "Installed"
+msgstr "Инсталирано"
+
+#. Used as title, eg in table header. Means 'GNOME Shell extension name'.
+#: chrome-gnome-shell-key-extension_name:1
+msgid "Extension"
+msgstr "Разширение"
+
+#. This is a part of phrase like 'Extension Top Icons must be downgraded'.
+#: chrome-gnome-shell-key-extension_status_downgrade:1
+msgid "must be downgraded"
+msgstr "трябва да бъде понижено"
+
+#. This is a part of phrase like 'Extension Top Icons can be upgraded'.
+#: chrome-gnome-shell-key-extension_status_upgrade:1
+msgid "can be upgraded"
+msgstr "може да бъде надградено"
+
+#. Used as title, eg in table header. Means 'Does GNOME Shell extension status
+#. synchronized with remote browser storage?'
+#: chrome-gnome-shell-key-extension_synchronized:1
+msgid "Synchronized"
+msgstr "Синхронизирано"
+
+#. This is a project title. Used as extension name in Chrome Store and in some
+#. titlebars.
+#: chrome-gnome-shell-key-gs_chrome:1
+msgid "GNOME Shell integration"
+msgstr "Интеграцията на GNOME обвивката"
+
+#. Used as extension description in Chrome Store
+#: chrome-gnome-shell-key-manifest_description:1
+msgid ""
+"This extension provides integration with GNOME Shell and the corresponding "
+"extensions repository https://extensions.gnome.org"
+msgstr ""
+"Това разширение осигурява интеграция с GNOME обвивката и съответното "
+"хранилище за разширения https://extensions.gnome.org"
+
+#. $REQUEST$ is a placeholder for technical name of request that web extension
+#. make via native messaging host application.
+#.
+#. String placeholders:
+#. request
+#.
+#: chrome-gnome-shell-key-native_request_failed:1
+msgid "«$REQUEST$» native request failed"
+msgstr "«$REQUEST$» заявката от обвивката е неуспешна"
+
+#. This is a part of phrase 'Last check: never'
+#: chrome-gnome-shell-key-never:1
+msgid "never"
+msgstr "никога"
+
+#: chrome-gnome-shell-key-no:1
+msgid "No"
+msgstr "Не"
+
+#. Shown to user when native connector unable to query GNOME Shell version or
+#. settings
+#: chrome-gnome-shell-key-no_gnome_shell:1
+msgid ""
+"Unable to locate GNOME Shell settings or version. Make sure it is installed "
+"and running."
+msgstr ""
+"Настройките или версията на GNOME обвивката не могат да бъдат намерени. "
+"Уверете се, че тя е инсталирана и работи."
+
+#. $url$ is a placeholder for URL
+#.
+#. String placeholders:
+#. url
+#.
+#: chrome-gnome-shell-key-no_host_connector:1
+msgid ""
+"Although GNOME Shell integration extension is running, native host connector "
+"is not detected. Refer <a href='$url$'>documentation</a> for instructions "
+"about installing connector."
+msgstr ""
+"Въпреки че разширението за интеграция с GNOME обвивката работи, не може да "
+"бъде открита програма за свързване с обвивката на хоста. За инструкции за "
+"инсталиране на програма за свързване вижте <a href='$url$'>документацията</"
+"a>."
+
+#. Means 'Web extension does not received answer from native messaging host
+#. application.'
+#: chrome-gnome-shell-key-no_host_response:1
+msgid "No host response"
+msgstr "Няма отговор от хоста"
+
+#. Tooltip for browser extensions icon.
+#: chrome-gnome-shell-key-open_website:1
+msgid "Open GNOME Shell extensions website"
+msgstr "Отваряне на уеб страницата за разширения на GNOME"
+
+#. Link name for options tab.
+#: chrome-gnome-shell-key-options_link:1
+msgid "Options"
+msgstr "Опции"
+
+#. Means 'Options were saved successfully after user clicked Save button'
+#: chrome-gnome-shell-key-options_saved:1
+msgid "Options saved."
+msgstr "Опциите са запазени."
+
+#. Option name. Allow to enable/disable popup with release notes when Web
+#. extension is updated.
+#: chrome-gnome-shell-key-options_show_release_notes:1
+msgid "Show release notes when browser extension updated"
+msgstr ""
+"Показване на бележките за изданието, когато разширението за браузъра е "
+"обновено"
+
+#. Option name. Allow to enable/disable synchronization of GNOME Shell
+#. extensions with remote browser storage.
+#: chrome-gnome-shell-key-options_synchronize_extensions:1
+msgid "Synchronize GNOME Shell extensions list"
+msgstr "Синхронизиране на списъка с разширения на GNOME обвивката"
+
+#. This is a notice under option name.
+#: chrome-gnome-shell-key-options_synchronize_extensions_notice:1
+msgid ""
+"If enabled, your GNOME Shell extensions list will be synchronized with your "
+"Google account."
+msgstr ""
+"Когато е включено, списъкът с разширенията на GNOME обвивката ще бъде "
+"синхронизиран с вашата Google регистрация."
+
+#. $GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This
+#. string used as title for Options page. This title is not shown in Chrome,
+#. but may be shown in other browsers.
+#.
+#. String placeholders:
+#. gs_chrome
+#.
+#: chrome-gnome-shell-key-options_title:1
+msgid "$GS_CHROME$ options"
+msgstr "$GS_CHROME$ опции"
+
+#. Use light icon that is looked better with dark themes.
+#: chrome-gnome-shell-key-options_use_light_icon:1
+msgid "Use light icon (dark theme)"
+msgstr "Използване на светли иконки (тъмна тема)"
+
+#: chrome-gnome-shell-key-platform_not_supported:1
+msgid "Native host connector is not supported for your platform."
+msgstr ""
+"Програмата за свързване с обвивката на хоста не се поддържа за вашата "
+"платформа."
+
+#: chrome-gnome-shell-key-retry:1
+msgid "Retry"
+msgstr "Повтаряне"
+
+#: chrome-gnome-shell-key-save:1
+msgid "Save"
+msgstr "Запазване"
+
+#. Link name for synchronization tab in options dialog.
+#: chrome-gnome-shell-key-synchronization:1
+msgid "Synchronization"
+msgstr "Синхронизация"
+
+#: chrome-gnome-shell-key-synchronization_cancel:1
+msgid "Do not enable synchronization."
+msgstr "Не включвайте синхронизацията."
+
+#. $CAUSE$ is placeholder for error that caused synchronization failure.
+#.
+#. String placeholders:
+#. cause
+#.
+#: chrome-gnome-shell-key-synchronization_failed:1
+msgid "Failed to synchronize extensions: $CAUSE$"
+msgstr "Разширенията не може да бъдат синхронизирани: $CAUSE$"
+
+#: chrome-gnome-shell-key-synchronization_storage_exists:1
+msgid "Your remote synchronization storage already contains extensions list."
+msgstr ""
+"Вашето хранилище за отдалечена синхронизация вече съдържа списък с "
+"разширения."
+
+#: chrome-gnome-shell-key-synchronization_use_local:1
+msgid "Use local extensions list, overwrite remote."
+msgstr ""
+"Използване на локалния списък с разширения и презаписване на отдалечения."
+
+#: chrome-gnome-shell-key-synchronization_use_remote:1
+msgid "Use remote extensions list, overwrite local."
+msgstr ""
+"Използване на отдалечения списък с разширения и презаписване на локалния."
+
+#. This is content of 'About translation' tab in Options dialog. Thank you for
+#. translation and feel free to add yourself here. HTML markup enabled for
+#. this string. New line character is treated as line break (<br />)
+#: chrome-gnome-shell-key-translation_credits:1
+msgid "translation_credits"
+msgstr ""
+"twlvnn kraftwerk <kraft_werk@tutanota.com>\n"
+"\n"
+"Проектът за превод на GNOME има нужда от подкрепа.\n"
+"Научете повече за нас на <a href=\"http://gnome.cult.bg\">http://"
+"gnome.cult.bg</a>\n"
+"Докладвайте за грешки на <a href=\"http://gnome.cult.bg/bugs\">http://"
+"gnome.cult.bg/bugs</a>"
+
+#. Link name for translation credits tab in options dialog.
+#: chrome-gnome-shell-key-translation_credits_title:1
+msgid "About translation"
+msgstr "Относно превода"
+
+#. This should newer be shown to user. However better safe than sorry.
+#: chrome-gnome-shell-key-unknown_error:1
+msgid "unknown error"
+msgstr "неизвестна грешка"
+
+#. $$1 is a placeholder for a list of missing APIs
+#: chrome-gnome-shell-key-warning_apis_missing:1
+msgid ""
+"Your native host connector do not support following APIs: $$1. Probably you "
+"should upgrade native host connector or install plugins for missing APIs. "
+"Refer <a href='$$2'>documentation</a> for instructions."
+msgstr ""
+"Вашата програма за свързване с обвивката на хоста не поддържа следните API "
+"функции: $$1. Вероятно трябва да обновите програмата за свързване или да "
+"инсталирате приставки за липсващите API функции. За инструкции вижте <a "
+"href='$$2'>документацията</a>."
+
+#: chrome-gnome-shell-key-yes:1
+msgid "Yes"
+msgstr "Да"
+
+#. Chrome store description
+#: chrome-gnome-shell-store-description:1
+msgid ""
+"You MUST install native connector for this extension to work.\n"
+"\n"
+"For Arch Linux, Debian, Fedora, Gentoo and Ubuntu you can install package "
+"named \"chrome-gnome-shell\".\n"
+"\n"
+"You also can install connector manually. See https://"
+"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+"guide.html for install instructions.\n"
+msgstr ""
+"За да работи това разширение, ТРЯБВА да инсталирате програма за свързване с "
+"обвивката.\n"
+"\n"
+"За Arch Linux, Debian, Fedora, Gentoo и Ubuntu може да инсталирате пакета с "
+"името „chrome-gnome-shell“.\n"
+"\n"
+"Може също да инсталирате програмата за свързване ръчно. Вижте https://"
+"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+"guide.html за инструкции за инсталиране.\n"
