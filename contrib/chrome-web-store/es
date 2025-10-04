@@ -1,0 +1,5 @@
+Debe instalar el conector nativo para que esta extensión funcione.
+
+Para Arch Linux, Debian, Fedora, Gentoo y Ubuntu puede instalar el paquete «chrome-gnome-shell».
+
+También puede instalar el conector manualmente. Consulte en https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation las instrucciones de instalación.

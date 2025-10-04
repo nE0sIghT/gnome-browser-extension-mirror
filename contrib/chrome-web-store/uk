@@ -1,0 +1,5 @@
+Вам СЛІД встановити з'єднувач із основною системою, щоб це розширення запрацювало.
+
+У Arch Linux, Debian, Fedora, Gentoo та Ubuntu ви можете встановити пакунок із назвою «chrome-gnome-shell».
+
+Ви також можете встановити з'єднувач вручну. Див. настанови щодо встановлення тут: https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html

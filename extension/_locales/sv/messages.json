@@ -64,7 +64,7 @@
 	},
 	"no_host_connector": {
 		"description": "$url$ is a placeholder for URL",
-		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"message": "\u00c4ven om till\u00e4gget f\u00f6r GNOME Shell-integration k\u00f6rs, s\u00e5 hittades inget inhemskt v\u00e4rdanslutningsprogram. Se <a href='$url$'>dokumentationen</a> f\u00f6r instruktioner om hur ett anslutningsprogram installeras.",
 		"placeholders": {
 			"url": {
 				"content": "$1"
@@ -160,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
+		"message": "Ditt inhemska v\u00e4rdanslutningsprogram st\u00f6der inte f\u00f6ljande API:er: $$1. Du b\u00f6r troligen uppgradera det inhemska v\u00e4rdanslutningsprogrammet eller installera insticksmoduler f\u00f6r saknade API:er. Se <a href='$$2'>dokumentationen</a> f\u00f6r instruktioner."
 	},
 	"yes": {
 		"message": "Ja"

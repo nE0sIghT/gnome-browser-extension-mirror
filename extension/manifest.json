@@ -4,7 +4,7 @@
   "name": "__MSG_gs_chrome__",
   "short_name": "GS Chrome",
   "description": "__MSG_manifest_description__",
-  "version": "12",
+  "version": "12.1",
 
   "default_locale": "en",
 

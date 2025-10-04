@@ -1,0 +1,5 @@
+您必须安装本地连接器，才能使此扩展工作。
+
+对于 Arch Linux、Debian、Fedora、Gentoo 和 Ubuntu，您可以安装“chrome-gnome-shell”软件包。
+
+您也可以手动安装连接器。参考 https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html 上的安装说明。

@@ -1,0 +1,5 @@
+A kiterjesztés működéséhez telepíteni KELL a natív csatlakozót.
+
+Arch Linux, Debian, Fedora, Gentoo és Ubuntu használatakor a „chrome-gnome-shell” nevű csomagot telepítheti.
+
+Kézzel is telepítheti a csatlakozót. Nézze meg a https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html oldalt a telepítési utasításokért.

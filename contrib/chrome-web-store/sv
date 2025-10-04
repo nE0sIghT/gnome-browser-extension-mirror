@@ -1,0 +1,5 @@
+Du MÅSTE installera ett inhemskt anslutningsprogram för att detta tillägg ska fungera.
+
+För Arch Linux, Debian, Fedora, Gentoo och Ubuntu kan du installera paketet med namnet ”chrome-gnome-shell”.
+
+Du kan också installera anslutningsprogrammet manuellt. Se https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html för installationsinstruktioner.
