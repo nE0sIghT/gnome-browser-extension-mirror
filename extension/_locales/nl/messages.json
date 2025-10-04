@@ -36,11 +36,11 @@
 	},
 	"gs_chrome": {
 		"description": "This is a project title. Used as extension name in Chrome Store and in some titlebars.",
-		"message": "Gnome-shell-integratie"
+		"message": "GNOME Shell-integratie"
 	},
 	"manifest_description": {
 		"description": "Used as extension description in Chrome Store",
-		"message": "Deze extensie voorziet in de integratie met Gnome-shell en de bijbehorende website met extensies https://extensions.gnome.org"
+		"message": "Deze extensie voorziet in de integratie met GNOME Shell en de bijbehorende website met uitbreidingen https://extensions.gnome.org"
 	},
 	"native_request_failed": {
 		"description": "$REQUEST$ is a placeholder for technical name of request that web extension make via native messaging host application.",
@@ -60,11 +60,11 @@
 	},
 	"no_gnome_shell": {
 		"description": "Shown to user when native connector unable to query GNOME Shell version or settings",
-		"message": "Geen Gnome-shell-instellingen of -versie gevonden. Zorg ervoor dat deze zijn ge\u00efnstalleerd en draaien."
+		"message": "Geen GNOME Shell-instellingen of -versie gevonden. Zorg ervoor dat deze zijn ge\u00efnstalleerd en draaien."
 	},
 	"no_host_connector": {
 		"description": "$url$ is a placeholder for URL",
-		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"message": "Alhoewel de extensie GNOME Shell-integratie actief is, wordt de platform-eigen hostconnector niet gedetecteerd. Ga naar de <a href='$url$'>documentatie</a> voor instructies met betrekking tot het installeren van de connector.",
 		"placeholders": {
 			"url": {
 				"content": "$1"
@@ -77,7 +77,7 @@
 	},
 	"open_website": {
 		"description": "Tooltip for browser extensions icon.",
-		"message": "Website met Gnome-shell-extensies openen"
+		"message": "Website voor GNOME Shell-uitbreidingen openen"
 	},
 	"options_link": {
 		"description": "Link name for options tab.",
@@ -93,11 +93,11 @@
 	},
 	"options_synchronize_extensions": {
 		"description": "Option name. Allow to enable/disable synchronization of GNOME Shell extensions with remote browser storage.",
-		"message": "Lijst met Gnome-shell-extensies synchroniseren"
+		"message": "Lijst met GNOME Shell-uitbreidingen synchroniseren"
 	},
 	"options_synchronize_extensions_notice": {
 		"description": "This is a notice under option name.",
-		"message": "Indien ingeschakeld, zal uw lijst met Gnome-shell-extensies gesynchroniseerd worden met uw Google-account."
+		"message": "Indien ingeschakeld, zal uw lijst met GNOME Shell-uitbreidingen gesynchroniseerd worden met uw Google-account."
 	},
 	"options_title": {
 		"description": "$GS_CHROME$ is placeholder for 'GNOME Shell integration' string. This string used as title for Options page. This title is not shown in Chrome, but may be shown in other browsers.",
@@ -148,7 +148,7 @@
 	},
 	"translation_credits": {
 		"description": "This is content of 'About translation' tab in Options dialog. Thank you for translation and feel free to add yourself here. HTML markup enabled for this string. New line character is treated as line break (<br />)",
-		"message": "Hannie Dumoleyn\nNathan Follens\n\nMeer info over Gnome-NL http://nl.gnome.org"
+		"message": "Hannie Dumoleyn\nNathan Follens <nfollens@gnome.org>\nMeer info over GNOME-NL https://nl.gnome.org"
 	},
 	"translation_credits_title": {
 		"description": "Link name for translation credits tab in options dialog.",
@@ -160,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
+		"message": "Uw platform-eigen hostconnector ondersteunt de volgende API\u2019s niet: $$1. Waarschijnlijk moet u de platform-eigen hostconnector bijwerken of plug-ins voor de ontbrekende API\u2019s installeren. Ga voor instructies naar de <a href='$$2'>documentatie</a>."
 	},
 	"yes": {
 		"message": "Ja"

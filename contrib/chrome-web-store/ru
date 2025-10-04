@@ -1,0 +1,5 @@
+Вы ДОЛЖНЫ установить нативный хост-коннектор для работы этого расширения веб-браузера.
+
+Для Arch Linux, Debian, Fedora, Gentoo и Ubuntu вы можете установить пакет «chrome-gnome-shell».
+
+Вы также можете установить коннектор вручную. Инструкция по установке находится по адресу https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html

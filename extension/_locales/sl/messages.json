@@ -64,7 +64,7 @@
 	},
 	"no_host_connector": {
 		"description": "$url$ is a placeholder for URL",
-		"message": "Although GNOME Shell integration extension is running, native host connector is not detected. Refer <a href='$url$'>documentation</a> for instructions about installing connector.",
+		"message": "\u010ceprav je raz\u0161iritev za povezovanja z Lupino GNOME zagnana, povezovalnika ni mogo\u010de zaznati. V <a href='$url$'>dokumentaciji</a> si oglejte navodila za namestitev.",
 		"placeholders": {
 			"url": {
 				"content": "$1"
@@ -160,7 +160,7 @@
 	},
 	"warning_apis_missing": {
 		"description": "$$1 is a placeholder for a list of missing APIs",
-		"message": "Your native host connector do not support following APIs: $$1. Probably you should upgrade native host connector or install plugins for missing APIs. Refer <a href='$$2'>documentation</a> for instructions."
+		"message": "Izvorni gostiteljski povezovalnik ne podpira vmesnikov API: $$1. Najverjetneje je treba povezovalnik posodobiti ali pa namestiti manjkajo\u010de pakete. Ve\u010d podrobnosti je zapisanih v <a href='$$2'>dokumentaciji</a>."
 	},
 	"yes": {
 		"message": "Da"

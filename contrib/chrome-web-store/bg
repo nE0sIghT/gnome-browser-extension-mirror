@@ -1,0 +1,5 @@
+За да работи това разширение, ТРЯБВА да инсталирате програма за свързване с обвивката.
+
+За Arch Linux, Debian, Fedora, Gentoo и Ubuntu може да инсталирате пакета с името „chrome-gnome-shell“.
+
+Може също да инсталирате програмата за свързване ръчно. Вижте https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html за инструкции за инсталиране.

@@ -1,0 +1,5 @@
+Za namestitev razširitve je NUJNO namestiti izvorni povezovalnik.
+
+Za okolja Arch Linux, Debian, Fedora, Gentoo in Ubuntu je na voljo v paketu »chrome-gnome-shell«.
+
+Povezovalnik je mogoče namestiti tudi ročno. Navodila za namestitev so na voljo na povezavi https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html
