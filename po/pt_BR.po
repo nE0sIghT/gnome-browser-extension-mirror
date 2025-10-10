@@ -2,21 +2,22 @@
 # This file is auto generated with chrome-messages2pot tool.
 # Enrico Nicoletto <liverig@gmail.com>, 2016.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2016-2025.
+# Juliano de Souza Camargo <julianosc@pm.me>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 42.0\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2025-03-04 06:18+0000\n"
-"PO-Revision-Date: 2025-08-05 22:53-0300\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
-"Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao>\n"
+"POT-Creation-Date: 2025-09-06 19:37+0000\n"
+"PO-Revision-Date: 2025-10-10 16:31-0300\n"
+"Last-Translator: Juliano de Souza Camargo <julianosc@pm.me>\n"
+"Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 48.0\n"
+"X-Generator: Gtranslator 49.0\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -105,17 +106,20 @@ msgstr ""
 "Não foi possível localizar as configurações ou versão do GNOME Shell. "
 "Certifique-se de que ele esteja instalado e em execução."
 
+#. $url$ is a placeholder for URL
+#.
+#. String placeholders:
+#. url
+#.
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-"
-"browser-integration/pages/installation-guide.html'>documentation</a> for "
-"instructions about installing connector."
+"is not detected. Refer <a href='$url$'>documentation</a> for instructions "
+"about installing connector."
 msgstr ""
 "Apesar da extensão de integração do GNOME Shell estar em execução, o "
-"conector nativo de máquina não foi detectado. Veja a <a href='https://"
-"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
-"guide.html'>documentação</a> para instruções sobre instalação do conector."
+"conector nativo de máquina não foi detectado. Veja a <a "
+"href='$url$'>documentação</a> para instruções sobre instalação do conector."
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -241,15 +245,12 @@ msgstr "erro desconhecido"
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://gnome.pages.gitlab.gnome.org/gnome-browser-"
-"integration/pages/installation-guide.html'>documentation</a> for "
-"instructions."
+"Refer <a href='$$2'>documentation</a> for instructions."
 msgstr ""
 "Seu conector nativo de máquina não oferece suporte a seguinte API: $$1. "
 "Provavelmente você deveria atualizar o conector nativo de máquina ou "
-"instalar plug-ins para as APIs em falta. Veja a <a href='https://"
-"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
-"guide.html'>documentação</a> para instruções."
+"instalar plug-ins para as APIs em falta. Veja a <a href='$$2'>documentação</"
+"a> para instruções."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
